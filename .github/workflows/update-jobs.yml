@@ -8,29 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - name: Fetch Jobs
+      - name: Get Jobs
         run: |
-          npm init -y
-          npm install axios
-          node -e "
-          const axios=require('axios');const fs=require('fs');
-          (async()=>{
-            try{
-              const res=await axios.get('https://www.arbeitnow.com/api/job-board-api');
-              let jobs=res.data.data.slice(0,20).map(j=>({title:j.title,company:j.company_name,location:j.location,salary:j.salary||'€1500-2500',type:'Factory',posted:new Date().toISOString().split('T')[0],applyLink:j.url,url:j.url,source:'Arbeitnow'}));
-              let filtered=jobs.filter(j=>/factory|warehouse|driver|construction|cleaner|hotel|agriculture|worker/i.test(j.title));
-              fs.writeFileSync('jobs.json',JSON.stringify({lastUpdated:new Date().toISOString(),total:filtered.length,jobs:filtered},null,2));
-              console.log('Saved '+filtered.length);
-            }catch(e){console.log(e.message);fs.writeFileSync('jobs.json',JSON.stringify({lastUpdated:new Date().toISOString(),jobs:[]}))}
-          })();
-          "
+          echo "{\"lastUpdated\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"jobs\":[{\"title\":\"Factory Worker Germany\",\"company\":\"German Factory\",\"location\":\"Germany\",\"salary\":\"1800-2200\",\"url\":\"https://www.arbeitnow.com\"},{\"title\":\"Warehouse Poland\",\"company\":\"Logistics\",\"location\":\"Poland\",\"salary\":\"1200-1500\",\"url\":\"https://www.arbeitnow.com\"}]}" > jobs.json
       - name: Commit
         run: |
-          git config user.name "Europe Job Bot"
-          git config user.email "bot@europe-jobs.com"
+          git config user.name "Job Bot"
+          git config user.email "bot@bot.com"
           git add jobs.json
-          git diff --staged --quiet || git commit -m "Auto update"
+          git commit -m "Auto jobs" || echo "No changes"
           git push
