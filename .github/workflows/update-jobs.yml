@@ -10,14 +10,41 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Update jobs
+      - name: Fetch real jobs
         run: |
-          echo "{\"lastUpdated\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > jobs.json
+          python3 -c "
+          import json, urllib.request, datetime
+          url = 'https://remotive.com/api/remote-jobs?category=software-dev&limit=50'
+          try:
+              data = json.loads(urllib.request.urlopen(url, timeout=30).read())
+              jobs = []
+              for j in data.get('jobs', [])[:30]:
+                  jobs.append({
+                      'title': j.get('title'),
+                      'company': j.get('company_name'),
+                      'location': j.get('candidate_required_location') or 'Europe / Remote',
+                      'category': j.get('category'),
+                      'job_type': j.get('job_type'),
+                      'salary': j.get('salary'),
+                      'url': j.get('url'),
+                      'published': j.get('publication_date')
+                  })
+          except Exception as e:
+              print('API failed:', e)
+              jobs = []
+          out = {
+              'lastUpdated': datetime.datetime.utcnow().isoformat() + 'Z',
+              'count': len(jobs),
+              'jobs': jobs
+          }
+          open('jobs.json','w').write(json.dumps(out, indent=2))
+          print(f'Saved {len(jobs)} real jobs')
+          "
           cat jobs.json
       - name: Save
         run: |
           git config user.name "bot"
           git config user.email "bot@bot.com"
           git add jobs.json
-          git commit -m "jobs" || true
+          git commit -m "Update real jobs" || true
           git push
