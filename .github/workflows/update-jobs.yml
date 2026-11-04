@@ -6,11 +6,14 @@ on:
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Update jobs
         run: |
-          echo '{"lastUpdated":"2026-05-13","total":2,"jobs":[{"title":"Factory Germany","company":"Factory","location":"Germany","salary":"1800 Euro","url":"https://arbeitnow.com"},{"title":"Warehouse Poland","company":"Logistics","location":"Poland","salary":"1200 Euro","url":"https://arbeitnow.com"}]}' > jobs.json
+          echo "{\"lastUpdated\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > jobs.json
+          cat jobs.json
       - name: Save
         run: |
           git config user.name "bot"
