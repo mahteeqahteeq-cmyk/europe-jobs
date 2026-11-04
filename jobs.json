@@ -1,5 +1,116 @@
 {
-  "lastUpdated": "2026-11-04",
-  "count": 0,
-  "jobs": []
+  "lastUpdated": "2026-11-04T15:21:31.920408",
+  "count": 11,
+  "jobs": [
+    {
+      "title": "Freelance Copywriter",
+      "company": "Coalition Technologies ",
+      "location": "Worldwide",
+      "category": "Writing",
+      "type": "freelance",
+      "salary": "$20k -$35k",
+      "url": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
+      "date": "2026-11-02"
+    },
+    {
+      "title": "Full-Stack Developer",
+      "company": "Fluence International, Inc.",
+      "location": "Worldwide",
+      "category": "Software Development",
+      "type": "contract",
+      "salary": "$3.5k\u2013$5k/month",
+      "url": "https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165",
+      "date": "2026-10-29"
+    },
+    {
+      "title": "Senior Back-end Developer",
+      "company": "Lemon.io",
+      "location": "Europe, USA, Canada, Australia, Singapore, Mexico, Saudi Arabia",
+      "category": "Software Development",
+      "type": "full_time",
+      "salary": "",
+      "url": "https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135",
+      "date": "2026-10-27"
+    },
+    {
+      "title": "Head of Engineering",
+      "company": "Lemon.io",
+      "location": "Worldwide",
+      "category": "Software Development",
+      "type": "full_time",
+      "salary": "",
+      "url": "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
+      "date": "2026-10-26"
+    },
+    {
+      "title": "AI Trainer - Video Annotation",
+      "company": "iMerit Technology",
+      "location": "Worldwide",
+      "category": "Artificial Intelligence",
+      "type": "freelance",
+      "salary": "70K-80K",
+      "url": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
+      "date": "2026-10-22"
+    },
+    {
+      "title": "Software Engineer, AI Coding Tasks",
+      "company": "Askable",
+      "location": "Worldwide",
+      "category": "Software Development",
+      "type": "contract",
+      "salary": "$1000 per task",
+      "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
+      "date": "2026-10-17"
+    },
+    {
+      "title": "Tech Lead Full-Stack Rails Engineer",
+      "company": "Mitre Media",
+      "location": "USA, Canada, USA timezones",
+      "category": "Software Development",
+      "type": "full_time",
+      "salary": "$170k - $200k",
+      "url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
+      "date": "2026-10-14"
+    },
+    {
+      "title": "Remote Office Assistant",
+      "company": "Coalition Technologies ",
+      "location": "Worldwide",
+      "category": "Marketing",
+      "type": "full_time",
+      "salary": "$35,3k- $52k",
+      "url": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+      "date": "2026-10-11"
+    },
+    {
+      "title": "Inside Sales Contractor",
+      "company": "Credit Wellness, LLC",
+      "location": "Worldwide",
+      "category": "Sales",
+      "type": "full_time",
+      "salary": "OTE $25k - $35k",
+      "url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+      "date": "2026-10-08"
+    },
+    {
+      "title": "Tier III Service Desk Engineer",
+      "company": "Unio Digital",
+      "location": "Worldwide",
+      "category": "Information Technology",
+      "type": "full_time",
+      "salary": "",
+      "url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
+      "date": "2026-10-07"
+    },
+    {
+      "title": "Freelance Writer",
+      "company": "IAPWE",
+      "location": "Worldwide",
+      "category": "Writing",
+      "type": "freelance",
+      "salary": "$50-$75 /hour",
+      "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
+      "date": "2026-10-04"
+    }
+  ]
 }
