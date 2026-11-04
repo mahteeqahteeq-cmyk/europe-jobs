@@ -1,20 +1,20 @@
 name: Daily Europe Jobs Update
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 4 * * *'
-  workflow_dispatch:
 jobs:
   update-jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Get Jobs
+      - name: Update jobs
         run: |
-          echo "{\"lastUpdated\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"jobs\":[{\"title\":\"Factory Worker Germany\",\"company\":\"German Factory\",\"location\":\"Germany\",\"salary\":\"1800-2200\",\"url\":\"https://www.arbeitnow.com\"},{\"title\":\"Warehouse Poland\",\"company\":\"Logistics\",\"location\":\"Poland\",\"salary\":\"1200-1500\",\"url\":\"https://www.arbeitnow.com\"}]}" > jobs.json
-      - name: Commit
+          echo '{"lastUpdated":"2026-05-13","total":2,"jobs":[{"title":"Factory Germany","company":"Factory","location":"Germany","salary":"1800 Euro","url":"https://arbeitnow.com"},{"title":"Warehouse Poland","company":"Logistics","location":"Poland","salary":"1200 Euro","url":"https://arbeitnow.com"}]}' > jobs.json
+      - name: Save
         run: |
-          git config user.name "Job Bot"
+          git config user.name "bot"
           git config user.email "bot@bot.com"
           git add jobs.json
-          git commit -m "Auto jobs" || echo "No changes"
+          git commit -m "jobs" || true
           git push
