@@ -1,7 +1,27 @@
 {
-  "lastUpdated": "2026-11-06T07:07:06.576731",
-  "count": 10,
+  "lastUpdated": "2026-11-07T06:50:54.073387",
+  "count": 12,
   "jobs": [
+    {
+      "title": "Freelance Writer",
+      "company": "IAPWE",
+      "location": "Worldwide",
+      "category": "Writing",
+      "type": "freelance",
+      "salary": "$50-$75 /hour",
+      "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
+      "date": "2026-11-04"
+    },
+    {
+      "title": "Content Reviewer - United States",
+      "company": "TELUS Digital",
+      "location": "USA",
+      "category": "All others",
+      "type": "part_time",
+      "salary": "$14/hour",
+      "url": "https://remotive.com/remote-jobs/all-others/content-reviewer-united-states-2091166",
+      "date": "2026-11-04"
+    },
     {
       "title": "Freelance Copywriter",
       "company": "Coalition Technologies ",
