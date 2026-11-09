@@ -86,6 +86,26 @@ function filterJobs(country){
    };
   }
  }
+});document.querySelectorAll('*').forEach(function(el){
+ var t=(el.innerText||'').trim();
+ if(t.indexOf('EU CV Maker')>-1 || t.indexOf('Cover Letter')>-1 || t.indexOf('Photo 35')>-1 || t.indexOf('Salary Calc')>-1 || t.indexOf('Auto Jobs Daily')>-1){
+  if(el.children.length>3) return;
+  el.onclick=function(e){
+   e.stopPropagation();
+   var want='';
+   if(t.indexOf('EU CV Maker')>-1) want='European CV Maker';
+   if(t.indexOf('Cover Letter')>-1) want='Cover Letter Maker';
+   if(t.indexOf('Photo 35')>-1) want='EU Photo';
+   if(t.indexOf('Salary Calc')>-1) want='Salary Calculator';
+   if(t.indexOf('Auto Jobs')>-1) want='Europe Jobs';
+   var found=null;
+   document.querySelectorAll('div').forEach(function(d){
+    if(d.innerText && d.innerText.indexOf(want)>-1 && d.innerText.length<300) found=d;
+   });
+   if(found) found.scrollIntoView({behavior:'smooth'});
+   else alert(want+' neeche hai, scroll karke dekhein');
+  };
+ }
 });script><div style="text-align:center; padding:15px; font-size:14px;">
 <a href="privacy-policy.html">Privacy Policy</a>
 </div></body></html>
