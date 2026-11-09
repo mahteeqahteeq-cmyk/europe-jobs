@@ -170,6 +170,17 @@ window.calcSal=function(){
   var pkr=Math.round(net*300);
   document.getElementById('salOut').innerText='Gross: '+g+' EUR | Net (approx): '+net.toFixed(0)+' EUR | PKR (approx): '+pkr+' PKR';
 };
-})();</script><div style="text-align:center; padding:15px; font-size:14px;">
+})();fetch('jobs.json').then(function(r){return r.json()}).then(function(data){
+ var list=data.jobs||data;
+ var box=document.querySelector('div');
+ var html='<div style="padding:10px"><h3>All Jobs - '+list.length+'</h3>';
+ list.forEach(function(j){
+  html+='<div style="border:1px solid #ddd;padding:10px;margin:8px 0;border-radius:10px;text-align:left"><b>'+j.title+'</b><br>'+j.company+' - '+j.location+'<br>'+j.category+' | '+j.salary+'<br><a href="'+j.url+'" target="_blank" style="color:#1a5cff">Apply Karein -></a></div>';
+ });
+ html+='</div>';
+ var target=null;
+ document.querySelectorAll('div').forEach(function(d){ if(d.innerText && d.innerText.indexOf('Europe Jobs +')>-1 && d.innerText.length<600) target=d; });
+ if(target) target.insertAdjacentHTML('afterend', html);
+});</script><div style="text-align:center; padding:15px; font-size:14px;">
 <a href="privacy-policy.html">Privacy Policy</a>
 </div></body></html>
