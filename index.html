@@ -37,7 +37,7 @@ function loadJobs(){const jobsListEl=document.getElementById('jobsList');jobsLis
 function renderJobsList(jobs,lastUpdated){let html=`<div style="background:#e8f5e9;padding:12px;border-radius:8px;margin-bottom:12px;font-size:13px">✅ <b>Auto Updated:</b> ${lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Today'} | 🤖 <b>Daily Auto Search ON</b> - New jobs added automatically every day at 9 AM Pakistan time!</div>`;jobs.forEach(j=>{html+=`<div class="job-card"><h4>${j.title}</h4><p>🏢 ${j.company||'Europe Company'} - 📍 ${j.location} - 💶 ${j.salary||'€1500-2500'}</p><p style="font-size:11px;color:#666">Posted: Today | Source: Auto Bot</p><button class="btn" style="margin-top:8px" onclick="showPage('cv-maker')">Apply with FREE CV</button> <a href="${j.url||'#'}" target="_blank" style="margin-left:8px;font-size:13px;color:#0E2A5A">View →</a></div>`;});document.getElementById('jobsList').innerHTML=html;}
 function shareWhatsApp(){const t=encodeURIComponent('My FREE Europass CV! Europe Jobs: https://mahtooqateeq-cmyk.github.io/europe-jobs/');window.open('https://wa.me/?text='+t,'_blank');}
 renderWorkExp();renderEdu();renderLang();updateCVPreview();updateCLPreview();calcSalary();
-</function filterJobs(country){
+function filterJobs(country){
   let cards = document.querySelectorAll('#jobs div');
   cards.forEach(card => {
     if(country==='all' || card.innerText.includes(country)){
