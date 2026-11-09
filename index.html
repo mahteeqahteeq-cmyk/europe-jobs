@@ -68,6 +68,24 @@ function filterJobs(country){
   });
   let jobsBox=document.getElementById('jobs');
   if(jobsBox) jobsBox.scrollIntoView({behavior:'smooth'});
-  }script><div style="text-align:center; padding:15px; font-size:14px;">
+  }document.querySelectorAll('a,div,li,button').forEach(function(el){
+ if(el.children.length==0){
+  var t=el.textContent.trim();
+  if(t=='EU CV Maker'||t=='Cover Letter'||t=='Photo 35x45'||t=='Salary Calc'||t=='Auto Jobs Daily'||t=='Home - All 6 Features'){
+   el.style.cursor='pointer';
+   el.onclick=function(e){
+    e.stopPropagation();
+    var card=null;
+    document.querySelectorAll('div').forEach(function(d){
+      if(d.textContent.indexOf(t.split(' ')[0])>-1 && d.textContent.length<200){ card=d; }
+    });
+    if(card) card.scrollIntoView({behavior:'smooth'});
+    var m=document.querySelector('.dropdown, .menu, nav');
+    if(m) m.click();
+    alert(t+' - neeche scroll karke dekhein, yehi wala tool hai');
+   };
+  }
+ }
+});script><div style="text-align:center; padding:15px; font-size:14px;">
 <a href="privacy-policy.html">Privacy Policy</a>
 </div></body></html>
