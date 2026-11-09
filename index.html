@@ -106,6 +106,70 @@ function filterJobs(country){
    else alert(want+' neeche hai, scroll karke dekhein');
   };
  }
-});script><div style="text-align:center; padding:15px; font-size:14px;">
+});(function(){
+function findBox(txt){
+  var all=document.querySelectorAll('div');
+  for(var i=0;i<all.length;i++){
+    var d=all[i];
+    if(d.innerText && d.innerText.indexOf(txt)>-1 && d.innerText.length<500 && d.querySelectorAll('div').length<5){
+      return d;
+    }
+  }
+  return null;
+}
+function box(title, html){
+  var b=findBox(title);
+  if(!b) return;
+  if(b.querySelector('.real-tool')) return;
+  var div=document.createElement('div');
+  div.className='real-tool';
+  div.style.cssText='margin-top:10px;padding:10px;background:#fff;border:1px solid #ddd;border-radius:10px;text-align:left';
+  div.innerHTML=html;
+  b.appendChild(div);
+}
+box('European CV Maker', '<b>1. Apna CV Banayen</b><br><input id="cvName" placeholder="Poora Naam" style="width:100%;padding:8px;margin:4px 0"><input id="cvJob" placeholder="Job - Driver / Worker" style="width:100%;padding:8px;margin:4px 0"><input id="cvPhone" placeholder="Phone / WhatsApp" style="width:100%;padding:8px;margin:4px 0"><textarea id="cvExp" placeholder="Experience likhein" style="width:100%;padding:8px;margin:4px 0"></textarea><input type="file" id="cvPhoto" accept="image/*" style="width:100%;margin:4px 0"><button onclick="makeCV()" style="width:100%;padding:10px;background:#0E2A5A;color:#fff;border:0;border-radius:8px">CV Preview Dekhein + Print / PDF</button><div id="cvOut" style="margin-top:10px"></div>');
+box('Cover Letter Maker', '<b>2. Cover Letter Banayen</b><br><input id="clName" placeholder="Apna Naam" style="width:100%;padding:8px;margin:4px 0"><input id="clJob" placeholder="Job - Driver" style="width:100%;padding:8px;margin:4px 0"><input id="clComp" placeholder="Company Ka Naam" style="width:100%;padding:8px;margin:4px 0"><textarea id="clText" placeholder="Apne bare me 2-3 lines" style="width:100%;padding:8px;margin:4px 0"></textarea><button onclick="makeCL()" style="width:100%;padding:10px;background:#1a5cff;color:#fff;border:0;border-radius:8px">Letter Banayen</button><div id="clOut" style="margin-top:10px;background:#f7f7f7;padding:10px;white-space:pre-wrap"></div>');
+box('EU Photo 35x45mm', '<b>3. EU Photo Banayen</b><br><input type="file" id="phFile" accept="image/*" style="width:100%;margin:6px 0"><canvas id="phCanvas" width="413" height="531" style="width:150px;height:190px;background:#fff;border:1px solid #000;display:block;margin:auto"></canvas><button onclick="makePhoto()" style="width:100%;padding:10px;background:#111;color:#fff;border:0;border-radius:8px;margin-top:8px">Photo Download Karein</button>');
+box('Salary Calculator', '<b>4. Salary Hisab Karein</b><br><select id="salCountry" style="width:100%;padding:8px;margin:4px 0"><option value="4500">Germany - 4500 EUR</option><option value="3500">Poland - 3500 EUR</option><option value="3000">Italy - 3000 EUR</option><option value="2800">Romania - 2800 EUR</option></select><input id="salGross" type="number" placeholder="Monthly Salary EUR me likhein - 3000" style="width:100%;padding:8px;margin:4px 0"><button onclick="calcSal()" style="width:100%;padding:10px;background:#0a7a42;color:#fff;border:0;border-radius:8px">Hisab Karein</button><div id="salOut" style="margin-top:10px;font-weight:bold"></div>');
+window.makeCV=function(){
+  var n=document.getElementById('cvName').value||'Apna Naam';
+  var j=document.getElementById('cvJob').value||'Job';
+  var p=document.getElementById('cvPhone').value||'';
+  var e=document.getElementById('cvExp').value||'';
+  var f=document.getElementById('cvPhoto').files[0];
+  var img='';
+  if(f){ img=URL.createObjectURL(f); }
+  document.getElementById('cvOut').innerHTML='<div style="border:1px solid #0E2A5A;padding:12px"><div style="background:#0E2A5A;color:#fff;padding:10px;text-align:center"><b>'+n+'</b><br>'+j+'</div>'+(img?'<img src="'+img+'" style="width:80px;height:80px;border-radius:50%;display:block;margin:10px auto">':'')+'<p><b>Phone:</b> '+p+'</p><p><b>Experience:</b><br>'+e+'</p><button onclick="window.print()" style="padding:8px 14px;background:#0E2A5A;color:#fff;border:0;border-radius:6px">Print / Save PDF</button></div>';
+};
+window.makeCL=function(){
+  var n=document.getElementById('clName').value||'Apna Naam';
+  var j=document.getElementById('clJob').value||'Job';
+  var c=document.getElementById('clComp').value||'Company';
+  var t=document.getElementById('clText').value||'I am hardworking and honest.';
+  document.getElementById('clOut').innerText='Dear Sir / Madam,\n\nI am '+n+', I want to apply for '+j+' in '+c+'.\n'+t+'\n\nThank you,\n'+n;
+};
+window.makePhoto=function(){
+  var f=document.getElementById('phFile').files[0];
+  if(!f){ alert('Pehle photo select karein'); return; }
+  var img=new Image();
+  img.onload=function(){
+    var cv=document.getElementById('phCanvas');
+    var ctx=cv.getContext('2d');
+    ctx.fillStyle='#fff'; ctx.fillRect(0,0,413,531);
+    ctx.drawImage(img,0,0,413,531);
+    var a=document.createElement('a');
+    a.download='EU-Photo-35x45.jpg';
+    a.href=cv.toDataURL('image/jpeg',0.95);
+    a.click();
+  };
+  img.src=URL.createObjectURL(f);
+};
+window.calcSal=function(){
+  var g=parseFloat(document.getElementById('salGross').value||document.getElementById('salCountry').value);
+  var net=g*0.75;
+  var pkr=Math.round(net*300);
+  document.getElementById('salOut').innerText='Gross: '+g+' EUR | Net (approx): '+net.toFixed(0)+' EUR | PKR (approx): '+pkr+' PKR';
+};
+})();</script><div style="text-align:center; padding:15px; font-size:14px;">
 <a href="privacy-policy.html">Privacy Policy</a>
 </div></body></html>
