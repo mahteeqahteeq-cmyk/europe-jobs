@@ -54,6 +54,20 @@ document.getElementById('searchInput').addEventListener('input', function(){
     if(card.innerText.toLowerCase().includes(v)) card.style.display='block';
     else if(card.innerText.length>50) card.style.display='none';
   });
-});script><div style="text-align:center; padding:15px; font-size:14px;">
+});let currentCountry='all';
+function filterJobs(country){
+  currentCountry=country;
+  let searchText=document.getElementById('searchInput').value.toLowerCase();
+  let cards=document.querySelectorAll('#jobs > div, #jobs .job-card, #jobs .card');
+  if(cards.length===0) cards=document.querySelectorAll('.job-card, .job-item');
+  cards.forEach(card=>{
+    let t=card.innerText.toLowerCase();
+    let okCountry=(country==='all' || t.includes(country.toLowerCase()));
+    let okSearch=(searchText==='' || t.includes(searchText));
+    card.style.display=(okCountry && okSearch)?'block':'none';
+  });
+  let jobsBox=document.getElementById('jobs');
+  if(jobsBox) jobsBox.scrollIntoView({behavior:'smooth'});
+  }script><div style="text-align:center; padding:15px; font-size:14px;">
 <a href="privacy-policy.html">Privacy Policy</a>
 </div></body></html>
