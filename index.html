@@ -1,186 +1,55 @@
 <!DOCTYPE html>
-<html><head><script>document.addEventListener('contextmenu',e=>e.preventDefault());document.addEventListener('copy',e=>e.preventDefault());</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Europe Job Alerts - 5 FREE Tools + Daily Auto Jobs</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script><style>*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}body{background:#f5f7fb;color:#1a1a1a}.header{background:#0E2A5A;color:white;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}.logo{font-weight:700;font-size:18px}.free-tools-btn{background:white;color:#0E2A5A;padding:8px 14px;border-radius:20px;font-weight:600;border:none;cursor:pointer}.dropdown{display:none;position:absolute;top:48px;right:20px;background:white;color:#1a1a1a;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.15);width:250px;overflow:hidden;z-index:200}.dropdown.show{display:block}.dropdown a{display:flex;gap:10px;padding:12px 14px;text-decoration:none;color:#1a1a1a;border-bottom:1px solid #eee}.badge-free{background:#10b981;color:white;font-size:10px;padding:2px 6px;border-radius:10px;font-weight:700}.hero{background:linear-gradient(135deg,#0E2A5A 0%,#1a4a9a 100%);color:white;padding:40px 20px;text-align:center}.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;padding:20px;max-width:1100px;margin:0 auto}.tool-card{background:white;border-radius:16px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);cursor:pointer;border:2px solid transparent}.tool-card:hover{border-color:#0E2A5A}.page{display:none;max-width:1100px;margin:0 auto;padding:20px}.page.active{display:block}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.form-grid{grid-template-columns:1fr}}.form-group{display:flex;flex-direction:column;gap:6px}.form-group.full{grid-column:1 / -1}label{font-size:13px;font-weight:600;color:#333}input,select,textarea{padding:10px 12px;border:1px solid #ddd;border-radius:8px;font-size:14px}.btn{background:#0E2A5A;color:white;border:none;padding:12px 20px;border-radius:8px;font-weight:600;cursor:pointer;width:100%;margin-top:10px}.btn-green{background:#10b981}.preview-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:900px){.preview-wrap{grid-template-columns:1fr}}.cv-preview{background:#FEF9E7;border-radius:8px;overflow:hidden;box-shadow:0 2px 20px rgba(0,0,0,0.1)}.cv-header{background:#0E2A5A;color:white;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}.cv-header h2{font-size:22px}.cv-photo{width:80px;height:80px;border-radius:50%;border:3px solid white;background:#ddd;overflow:hidden;flex-shrink:0}.cv-photo img{width:100%;height:100%;object-fit:cover}.cv-body{padding:16px}.cv-section{background:white;border-radius:8px;padding:14px;margin-bottom:12px}.cv-section h4{color:#0E2A5A;font-size:12px;border-bottom:2px solid #0E2A5A;padding-bottom:6px;margin-bottom:10px;text-transform:uppercase}.add-more{color:#0E2A5A;background:#e8eefc;border:1px dashed #0E2A5A;padding:8px 12px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13px;margin-top:8px}.checkbox-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.photo-canvas-wrap{background:white;padding:20px;border-radius:12px;text-align:center}.salary-result{background:white;padding:16px;border-radius:12px;margin-top:16px}.job-card{background:white;padding:16px;border-radius:12px;margin-bottom:12px}</style></head><body>
-<div class="header"><div class="logo">🇪🇺 Europe Job Alerts</div><div style="position:relative"><button class="free-tools-btn" onclick="document.getElementById('toolsDropdown').classList.toggle('show')">FREE Tools + Auto Jobs ▼</button><a href="privacy-policy.html" style="color:white;background:#6A1B9A;padding:8px 12px;border-radius:20px;text-decoration:none;font-size:13px;margin-left:8px;">Privacy Policy</a><div id="toolsDropdown" class="dropdown"><a href="#" onclick="showPage('home');return false;">🏠 Home - All 6 Features</a><a href="#" onclick="showPage('cv-maker');return false;">🇪🇺 EU CV Maker <span class="badge-free">FREE</span></a><a href="#" onclick="showPage('cover-letter');return false;">📄 Cover Letter <span class="badge-free">FREE</span></a><a href="#" onclick="showPage('photo-resizer');return false;">📸 Photo 35x45 <span class="badge-free">FREE</span></a><a href="#" onclick="showPage('salary-calculator');return false;">💶 Salary Calc <span class="badge-free">FREE</span></a><a href="#" onclick="showPage('jobs');return false;">💼 Auto Jobs Daily <span class="badge-free">NEW</span></a></div></div></div>
-<div id="home" class="page active"><div class="hero"><h1>6 FREE Features - Europe Job Alerts</h1><input type="text" id="searchInput" placeholder="Search Job... Germany, Driver" style="width:92%;padding:12px;margin:10px;border-radius:8px;">
-<div style="text-align:center;">
-<button onclick="filterJobs('all')">All</button>
-<button onclick="filterJobs('Germany')">Germany</button>
-<button onclick="filterJobs('Italy')">Italy</button>
-<button onclick="filterJobs('Poland')">Poland</button>
-<button onclick="filterJobs('Romania')">Romania</button>
-</div><p>5 Tools + Daily Auto Jobs Search - 100% FREE - Updated Daily at 9 AM Pakistan</p></div><div class="tools-grid"><div class="tool-card" onclick="showPage('cv-maker')"><h3>🇪🇺 European CV Maker - FINAL PERFECT</h3><p>Dark blue header #0E2A5A, circle photo 80x80, beige body, A4 PDF</p><span class="badge-free">FREE</span></div><div class="tool-card" onclick="showPage('cover-letter')"><h3>📄 Cover Letter Maker</h3><p>European format blue header</p><span class="badge-free">FREE</span></div><div class="tool-card" onclick="showPage('photo-resizer')"><h3>📸 EU Photo 35x45mm</h3><p>White bg 413x531px 300 DPI</p><span class="badge-free">FREE</span></div><div class="tool-card" onclick="showPage('salary-calculator')"><h3>💶 Salary Calculator</h3><p>Germany Poland Romania + PKR</p><span class="badge-free">FREE</span></div><div class="tool-card" onclick="showPage('jobs')"><h3>💼 Europe Jobs + 🤖 Auto Daily Search</h3><p>Auto search new latest jobs every day at 9 AM and add in app automatically - NEW FEATURE</p><span class="badge-free">FREE + AUTO</span></div><div class="tool-card" style="background:#e8f5e9;border:2px solid #10b981"><h3>🤖 Daily Auto Robot - How it works?</h3><p>GitHub Action runs daily 9 AM PK, searches Arbeitnow API + other sources, updates jobs.json, your site shows NEW jobs automatically!</p><span class="badge-free">AUTO</span></div></div></div>
-<div id="cv-maker" class="page"><h2 style="color:#0E2A5A">🇪🇺 CV Maker FINAL - All Fields</h2><div class="preview-wrap"><div><div class="form-grid"><div class="form-group full"><label>Full Name *</label><input id="cvName" placeholder="Muhammad Ateeq" oninput="updateCVPreview()"></div><div class="form-group"><label>Email</label><input id="cvEmail" oninput="updateCVPreview()"></div><div class="form-group"><label>Phone +92</label><input id="cvPhone" oninput="updateCVPreview()"></div><div class="form-group full"><label>Address 1</label><input id="cvAddr1" oninput="updateCVPreview()"></div><div class="form-group full"><label>Address 2</label><input id="cvAddr2" oninput="updateCVPreview()"></div><div class="form-group"><label>DOB</label><input id="cvDOB" type="date" oninput="updateCVPreview()"></div><div class="form-group"><label>Nationality</label><input id="cvNationality" value="Pakistani" oninput="updateCVPreview()"></div><div class="form-group"><label>Gender</label><select id="cvGender" onchange="updateCVPreview()"><option>Male</option><option>Female</option></select></div><div class="form-group"><label>Photo 2MB</label><input type="file" accept="image/*" onchange="handlePhoto(event)"></div><div class="form-group full"><label>Professional Summary</label><textarea id="cvSummary" rows="3" oninput="updateCVPreview()"></textarea></div><div class="form-group full"><h4>Work Experience</h4><div id="workExpContainer"></div><button class="add-more" onclick="addWorkExp()">+ Add More</button></div><div class="form-group full"><h4>Education</h4><div id="eduContainer"></div><button class="add-more" onclick="addEducation()">+ Add More</button></div><div class="form-group full"><label>Skills</label><textarea id="cvSkills" oninput="updateCVPreview()"></textarea></div><div class="form-group full"><h4>Languages</h4><div id="langContainer"></div><button class="add-more" onclick="addLanguage()">+ Add Language</button></div><div class="form-group full"><h3 style="color:#0E2A5A">ADDITIONAL INFORMATION FINAL</h3></div><div class="form-group"><label>Driving License</label><select id="cvLicense" onchange="updateCVPreview()"><option>No License</option><option>Yes Car (B)</option><option>Yes Motorcycle (A)</option><option>Yes Heavy Truck (C)</option><option>Yes Car+Motorcycle</option><option>Yes All Categories</option></select></div><div class="form-group"><label>Issue Date</label><input id="cvLicenseDate" type="month" onchange="updateCVPreview()"></div><div class="form-group"><label>Passport</label><select id="cvPassport" onchange="updateCVPreview()"><option>No Passport</option><option>Yes Pakistan Valid</option><option>Yes Pakistan Expired</option><option>Yes Applied</option><option>Yes Other Country</option></select></div><div class="form-group"><label>Last 4 digits</label><input id="cvPassportNo" oninput="updateCVPreview()"></div><div class="form-group"><label>Valid Until</label><input id="cvPassportValid" type="date" oninput="updateCVPreview()"></div><div class="form-group"><label>Visa Status</label><select id="cvVisa" onchange="updateCVPreview()"><option>Ready to work in Europe</option><option>Need Sponsorship</option><option>Have Schengen</option><option>Have Work Permit</option></select></div><div class="form-group full"><label>Willing to work</label><div class="checkbox-grid"><label><input type="checkbox" value="Factory" class="willWork" onchange="updateCVPreview()"> Factory</label><label><input type="checkbox" value="Warehouse" class="willWork" onchange="updateCVPreview()"> Warehouse</label><label><input type="checkbox" value="Construction" class="willWork" onchange="updateCVPreview()"> Construction</label><label><input type="checkbox" value="Agriculture" class="willWork" onchange="updateCVPreview()"> Agriculture</label><label><input type="checkbox" value="Driving" class="willWork" onchange="updateCVPreview()"> Driving</label><label><input type="checkbox" value="Hotel" class="willWork" onchange="updateCVPreview()"> Hotel</label><label><input type="checkbox" value="Cleaning" class="willWork" onchange="updateCVPreview()"> Cleaning</label><label><input type="checkbox" value="Healthcare" class="willWork" onchange="updateCVPreview()"> Healthcare</label><label><input type="checkbox" value="Any Job" class="willWork" onchange="updateCVPreview()"> Any Job</label></div></div><div class="form-group"><label>Availability</label><select id="cvAvail" onchange="updateCVPreview()"><option>Immediate</option><option>From Date</option></select></div><div class="form-group"><label>From Date</label><input id="cvAvailDate" type="date" onchange="updateCVPreview()"></div><div class="form-group full"><label><input type="checkbox" id="cvDeclare"> Declaration</label></div></div><button class="btn btn-green" onclick="downloadCV()">Download FREE Europass CV</button><button class="btn" style="background:#25D366" onclick="shareWhatsApp()">WhatsApp Share</button></div><div><h4>Live Preview Exactly Like PDF</h4><div id="cvPreview" class="cv-preview"></div></div></div></div>
-<div id="cover-letter" class="page"><h2>📄 Cover Letter FREE</h2><div class="preview-wrap"><div><div class="form-grid"><div class="form-group"><label>Full Name</label><input id="clName" oninput="updateCLPreview()"></div><div class="form-group"><label>Email</label><input id="clEmail" oninput="updateCLPreview()"></div><div class="form-group"><label>Phone</label><input id="clPhone" oninput="updateCLPreview()"></div><div class="form-group"><label>Address</label><input id="clAddr" oninput="updateCLPreview()"></div><div class="form-group"><label>Date</label><input id="clDate" type="date" oninput="updateCLPreview()"></div><div class="form-group"><label>Company</label><input id="clCompany" oninput="updateCLPreview()"></div><div class="form-group"><label>Manager</label><input id="clManager" oninput="updateCLPreview()"></div><div class="form-group full"><label>Company Address</label><input id="clCompAddr" oninput="updateCLPreview()"></div><div class="form-group"><label>Job Title</label><input id="clJobTitle" oninput="updateCLPreview()"></div><div class="form-group"><label>Source</label><input id="clSource" value="Europe Job Alerts" oninput="updateCLPreview()"></div><div class="form-group full"><label>Why want job</label><textarea id="clWhy" rows="2" oninput="updateCLPreview()"></textarea></div><div class="form-group full"><label>Experience</label><textarea id="clExp" rows="2" oninput="updateCLPreview()"></textarea></div><div class="form-group full"><label>Skills</label><textarea id="clSkills" rows="2" oninput="updateCLPreview()"></textarea></div></div><button class="btn btn-green" onclick="downloadCL()">Download FREE Cover Letter</button></div><div><div id="clPreview" class="cv-preview"></div></div></div></div>
-<div id="photo-resizer" class="page"><h2>📸 EU Photo 35x45mm FREE</h2><div class="photo-canvas-wrap"><input type="file" accept="image/*" onchange="handleEUPhoto(event)"><br><br><img id="photoPreview" style="max-width:300px;display:none"><br><canvas id="photoCanvas" width="413" height="531" style="border:2px solid #0E2A5A;max-width:100%"></canvas><br><br><button class="btn" onclick="downloadPhoto('jpg')">Download JPG 35x45mm</button><button class="btn" style="background:white;color:#0E2A5A;border:1px solid" onclick="downloadPhoto('png')">Download PNG</button><p style="margin-top:10px;font-size:12px">EU Visa Standard - White bg 35x45mm 70-80% face</p></div></div>
-<div id="salary-calculator" class="page"><h2>💶 Salary Calculator FREE</h2><div class="form-grid"><div><div class="form-group"><label>Country</label><select id="salCountry" onchange="calcSalary()"><option>Germany</option><option>Poland</option><option>Romania</option><option>Lithuania</option><option>Latvia</option><option>Hungary</option><option>Czech</option><option>Croatia</option><option>Italy</option><option>Portugal</option><option>Spain</option><option>Netherlands</option></select></div><div class="form-group"><label>Job</label><select id="salJob" onchange="calcSalary()"><option>Factory Worker</option><option>Warehouse</option><option>Driver</option><option>Construction</option><option>Cleaner</option><option>Agriculture</option><option>Welder</option><option>Hotel</option><option>Caregiver</option></select></div><div class="form-group"><label>Hours/week</label><input id="salHours" type="number" value="40" oninput="calcSalary()"></div><div class="form-group"><label>Rate EUR</label><input id="salRate" type="number" value="12" oninput="calcSalary()"><select id="salRateType" onchange="calcSalary()"><option value="hourly">Hourly</option><option value="monthly">Monthly</option></select></div></div><div><div id="salResult" class="salary-result"></div><button class="btn btn-green" onclick="downloadSalaryPDF()">Download PDF</button></div></div></div>
-<a href="https://forms.gle/4UrN8D6zhMWCaRWY6" target="_blank" style="display:block;text-align:center;background:#6A1B9A;color:white;padding:15px;border-radius:10px;font-size:18px;text-decoration:none;margin:15px;">+ Add New Job</a><div id="jobs" class="page"><h2>💼 Europe Jobs - Auto Updated Daily 🤖</h2><div id="jobsList"></div></div><div id="jobs" class="page">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe Job Alerts - Germany, Poland, Netherlands Jobs</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4}
+header{background:#1e2a5a;color:#fff;padding:18px;text-align:center}
+header h1{margin:0;font-size:24px}
+header p{margin:5px 0 0;font-size:14px}
+.container{max-width:800px;margin:15px auto;padding:0 12px}
+.card{background:#fff;border-radius:10px;padding:15px;margin-bottom:12px;box-shadow:0 1px 5px rgba(0,0,0,.1)}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:3px 0;color:#444;font-size:14px}
+.date{color:#0a7a42;font-weight:bold}
+a{color:#1e2a5a;font-weight:bold}
+#count{font-weight:bold;font-size:18px;margin:10px 0}
+</style>
+</head>
+<body>
+<header><h1>🇪🇺 Europe Job Alerts</h1><p>Germany | Poland | Netherlands | France | Czech Republic - Daily Updated</p></header>
+<div class="container">
+<div id="count">Loading Europe Jobs...</div>
+<div id="jobs"></div>
+</div>
 <script>
-let cvPhotoData=null;let workExps=[{title:'',company:'',country:'',city:'',start:'',end:'',current:false,desc:''}];let edus=[{degree:'',school:'',country:'',city:'',start:'',end:'',desc:''}];let langs=[{name:'',level:'B1'}];
-function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById('toolsDropdown').classList.remove('show');window.scrollTo(0,0);if(id==='jobs')loadJobs();if(id==='salary-calculator')calcSalary();}
-function addWorkExp(){workExps.push({title:'',company:'',country:'',city:'',start:'',end:'',current:false,desc:''});renderWorkExp();updateCVPreview();}
-function addEducation(){edus.push({degree:'',school:'',country:'',city:'',start:'',end:'',desc:''});renderEdu();updateCVPreview();}
-function addLanguage(){langs.push({name:'',level:'B1'});renderLang();updateCVPreview();}
-function renderWorkExp(){let h='';workExps.forEach((w,i)=>{h+=`<div style="background:#f9f9f9;padding:10px;border-radius:8px;margin-bottom:8px"><div class="form-grid"><div class="form-group"><label>Title</label><input value="${w.title}" oninput="workExps[${i}].title=this.value;updateCVPreview()"></div><div class="form-group"><label>Company</label><input value="${w.company}" oninput="workExps[${i}].company=this.value;updateCVPreview()"></div><div class="form-group"><label>Country</label><input value="${w.country}" oninput="workExps[${i}].country=this.value;updateCVPreview()"></div><div class="form-group"><label>City</label><input value="${w.city}" oninput="workExps[${i}].city=this.value;updateCVPreview()"></div><div class="form-group"><label>Start MM-YYYY</label><input type="month" value="${w.start}" onchange="workExps[${i}].start=this.value;updateCVPreview()"></div><div class="form-group"><label>End</label><input type="month" value="${w.end}" onchange="workExps[${i}].end=this.value;updateCVPreview()"></div><div class="form-group full"><label><input type="checkbox" ${w.current?'checked':''} onchange="workExps[${i}].current=this.checked;updateCVPreview()"> Currently Working</label></div><div class="form-group full"><label>Description</label><textarea oninput="workExps[${i}].desc=this.value;updateCVPreview()">${w.desc}</textarea></div></div></div>`});document.getElementById('workExpContainer').innerHTML=h;}
-function renderEdu(){let h='';edus.forEach((e,i)=>{h+=`<div style="background:#f9f9f9;padding:10px;border-radius:8px;margin-bottom:8px"><div class="form-grid"><div class="form-group"><label>Degree</label><input value="${e.degree}" oninput="edus[${i}].degree=this.value;updateCVPreview()"></div><div class="form-group"><label>School</label><input value="${e.school}" oninput="edus[${i}].school=this.value;updateCVPreview()"></div><div class="form-group"><label>Country</label><input value="${e.country}" oninput="edus[${i}].country=this.value;updateCVPreview()"></div><div class="form-group"><label>City</label><input value="${e.city}" oninput="edus[${i}].city=this.value;updateCVPreview()"></div><div class="form-group"><label>Start</label><input type="month" value="${e.start}" onchange="edus[${i}].start=this.value;updateCVPreview()"></div><div class="form-group"><label>End</label><input type="month" value="${e.end}" onchange="edus[${i}].end=this.value;updateCVPreview()"></div><div class="form-group full"><label>Description</label><textarea oninput="edus[${i}].desc=this.value;updateCVPreview()">${e.desc}</textarea></div></div></div>`});document.getElementById('eduContainer').innerHTML=h;}
-function renderLang(){let h='';langs.forEach((l,i)=>{h+=`<div style="display:flex;gap:8px;margin-bottom:6px"><input placeholder="English" value="${l.name}" style="flex:1" oninput="langs[${i}].name=this.value;updateCVPreview()"><select onchange="langs[${i}].level=this.value;updateCVPreview()"><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option><option>C2</option><option>Native</option></select></div>`});document.getElementById('langContainer').innerHTML=h;}
-function handlePhoto(e){const file=e.target.files[0];if(!file)return;if(file.size>2097152){alert('Max 2MB');return;}const r=new FileReader();r.onload=ev=>{cvPhotoData=ev.target.result;updateCVPreview();};r.readAsDataURL(file);}
-function updateCVPreview(){const name=document.getElementById('cvName').value||'YOUR NAME';const email=document.getElementById('cvEmail').value;const phone=document.getElementById('cvPhone').value;const addr1=document.getElementById('cvAddr1').value;const addr2=document.getElementById('cvAddr2').value;const dob=document.getElementById('cvDOB').value;const nat=document.getElementById('cvNationality').value;const gender=document.getElementById('cvGender').value;const summary=document.getElementById('cvSummary').value;const skills=document.getElementById('cvSkills').value;const license=document.getElementById('cvLicense').value;const licenseDate=document.getElementById('cvLicenseDate').value;const passport=document.getElementById('cvPassport').value;const passportNo=document.getElementById('cvPassportNo').value;const passportValid=document.getElementById('cvPassportValid').value;const visa=document.getElementById('cvVisa').value;const avail=document.getElementById('cvAvail').value;const availDate=document.getElementById('cvAvailDate').value;const willWorks=[...document.querySelectorAll('.willWork:checked')].map(c=>c.value).join(', ');let photoHtml=cvPhotoData?`<img src="${cvPhotoData}">`:'';let workHtml='';workExps.forEach(w=>{if(w.title||w.company)workHtml+=`<div style="display:flex;gap:10px;margin-bottom:8px;font-size:13px"><div style="min-width:90px;color:#666">${w.start} - ${w.current?'Present':w.end}</div><div><strong>${w.title}</strong> - ${w.company}, ${w.city}, ${w.country}<br><small>${w.desc}</small></div></div>`});let eduHtml='';edus.forEach(e=>{if(e.degree||e.school)eduHtml+=`<div style="display:flex;gap:10px;margin-bottom:8px;font-size:13px"><div style="min-width:90px;color:#666">${e.start} - ${e.end}</div><div><strong>${e.degree}</strong> - ${e.school}, ${e.city}<br><small>${e.desc}</small></div></div>`});let langHtml='';langs.forEach(l=>{if(l.name)langHtml+=`${l.name} (${l.level}) `});let html=`<div class="cv-header"><div><h2>${name.toUpperCase()}</h2><div style="font-size:12px;letter-spacing:2px">CURRICULUM VITAE</div><div style="font-size:11px;margin-top:6px">${email} | ${phone}<br>${addr1} ${addr2} | ${nat} | ${gender} | DOB:${dob}</div></div><div class="cv-photo">${photoHtml}</div></div><div class="cv-body">`;if(summary)html+=`<div class="cv-section"><h4>Professional Summary</h4><div style="font-size:13px">${summary}</div></div>`;if(workHtml)html+=`<div class="cv-section"><h4>Work Experience</h4>${workHtml}</div>`;if(eduHtml)html+=`<div class="cv-section"><h4>Education</h4>${eduHtml}</div>`;if(skills)html+=`<div class="cv-section"><h4>Skills</h4><div style="font-size:13px">${skills}</div></div>`;if(langHtml)html+=`<div class="cv-section"><h4>Languages</h4><div style="font-size:13px">${langHtml}</div></div>`;html+=`<div class="cv-section"><h4>ADDITIONAL INFORMATION</h4><div style="font-size:12px;line-height:1.8"><strong>Driving License:</strong> ${license} ${licenseDate}<br><strong>Passport:</strong> ${passport} ${passportNo?'Last4:'+passportNo:''} ${passportValid}<br><strong>Visa Status:</strong> ${visa}<br><strong>Willing to work:</strong> ${willWorks}<br><strong>Availability:</strong> ${avail} ${availDate}</div></div></div>`;document.getElementById('cvPreview').innerHTML=html;}
-function updateCLPreview(){const name=document.getElementById('clName').value||'Your Name';const email=document.getElementById('clEmail').value;const phone=document.getElementById('clPhone').value;const addr=document.getElementById('clAddr').value;const date=document.getElementById('clDate').value;const company=document.getElementById('clCompany').value;const manager=document.getElementById('clManager').value;const compAddr=document.getElementById('clCompAddr').value;const jobTitle=document.getElementById('clJobTitle').value;const source=document.getElementById('clSource').value;const why=document.getElementById('clWhy').value;const exp=document.getElementById('clExp').value;const skills=document.getElementById('clSkills').value;let html=`<div class="cv-header"><div><h2>${name.toUpperCase()}</h2><div style="font-size:11px">${email} | ${phone}<br>${addr}</div></div></div><div class="cv-body"><div class="cv-section"><div style="font-size:13px;line-height:1.6"><p style="text-align:right">${date}</p><p><strong>${manager}</strong><br>${company}<br>${compAddr}</p><p>Dear ${manager||'Hiring Manager'},</p><p><strong>Re: ${jobTitle} via ${source}</strong></p><p>${why}</p><p>${exp}</p><p>${skills}</p><p>Sincerely,<br><strong>${name}</strong></p></div></div></div>`;document.getElementById('clPreview').innerHTML=html;}
-function downloadCV(){const {jsPDF}=window.jspdf;const doc=new jsPDF('p','mm','a4');const name=document.getElementById('cvName').value||'CV';const first=name.split(' ')[0]||'First';const last=name.split(' ').slice(1).join(' ')||'Last';doc.setFillColor(14,42,90);doc.rect(0,0,210,35,'F');doc.setTextColor(255,255,255);doc.setFontSize(22);doc.setFont('helvetica','bold');doc.text(name.toUpperCase(),10,18);doc.setFontSize(10);doc.text('CURRICULUM VITAE',10,24);doc.setFontSize(8);doc.text(`${document.getElementById('cvEmail').value} | ${document.getElementById('cvPhone').value}`,10,30);if(cvPhotoData){try{doc.addImage(cvPhotoData,'JPEG',165,5,30,30);}catch(e){}}doc.setFillColor(254,249,231);doc.rect(0,35,210,262,'F');let y=42;function addSec(t,c){if(!c)return;doc.setFillColor(255,255,255);doc.rect(10,y-4,190,8,'F');doc.setTextColor(14,42,90);doc.setFontSize(10);doc.setFont('helvetica','bold');doc.text(t,12,y+1);y+=9;doc.setTextColor(0,0,0);doc.setFontSize(8);doc.setFont('helvetica','normal');let ls=doc.splitTextToSize(c,186);doc.text(ls,12,y);y+=ls.length*3.5+6;if(y>270){doc.addPage();y=15;}}addSec('PROFESSIONAL SUMMARY',document.getElementById('cvSummary').value);let wt='';workExps.forEach(w=>{if(w.title)wt+=`${w.title} at ${w.company} (${w.start}-${w.current?'Present':w.end})\n${w.desc}\n\n`;});addSec('WORK EXPERIENCE',wt);let et='';edus.forEach(e=>{if(e.degree)et+=`${e.degree} - ${e.school}\n`;});addSec('EDUCATION',et);addSec('SKILLS',document.getElementById('cvSkills').value);let ai=`Driving License: ${document.getElementById('cvLicense').value} ${document.getElementById('cvLicenseDate').value}\nPassport: ${document.getElementById('cvPassport').value} ${document.getElementById('cvPassportNo').value} Valid:${document.getElementById('cvPassportValid').value}\nVisa: ${document.getElementById('cvVisa').value}\nWilling: ${[...document.querySelectorAll('.willWork:checked')].map(c=>c.value).join(', ')}\nAvailability: ${document.getElementById('cvAvail').value}`;addSec('ADDITIONAL INFORMATION',ai);doc.save(`CV_${first}_${last}.pdf`);}
-function downloadCL(){const {jsPDF}=window.jspdf;const doc=new jsPDF('p','mm','a4');const name=document.getElementById('clName').value||'Name';doc.setFillColor(14,42,90);doc.rect(0,0,210,30,'F');doc.setTextColor(255,255,255);doc.setFontSize(16);doc.text(name.toUpperCase(),10,18);let y=40;doc.setTextColor(0,0,0);doc.setFontSize(10);let text=`Date: ${document.getElementById('clDate').value}\nTo: ${document.getElementById('clManager').value}, ${document.getElementById('clCompany').value}\n${document.getElementById('clCompAddr').value}\n\nDear Hiring Manager,\nRe: ${document.getElementById('clJobTitle').value}\n\n${document.getElementById('clWhy').value}\n\n${document.getElementById('clExp').value}\n\n${document.getElementById('clSkills').value}\n\nSincerely,\n${name}`;let ls=doc.splitTextToSize(text,180);doc.text(ls,10,y);doc.save(`CoverLetter_${name.replace(/ /g,'_')}.pdf`);}
-function handleEUPhoto(e){const file=e.target.files[0];if(!file)return;const img=document.getElementById('photoPreview');const r=new FileReader();r.onload=ev=>{img.src=ev.target.result;img.style.display='block';img.onload=()=>{const c=document.getElementById('photoCanvas');const ctx=c.getContext('2d');ctx.fillStyle='white';ctx.fillRect(0,0,413,531);let scale=Math.max(413/img.width,531/img.height);let w=img.width*scale,h=img.height*scale;let x=(413-w)/2,y=(531-h)/2;ctx.drawImage(img,x,y,w,h);};};r.readAsDataURL(file);}
-function downloadPhoto(type){const c=document.getElementById('photoCanvas');const a=document.createElement('a');a.download=`EU_Photo_35x45mm.${type}`;a.href=c.toDataURL(type==='jpg'?'image/jpeg':'image/png');a.click();}
-const taxRates={Germany:0.30,Poland:0.20,Romania:0.15,Lithuania:0.20,Latvia:0.23,Hungary:0.15,Czech:0.20,Croatia:0.24,Italy:0.27,Portugal:0.23,Spain:0.24,Netherlands:0.30};
-function calcSalary(){const country=document.getElementById('salCountry').value;const hours=parseFloat(document.getElementById('salHours').value)||40;const rate=parseFloat(document.getElementById('salRate').value)||12;const rateType=document.getElementById('salRateType').value;let gross=rateType==='hourly'?rate*hours*4.33:rate;let taxRate=taxRates[country]||0.20;let tax=gross*taxRate;let net=gross-tax;let pkr=300;let html=`<h4>${country} - ${document.getElementById('salJob').value}</h4><div style="margin-top:12px;line-height:2">Gross: <strong>€${gross.toFixed(2)}</strong><br>Tax ${(taxRate*100).toFixed(0)}%: <strong>€${tax.toFixed(2)}</strong><br>Net: <strong>€${net.toFixed(2)}</strong><br>PKR: <strong>Rs ${(net*pkr).toFixed(0)}</strong><br>Save 60%: <strong>Rs ${(net*0.6*pkr).toFixed(0)}/month for Pakistan</strong></div>`;document.getElementById('salResult').innerHTML=html;}
-function downloadSalaryPDF(){const {jsPDF}=window.jspdf;const doc=new jsPDF();doc.text(document.getElementById('salResult').innerText,10,20);doc.save('Salary_Breakdown.pdf');}
-function loadJobs(){const jobsListEl=document.getElementById('jobsList');jobsListEl.innerHTML='<p>🔍 Searching latest jobs... Auto-updated daily at 9 AM Pakistan...</p>';fetch('jobs.json').then(r=>r.json()).then(data=>{if(data && data.jobs && data.jobs.length>0){renderJobsList(data.jobs,data.lastUpdated);return;}throw 'empty';}).catch(()=>{fetch('https://www.arbeitnow.com/api/job-board-api').then(r=>r.json()).then(api=>{let jobs=api.data.slice(0,15).map(j=>({title:j.title,company:j.company_name,location:j.location,salary:j.salary||'€1500-2500',url:j.url}));renderJobsList(jobs,new Date().toISOString());}).catch(()=>{const fallback=[{title:'Factory Worker - Germany',company:'German Factory',location:'Germany',salary:'€1800-2200',url:'#'},{title:'Warehouse Worker - Poland',company:'Polish Logistics',location:'Poland',salary:'€1200-1500',url:'#'},{title:'Driver Cat C - Lithuania',company:'Transport Co',location:'Lithuania',salary:'€2000-2500',url:'#'},{title:'Construction - Romania',company:'Build SRL',location:'Romania',salary:'€1300-1700',url:'#'}];renderJobsList(fallback,'Static - Auto bot will update daily');});});}
-function renderJobsList(jobs,lastUpdated){let html=`<div style="background:#e8f5e9;padding:12px;border-radius:8px;margin-bottom:12px;font-size:13px">✅ <b>Auto Updated:</b> ${lastUpdated ? new Date(lastUpdated).toLocaleString() : 'Today'} | 🤖 <b>Daily Auto Search ON</b> - New jobs added automatically every day at 9 AM Pakistan time!</div>`;jobs.forEach(j=>{html+=`<div class="job-card"><h4>${j.title}</h4><p>🏢 ${j.company||'Europe Company'} - 📍 ${j.location} - 💶 ${j.salary||'€1500-2500'}</p><p>📅 Posted: ${j.date ? new Date(j.date).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : 'Today'} | ⏰ Last Date: ${j.date ? new Date(new Date(j.date).getTime()+30*24*60*60*1000).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : ''}</p><p style="font-size:11px;color:#666">Posted: Today | Source: Auto Bot</p><button class="btn" style="margin-top:8px" onclick="showPage('cv-maker')">Apply with FREE CV</button> <a href="${j.url||'#'}" target="_blank" style="margin-left:8px;font-size:13px;color:#0E2A5A">View →</a></div>`;});document.getElementById('jobsList').innerHTML=html;}
-function shareWhatsApp(){const t=encodeURIComponent('My FREE Europass CV! Europe Jobs: https://mahtooqateeq-cmyk.github.io/europe-jobs/');window.open('https://wa.me/?text='+t,'_blank');}
-renderWorkExp();renderEdu();renderLang();updateCVPreview();updateCLPreview();calcSalary();
-function filterJobs(country){
-  let cards = document.querySelectorAll('#jobs div');
-  cards.forEach(card => {
-    if(country==='all' || card.innerText.includes(country)){
-      card.style.display='block';
-    } else {
-      if(card.innerText.length>50) card.style.display='none';
-    }
-  });
+const EUROPE = ["germany","poland","netherlands","france","czech","spain","italy","portugal","austria","belgium","sweden","denmark","finland","norway","ireland","greece","hungary","romania","croatia","slovakia","slovenia","lithuania","latvia","estonia","bulgaria","europe","eu","berlin","munich","hamburg","amsterdam","warsaw","paris","prague","vienna","madrid","lisbon","dublin","stockholm"];
+const BAD = ["usa","united states","america","canada","australia","india","pakistan","worldwide"];
+function isEurope(loc){
+  loc = (loc||"").toLowerCase();
+  if(BAD.some(w=>loc===w || loc.includes(" - usa") || loc.endsWith("usa"))) return false;
+  if(loc==="worldwide") return false;
+  return EUROPE.some(w=>loc.includes(w));
 }
-document.getElementById('searchInput').addEventListener('input', function(){
-  let v=this.value.toLowerCase();
-  let cards=document.querySelectorAll('#jobs div');
-  cards.forEach(card=>{
-    if(card.innerText.toLowerCase().includes(v)) card.style.display='block';
-    else if(card.innerText.length>50) card.style.display='none';
-  });
-});let currentCountry='all';
-function filterJobs(country){
-  currentCountry=country;
-  let searchText=document.getElementById('searchInput').value.toLowerCase();
-  let cards=document.querySelectorAll('#jobs > div, #jobs .job-card, #jobs .card');
-  if(cards.length===0) cards=document.querySelectorAll('.job-card, .job-item');
-  cards.forEach(card=>{
-    let t=card.innerText.toLowerCase();
-    let okCountry=(country==='all' || t.includes(country.toLowerCase()));
-    let okSearch=(searchText==='' || t.includes(searchText));
-    card.style.display=(okCountry && okSearch)?'block':'none';
-  });
-  let jobsBox=document.getElementById('jobs');
-  if(jobsBox) jobsBox.scrollIntoView({behavior:'smooth'});
-  }document.querySelectorAll('a,div,li,button').forEach(function(el){
- if(el.children.length==0){
-  var t=el.textContent.trim();
-  if(t=='EU CV Maker'||t=='Cover Letter'||t=='Photo 35x45'||t=='Salary Calc'||t=='Auto Jobs Daily'||t=='Home - All 6 Features'){
-   el.style.cursor='pointer';
-   el.onclick=function(e){
-    e.stopPropagation();
-    var card=null;
-    document.querySelectorAll('div').forEach(function(d){
-      if(d.textContent.indexOf(t.split(' ')[0])>-1 && d.textContent.length<200){ card=d; }
-    });
-    if(card) card.scrollIntoView({behavior:'smooth'});
-    var m=document.querySelector('.dropdown, .menu, nav');
-    if(m) m.click();
-    alert(t+' - neeche scroll karke dekhein, yehi wala tool hai');
-   };
-  }
- }
-});document.querySelectorAll('*').forEach(function(el){
- var t=(el.innerText||'').trim();
- if(t.indexOf('EU CV Maker')>-1 || t.indexOf('Cover Letter')>-1 || t.indexOf('Photo 35')>-1 || t.indexOf('Salary Calc')>-1 || t.indexOf('Auto Jobs Daily')>-1){
-  if(el.children.length>3) return;
-  el.onclick=function(e){
-   e.stopPropagation();
-   var want='';
-   if(t.indexOf('EU CV Maker')>-1) want='European CV Maker';
-   if(t.indexOf('Cover Letter')>-1) want='Cover Letter Maker';
-   if(t.indexOf('Photo 35')>-1) want='EU Photo';
-   if(t.indexOf('Salary Calc')>-1) want='Salary Calculator';
-   if(t.indexOf('Auto Jobs')>-1) want='Europe Jobs';
-   var found=null;
-   document.querySelectorAll('div').forEach(function(d){
-    if(d.innerText && d.innerText.indexOf(want)>-1 && d.innerText.length<300) found=d;
-   });
-   if(found) found.scrollIntoView({behavior:'smooth'});
-   else alert(want+' neeche hai, scroll karke dekhein');
-  };
- }
-});(function(){
-function findBox(txt){
-  var all=document.querySelectorAll('div');
-  for(var i=0;i<all.length;i++){
-    var d=all[i];
-    if(d.innerText && d.innerText.indexOf(txt)>-1 && d.innerText.length<500 && d.querySelectorAll('div').length<5){
-      return d;
-    }
-  }
-  return null;
-}
-function box(title, html){
-  var b=findBox(title);
-  if(!b) return;
-  if(b.querySelector('.real-tool')) return;
-  var div=document.createElement('div');
-  div.className='real-tool';
-  div.style.cssText='margin-top:10px;padding:10px;background:#fff;border:1px solid #ddd;border-radius:10px;text-align:left';
-  div.innerHTML=html;
-  b.appendChild(div);
-}
-box('European CV Maker', '<b>1. Apna CV Banayen</b><br><input id="cvName" placeholder="Poora Naam" style="width:100%;padding:8px;margin:4px 0"><input id="cvJob" placeholder="Job - Driver / Worker" style="width:100%;padding:8px;margin:4px 0"><input id="cvPhone" placeholder="Phone / WhatsApp" style="width:100%;padding:8px;margin:4px 0"><textarea id="cvExp" placeholder="Experience likhein" style="width:100%;padding:8px;margin:4px 0"></textarea><input type="file" id="cvPhoto" accept="image/*" style="width:100%;margin:4px 0"><button onclick="makeCV()" style="width:100%;padding:10px;background:#0E2A5A;color:#fff;border:0;border-radius:8px">CV Preview Dekhein + Print / PDF</button><div id="cvOut" style="margin-top:10px"></div>');
-box('Cover Letter Maker', '<b>2. Cover Letter Banayen</b><br><input id="clName" placeholder="Apna Naam" style="width:100%;padding:8px;margin:4px 0"><input id="clJob" placeholder="Job - Driver" style="width:100%;padding:8px;margin:4px 0"><input id="clComp" placeholder="Company Ka Naam" style="width:100%;padding:8px;margin:4px 0"><textarea id="clText" placeholder="Apne bare me 2-3 lines" style="width:100%;padding:8px;margin:4px 0"></textarea><button onclick="makeCL()" style="width:100%;padding:10px;background:#1a5cff;color:#fff;border:0;border-radius:8px">Letter Banayen</button><div id="clOut" style="margin-top:10px;background:#f7f7f7;padding:10px;white-space:pre-wrap"></div>');
-box('EU Photo 35x45mm', '<b>3. EU Photo Banayen</b><br><input type="file" id="phFile" accept="image/*" style="width:100%;margin:6px 0"><canvas id="phCanvas" width="413" height="531" style="width:150px;height:190px;background:#fff;border:1px solid #000;display:block;margin:auto"></canvas><button onclick="makePhoto()" style="width:100%;padding:10px;background:#111;color:#fff;border:0;border-radius:8px;margin-top:8px">Photo Download Karein</button>');
-box('Salary Calculator', '<b>4. Salary Hisab Karein</b><br><select id="salCountry" style="width:100%;padding:8px;margin:4px 0"><option value="4500">Germany - 4500 EUR</option><option value="3500">Poland - 3500 EUR</option><option value="3000">Italy - 3000 EUR</option><option value="2800">Romania - 2800 EUR</option></select><input id="salGross" type="number" placeholder="Monthly Salary EUR me likhein - 3000" style="width:100%;padding:8px;margin:4px 0"><button onclick="calcSal()" style="width:100%;padding:10px;background:#0a7a42;color:#fff;border:0;border-radius:8px">Hisab Karein</button><div id="salOut" style="margin-top:10px;font-weight:bold"></div>');
-window.makeCV=function(){
-  var n=document.getElementById('cvName').value||'Apna Naam';
-  var j=document.getElementById('cvJob').value||'Job';
-  var p=document.getElementById('cvPhone').value||'';
-  var e=document.getElementById('cvExp').value||'';
-  var f=document.getElementById('cvPhoto').files[0];
-  var img='';
-  if(f){ img=URL.createObjectURL(f); }
-  document.getElementById('cvOut').innerHTML='<div style="border:1px solid #0E2A5A;padding:12px"><div style="background:#0E2A5A;color:#fff;padding:10px;text-align:center"><b>'+n+'</b><br>'+j+'</div>'+(img?'<img src="'+img+'" style="width:80px;height:80px;border-radius:50%;display:block;margin:10px auto">':'')+'<p><b>Phone:</b> '+p+'</p><p><b>Experience:</b><br>'+e+'</p><button onclick="window.print()" style="padding:8px 14px;background:#0E2A5A;color:#fff;border:0;border-radius:6px">Print / Save PDF</button></div>';
-};
-window.makeCL=function(){
-  var n=document.getElementById('clName').value||'Apna Naam';
-  var j=document.getElementById('clJob').value||'Job';
-  var c=document.getElementById('clComp').value||'Company';
-  var t=document.getElementById('clText').value||'I am hardworking and honest.';
-  document.getElementById('clOut').innerText='Dear Sir / Madam,\n\nI am '+n+', I want to apply for '+j+' in '+c+'.\n'+t+'\n\nThank you,\n'+n;
-};
-window.makePhoto=function(){
-  var f=document.getElementById('phFile').files[0];
-  if(!f){ alert('Pehle photo select karein'); return; }
-  var img=new Image();
-  img.onload=function(){
-    var cv=document.getElementById('phCanvas');
-    var ctx=cv.getContext('2d');
-    ctx.fillStyle='#fff'; ctx.fillRect(0,0,413,531);
-    ctx.drawImage(img,0,0,413,531);
-    var a=document.createElement('a');
-    a.download='EU-Photo-35x45.jpg';
-    a.href=cv.toDataURL('image/jpeg',0.95);
-    a.click();
-  };
-  img.src=URL.createObjectURL(f);
-};
-window.calcSal=function(){
-  var g=parseFloat(document.getElementById('salGross').value||document.getElementById('salCountry').value);
-  var net=g*0.75;
-  var pkr=Math.round(net*300);
-  document.getElementById('salOut').innerText='Gross: '+g+' EUR | Net (approx): '+net.toFixed(0)+' EUR | PKR (approx): '+pkr+' PKR';
-};
-})();fetch('jobs.json').then(function(r){return r.json()}).then(function(data){
- var list=data.jobs||data;
- var box=document.querySelector('div');
- var html='<div style="padding:10px"><h3>All Jobs - '+list.length+'</h3>';
- list.forEach(function(j){
-  html+='<div style="border:1px solid #ddd;padding:10px;margin:8px 0;border-radius:10px;text-align:left"><b>'+j.title+'</b><br>'+j.company+' - '+j.location+'<br>'+j.category+' | '+j.salary+'<br><a href="'+j.url+'" target="_blank" style="color:#1a5cff">Apply Karein -></a></div>';
- });
- html+='</div>';
- var target=null;
- document.querySelectorAll('div').forEach(function(d){ if(d.innerText && d.innerText.indexOf('Europe Jobs +')>-1 && d.innerText.length<600) target=d; });
- if(target) target.insertAdjacentHTML('afterend', html);
-});</script><div style="text-align:center; padding:15px; font-size:14px;">
-<a href="privacy-policy.html">Privacy Policy</a>
-</div></body></html>
+fetch("jobs.json?v="+Date.now()).then(r=>r.json()).then(data=>{
+  let jobs = data.jobs || [];
+  // Sirf Europe wali rakho, USA / Worldwide hata do
+  let eu = jobs.filter(j=>isEurope(j.location));
+  if(eu.length===0) eu = jobs.filter(j=>!BAD.some(w=>(j.location||"").toLowerCase().includes(w)));
+  document.getElementById("count").textContent = "All Europe Jobs - " + eu.length + " | Updated: " + (data.lastUpdated||"").slice(0,10);
+  document.getElementById("jobs").innerHTML = eu.map(j=>`
+    <div class="card">
+      <h3>${j.title||""}</h3>
+      <p>${j.company||""} - ${j.location||"Europe"}</p>
+      <p>${j.category||"General"} | ${j.salary||""}</p>
+      <p class="date">📅 Date: ${j.date||(data.lastUpdated||"").slice(0,10)}</p>
+      <p><a href="${j.url||"#"}" target="_blank">Apply Karein →</a></p>
+    </div>`).join("") || "<p>No Europe jobs found today, please check tomorrow.</p>";
+}).catch(e=>{
+  document.getElementById("count").textContent = "Jobs load nahi hui, please refresh karein.";
+});
+</script>
+</body>
+</html>
