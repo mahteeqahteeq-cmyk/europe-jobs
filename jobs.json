@@ -1,7 +1,16 @@
 {
-  "lastUpdated": "2026-11-10T10:28:01.312432",
-  "count": 12,
+  "lastUpdated": "2026-11-10T14:41:01.606645Z",
   "jobs": [
+    {
+      "title": "Inside Sales Contractor",
+      "company": "Credit Wellness, LLC",
+      "location": "Worldwide",
+      "category": "Sales",
+      "type": "full_time",
+      "salary": "OTE $25k - $35k",
+      "url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+      "date": "2026-11-08T21:47:58"
+    },
     {
       "title": "Tier III Service Desk Engineer",
       "company": "Unio Digital",
@@ -10,7 +19,7 @@
       "type": "full_time",
       "salary": "",
       "url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
-      "date": "2026-11-07"
+      "date": "2026-11-07T01:10:55"
     },
     {
       "title": "US Remote Patient Care Advocate (Customer Service)",
@@ -20,7 +29,7 @@
       "type": "full_time",
       "salary": "$25k - $35k",
       "url": "https://remotive.com/remote-jobs/customer-service/us-remote-patient-care-advocate-customer-service-2091168",
-      "date": "2026-11-06"
+      "date": "2026-11-06T08:51:01"
     },
     {
       "title": "Freelance Writer",
@@ -30,7 +39,7 @@
       "type": "freelance",
       "salary": "$50-$75 /hour",
       "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
-      "date": "2026-11-04"
+      "date": "2026-11-04T16:53:35"
     },
     {
       "title": "Content Reviewer - United States",
@@ -40,7 +49,7 @@
       "type": "part_time",
       "salary": "$14/hour",
       "url": "https://remotive.com/remote-jobs/all-others/content-reviewer-united-states-2091166",
-      "date": "2026-11-04"
+      "date": "2026-11-04T13:39:06"
     },
     {
       "title": "Freelance Copywriter",
@@ -50,7 +59,7 @@
       "type": "freelance",
       "salary": "$20k -$35k",
       "url": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
-      "date": "2026-11-02"
+      "date": "2026-11-02T20:01:00"
     },
     {
       "title": "Full-Stack Developer",
@@ -60,7 +69,7 @@
       "type": "contract",
       "salary": "$3.5k\u2013$5k/month",
       "url": "https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165",
-      "date": "2026-10-29"
+      "date": "2026-10-29T18:22:41"
     },
     {
       "title": "Senior Back-end Developer",
@@ -70,7 +79,7 @@
       "type": "full_time",
       "salary": "",
       "url": "https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135",
-      "date": "2026-10-27"
+      "date": "2026-10-27T12:56:13"
     },
     {
       "title": "Head of Engineering",
@@ -80,7 +89,7 @@
       "type": "full_time",
       "salary": "",
       "url": "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
-      "date": "2026-10-26"
+      "date": "2026-10-26T12:20:09"
     },
     {
       "title": "AI Trainer - Video Annotation",
@@ -90,7 +99,7 @@
       "type": "freelance",
       "salary": "70K-80K",
       "url": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
-      "date": "2026-10-22"
+      "date": "2026-10-22T18:40:19"
     },
     {
       "title": "Software Engineer, AI Coding Tasks",
@@ -100,7 +109,7 @@
       "type": "contract",
       "salary": "$1000 per task",
       "url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
-      "date": "2026-10-17"
+      "date": "2026-10-17T16:04:29"
     },
     {
       "title": "Tech Lead Full-Stack Rails Engineer",
@@ -110,7 +119,7 @@
       "type": "full_time",
       "salary": "$170k - $200k",
       "url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
-      "date": "2026-10-14"
+      "date": "2026-10-14T20:33:44"
     },
     {
       "title": "Remote Office Assistant",
@@ -120,7 +129,7 @@
       "type": "full_time",
       "salary": "$35,3k- $52k",
       "url": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
-      "date": "2026-10-11"
+      "date": "2026-10-11T20:17:27"
     }
   ]
 }
