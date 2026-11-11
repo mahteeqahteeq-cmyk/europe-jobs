@@ -3,64 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Europe Job Alerts - Germany, Poland, Netherlands Jobs</title>
+<title>Europe Job Alerts</title>
 <style>
 body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4}
 header{background:#1e2a5a;color:#fff;padding:18px;text-align:center}
 header h1{margin:0;font-size:24px}
 .container{max-width:800px;margin:15px auto;padding:0 12px}
-.tools{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:12px 0}
-.tool{background:#fff;border-radius:10px;padding:14px;text-align:center;box-shadow:0 1px 5px rgba(0,0,0,.1);cursor:pointer;font-weight:bold;font-size:14px}
-.tool span{display:block;font-size:26px}
 .card{background:#fff;border-radius:10px;padding:15px;margin-bottom:12px;box-shadow:0 1px 5px rgba(0,0,0,.1)}
 .card h3{margin:0 0 6px;font-size:18px}
-.card p{margin:3px 0;color:#444;font-size:14px}
+.card p{margin:4px 0;color:#444;font-size:14px}
 .date{color:#0a7a42;font-weight:bold}
 a{color:#1e2a5a;font-weight:bold}
-#count{font-weight:bold;font-size:18px;margin:10px 0}
 input,textarea,select{width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
-button{background:#1e2a5a;color:#fff;border:0;padding:12px;border-radius:8px;width:100%;font-weight:bold;margin-top:6px}
-#toolBox{display:none}
+button{background:#1e2a5a;color:#fff;border:0;padding:12px;border-radius:8px;width:100%;font-weight:bold;margin-top:6px;cursor:pointer}
+.out{background:#eef3ff;padding:10px;border-radius:8px;margin-top:8px;white-space:pre-wrap;font-size:14px}
+#count{font-weight:bold;font-size:18px;margin:10px 0}
 </style>
 </head>
 <body>
 <header><h1>🇪🇺 Europe Job Alerts</h1><p>Germany | Poland | Netherlands | France | Czech Republic - Daily Updated</p></header>
 <div class="container">
+
 <h2>🛠️ Free Tools - 6 Tools</h2>
-<div class="tools">
-<div class="tool" onclick="openTool('cv')"><span>📄</span>CV Maker</div>
-<div class="tool" onclick="openTool('cover')"><span>✉️</span>Cover Letter</div>
-<div class="tool" onclick="openTool('photo')"><span>📸</span>Photo Maker</div>
-<div class="tool" onclick="openTool('salary')"><span>💶</span>Salary Calculator</div>
-<div class="tool" onclick="openTool('interview')"><span>🎤</span>Interview Q&A</div>
-<div class="tool" onclick="openTool('visa')"><span>🛂</span>Visa Guide</div>
+
+<div class="card">
+<h3>1. 📄 CV Maker</h3>
+<input id="cvName" placeholder="Full Name - مثال: Ahmad Khan">
+<input id="cvJob" placeholder="Job Title - مثال: Warehouse Worker">
+<textarea id="cvSkills" placeholder="Skills - مثال: Packing, Driving, English"></textarea>
+<button onclick="makeCV()">Generate CV</button>
+<div id="cvOut" class="out" style="display:none"></div>
 </div>
-<div id="toolBox" class="card"><div id="toolContent"></div><button onclick="document.getElementById('toolBox').style.display='none'">Close</button></div>
+
+<div class="card">
+<h3>2. ✉️ Cover Letter Maker</h3>
+<input id="clName" placeholder="Your Name">
+<input id="clCompany" placeholder="Company Name">
+<input id="clPost" placeholder="Position - مثال: Cleaner">
+<button onclick="makeCover()">Generate Cover Letter</button>
+<div id="clOut" class="out" style="display:none"></div>
+</div>
+
+<div class="card">
+<h3>3. 📸 Photo Maker - Passport Size</h3>
+<p>اپنی فوٹو چنیں، یہ پاسپورٹ سائز میں بن جائے گی۔</p>
+<input type="file" accept="image/*" onchange="makePhoto(event)">
+<div id="photoOut"></div>
+<button onclick="window.print()">Print / Save Photo</button>
+</div>
+
+<div class="card">
+<h3>4. 💶 Salary Calculator</h3>
+<input id="salInput" type="number" placeholder="Monthly Salary in Euro - مثال: 2500">
+<button onclick="calcSalary()">Calculate</button>
+<div id="salOut" class="out" style="display:none"></div>
+</div>
+
+<div class="card">
+<h3>5. 🎤 Interview Q&A</h3>
+<p><b>1.</b> Tell me about yourself?<br><b>جواب:</b> I am hardworking, I have experience in this work.<br><br><b>2.</b> Why Germany?<br><b>جواب:</b> Germany has good jobs and safe future.<br><br><b>3.</b> Can you work in shifts?<br><b>جواب:</b> Yes, I can work day and night shift.<br><br><b>4.</b> When can you join?<br><b>جواب:</b> I can join as soon as visa is ready.</p>
+</div>
+
+<div class="card">
+<h3>6. 🛂 Visa Guide</h3>
+<p><b>Germany:</b> Job Seeker Visa / Work Visa<br><b>Poland:</b> Work Permit Type A<br><b>Netherlands:</b> Highly Skilled Migrant<br><b>ضروری کاغذات:</b> Passport, CV, Job Offer, Photo, Insurance, Experience Letter</p>
+</div>
+
+<h2>🇪🇺 Europe Jobs</h2>
 <div id="count">Loading Europe Jobs...</div>
 <div id="jobs"></div>
+
 </div>
 <script>
-function openTool(t){
-  document.getElementById('toolBox').style.display='block';
-  let h='';
-  if(t=='cv') h='<h3>📄 CV Maker</h3><input id="n" placeholder="Full Name"><input id="j" placeholder="Job Title - e.g. Warehouse Worker"><textarea id="s" placeholder="Your Skills"></textarea><button onclick="alert(\'CV Ready! Name: \'+document.getElementById(\'n\').value+\' | Job: \'+document.getElementById(\'j\').value+\' | Skills: \'+document.getElementById(\'s\').value)">Generate CV</button><p>Apna naam, job aur skills likh kar Generate dabayein.</p>';
-  if(t=='cover') h='<h3>✉️ Cover Letter Maker</h3><input id="cn" placeholder="Your Name"><input id="cc" placeholder="Company Name"><input id="cp" placeholder="Position"><button onclick="alert(\'Dear \'+document.getElementById(\'cc\').value+\', I am \'+document.getElementById(\'cn\').value+\' applying for \'+document.getElementById(\'cp\').value+\'. I have experience and I am ready to work in Europe. Thank you.\')">Generate Cover Letter</button>';
-  if(t=='photo') h='<h3>📸 Photo Maker - Passport Size</h3><p>Apni photo choose karein, ye passport size me ban jayegi.</p><input type="file" accept="image/*" onchange="let u=URL.createObjectURL(this.files[0]);document.getElementById(\'pv\').innerHTML=\'<img src=\'+u+\' style=width:150px;height:180px;object-fit:cover;border:2px solid #000>\'"><div id="pv"></div>';
-  if(t=='salary') h='<h3>💶 Salary Calculator</h3><input id="sal" type="number" placeholder="Monthly Salary in Euro - e.g. 2500"><button onclick="let s=+document.getElementById(\'sal\').value;alert(\'Yearly: \'+(s*12)+\' Euro | After Tax approx: \'+Math.round(s*0.75)+\' Euro/month\')">Calculate</button>';
-  if(t=='interview') h='<h3>🎤 Interview Questions</h3><p><b>1.</b> Tell me about yourself?<br><b>2.</b> Why do you want to work in Germany?<br><b>3.</b> What is your experience?<br><b>4.</b> Can you work in shifts?<br><b>5.</b> When can you join?</p>';
-  if(t=='visa') h='<h3>🛂 Visa Guide - Europe</h3><p><b>Germany:</b> Job Seeker Visa / Work Visa<br><b>Poland:</b> Work Permit Type A<br><b>Netherlands:</b> Highly Skilled Migrant<br><b>Documents:</b> Passport, CV, Job Offer, Photo, Insurance</p>';
-  document.getElementById('toolContent').innerHTML=h;
-  window.scrollTo(0,200);
+function makeCV(){
+  var n=document.getElementById("cvName").value;
+  var j=document.getElementById("cvJob").value;
+  var s=document.getElementById("cvSkills").value;
+  var o=document.getElementById("cvOut");
+  o.style.display="block";
+  o.textContent="CV\nName: "+n+"\nApplying For: "+j+"\nSkills: "+s+"\n\nI am hardworking and ready to work in Europe. I have experience and I can join immediately.";
 }
-const EUROPE=["germany","poland","netherlands","france","czech","spain","italy","portugal","austria","belgium","sweden","denmark","finland","norway","ireland","greece","hungary","romania","croatia","slovakia","slovenia","lithuania","latvia","estonia","bulgaria","europe","eu","berlin","munich","hamburg","amsterdam","warsaw","paris","prague","vienna","madrid","lisbon","dublin","stockholm"];
-const BAD=["usa","united states","america","canada","australia","india","pakistan","worldwide"];
-function isEurope(loc){loc=(loc||"").toLowerCase();if(loc==="worldwide")return false;if(BAD.some(w=>loc.includes(" - usa")||loc.endsWith("usa")))return false;return EUROPE.some(w=>loc.includes(w));}
-fetch("jobs.json?v="+Date.now()).then(r=>r.json()).then(data=>{
-  let jobs=data.jobs||[];
-  let eu=jobs.filter(j=>isEurope(j.location));
-  if(eu.length===0) eu=jobs.filter(j=>!BAD.some(w=>(j.location||"").toLowerCase().includes(w)));
+function makeCover(){
+  var n=document.getElementById("clName").value;
+  var c=document.getElementById("clCompany").value;
+  var p=document.getElementById("clPost").value;
+  var o=document.getElementById("clOut");
+  o.style.display="block";
+  o.textContent="Dear "+c+",\n\nMy name is "+n+" and I am applying for the position of "+p+". I have experience in this field and I am ready to work in Europe. Please consider my application.\n\nThank you,\n"+n;
+}
+function makePhoto(e){
+  var file=e.target.files[0];
+  if(!file) return;
+  var url=URL.createObjectURL(file);
+  document.getElementById("photoOut").innerHTML='<img src="'+url+'" style="width:150px;height:180px;object-fit:cover;border:2px solid black">';
+}
+function calcSalary(){
+  var s=Number(document.getElementById("salInput").value);
+  var o=document.getElementById("salOut");
+  o.style.display="block";
+  o.textContent="Monthly Salary: "+s+" Euro\nYearly Salary: "+(s*12)+" Euro\nAfter Tax Approx: "+Math.round(s*0.75)+" Euro / month\nMonthly Saving Approx: "+Math.round(s*0.4)+" Euro";
+}
+var EUROPE=["germany","poland","netherlands","france","czech","spain","italy","portugal","austria","belgium","sweden","denmark","finland","norway","ireland","greece","hungary","romania","croatia","slovakia","slovenia","lithuania","latvia","estonia","bulgaria","europe","berlin","munich","amsterdam","warsaw","paris","prague","vienna","madrid","lisbon","dublin","stockholm"];
+var BAD=["usa","united states","america","canada","australia","worldwide"];
+function isEurope(loc){
+  loc=(loc||"").toLowerCase();
+  if(loc==="worldwide") return false;
+  if(loc.indexOf("usa")>=0) return false;
+  for(var i=0;i<EUROPE.length;i++){ if(loc.indexOf(EUROPE[i])>=0) return true; }
+  return false;
+}
+fetch("jobs.json?v="+Date.now()).then(function(r){return r.json();}).then(function(data){
+  var jobs=data.jobs||[];
+  var eu=[];
+  for(var i=0;i<jobs.length;i++){ if(isEurope(jobs[i].location)) eu.push(jobs[i]); }
+  if(eu.length===0) eu=jobs;
   document.getElementById("count").textContent="All Europe Jobs - "+eu.length+" | Updated: "+(data.lastUpdated||"").slice(0,10);
-  document.getElementById("jobs").innerHTML=eu.map(j=>`<div class="card"><h3>${j.title||""}</h3><p>${j.company||""} - ${j.location||"Europe"}</p><p>${j.category||"General"} | ${j.salary||""}</p><p class="date">📅 Date: ${j.date||(data.lastUpdated||"").slice(0,10)}</p><p><a href="${j.url||"#"}" target="_blank">Apply Karein →</a></p></div>`).join("");
+  var html="";
+  for(var k=0;k<eu.length;k++){
+    var j=eu[k];
+    html+='<div class="card"><h3>'+(j.title||"")+'</h3><p>'+(j.company||"")+' - '+(j.location||"Europe")+'</p><p>'+(j.category||"General")+'</p><p class="date">📅 Date: '+(j.date||(data.lastUpdated||"").slice(0,10))+'</p><p><a href="'+(j.url||"#")+'" target="_blank">Apply Karein →</a></p></div>';
+  }
+  document.getElementById("jobs").innerHTML=html;
 });
 </script>
 </body>
