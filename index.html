@@ -14,12 +14,14 @@ header h1{margin:0;font-size:24px}
 .card p{margin:4px 0;color:#444;font-size:14px}
 .date{color:#0a7a42;font-weight:bold}
 a{color:#1e2a5a;font-weight:bold}
-input,textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+input,textarea,select{width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
 button{background:#1e2a5a;color:#fff;border:0;padding:12px;border-radius:8px;width:100%;font-weight:bold;margin-top:6px;cursor:pointer}
 .green{background:#0a7a42}
 .out{background:#eef3ff;padding:10px;border-radius:8px;margin-top:8px;white-space:pre-wrap;font-size:14px;word-break:break-word}
+label{font-weight:bold;font-size:13px;color:#1e2a5a}
 #count{font-weight:bold;font-size:18px;margin:10px 0}
 .badge{background:#ff9800;color:#fff;padding:2px 8px;border-radius:10px;font-size:12px}
+.small{font-size:13px;color:#666}
 </style>
 </head>
 <body>
@@ -33,14 +35,24 @@ button{background:#1e2a5a;color:#fff;border:0;padding:12px;border-radius:8px;wid
 <div class="card"><h3>5. 🎤 Interview Q&A</h3><p><b>1.</b> Tell me about yourself?<br><b>جواب:</b> I am hardworking, I have experience.<br><br><b>2.</b> Why Germany?<br><b>جواب:</b> Germany has good jobs and safe future.<br><br><b>3.</b> Can you work in shifts?<br><b>جواب:</b> Yes, day and night shift.<br><br><b>4.</b> When can you join?<br><b>جواب:</b> As soon as visa is ready.</p></div>
 <div class="card"><h3>6. 🛂 Visa Guide - Documents List</h3><p><b>Germany:</b> Job Seeker / Work Visa<br><b>Poland:</b> Work Permit Type A<br><b>Netherlands:</b> Highly Skilled Migrant<br><b>Documents:</b> Passport, CV, Job Offer, Photo, Insurance, Experience Letter</p></div>
 
-<h2>➕ Add New Job - Sab Ko Nazar Aayegi</h2>
+<h2>➕ Add New Job - 14 Sawal Wala Full Form - Sab Ko Nazar Aayegi</h2>
 <div class="card">
-<p><b>طریقہ:</b> نیچے جاب لکھیں > <b>Generate Code</b> دبائیں > جو کوڈ بنے اس کو کاپی کریں > GitHub میں <b>manual-jobs.json</b> کھول کر پیسٹ کر کے Commit کریں۔ بس! پھر وہ جاب سب کو نظر آئے گی۔</p>
-<input id="newTitle" placeholder="Job Title - e.g. Warehouse Worker">
-<input id="newCompany" placeholder="Company Name">
-<input id="newLoc" placeholder="Location - e.g. Germany">
-<input id="newUrl" placeholder="Apply Link - https://...">
-<button class="green" onclick="makeJobCode()">Generate Code - Sab Ke Liye</button>
+<p class="small">14 sawal bharein > Generate Code dabayein > Copy karein > GitHub me <b>manual-jobs.json</b> me paste karke Commit karein. Phir ye job sab ko nazar aayegi.</p>
+<label>1. Job Title - Job ka naam kya hai?</label><input id="f1" placeholder="e.g. Warehouse Worker">
+<label>2. Company Name - Company ka naam kya hai?</label><input id="f2" placeholder="e.g. Euro Logistics">
+<label>3. Company Website - Company ki website kya hai?</label><input id="f3" placeholder="e.g. https://company.com">
+<label>4. Country - Kahan pe kaam hai? Country</label><input id="f4" placeholder="e.g. Germany">
+<label>5. City - Kis shehar me kaam hai?</label><input id="f5" placeholder="e.g. Berlin">
+<label>6. Job Category - Kis kaam ki job hai?</label><select id="f6"><option>Warehouse</option><option>Delivery Driver</option><option>Hotel Cleaner</option><option>Factory Helper</option><option>Construction</option><option>Farm Worker</option><option>Other</option></select>
+<label>7. Job Type - Full-time / Part-time?</label><select id="f7"><option>Full-time</option><option>Part-time</option><option>Contract</option><option>Seasonal</option></select>
+<label>8. Salary - Tankhwah kitni hai? Euro me</label><input id="f8" placeholder="e.g. 2200 Euro / Month">
+<label>9. Working Hours - Roz kitne ghante kaam hai?</label><input id="f9" placeholder="e.g. 8 Hours, 6 Days">
+<label>10. Experience - Tajurba kitna chahiye?</label><input id="f10" placeholder="e.g. No Experience / 1 Year">
+<label>11. Education - Taleem kitni chahiye?</label><input id="f11" placeholder="e.g. Matric / No Education">
+<label>12. Language - Kaun si zuban aani chahiye?</label><input id="f12" placeholder="e.g. English Basic / No English">
+<label>13. Visa / Work Permit - Visa kaun dega?</label><input id="f13" placeholder="e.g. Company will provide Work Permit">
+<label>14. Apply Link - Apply karne ka Link / WhatsApp / Email</label><input id="f14" placeholder="e.g. https://... ya WhatsApp Number">
+<button class="green" onclick="makeJobCode()">Generate Code - 14 Sawal Wala</button>
 <div id="jobCodeOut" class="out" style="display:none"></div>
 <button onclick="copyJobCode()" style="display:none" id="copyBtn">📋 Copy Code</button>
 </div>
@@ -55,43 +67,61 @@ function makeCover(){var n=document.getElementById("clName").value;var c=documen
 function makePhoto(e){var f=e.target.files[0];if(!f)return;var u=URL.createObjectURL(f);document.getElementById("photoOut").innerHTML='<img src="'+u+'" style="width:150px;height:180px;object-fit:cover;border:2px solid black">';}
 function calcSalary(){var s=Number(document.getElementById("salInput").value);var o=document.getElementById("salOut");o.style.display="block";o.textContent="Monthly: "+s+" Euro\nYearly: "+(s*12)+" Euro\nAfter Tax Approx: "+Math.round(s*0.75)+" Euro/month";}
 var lastJobCode="";
+function clean(v){return (v||"").replace(/"/g,"'").replace(/\n/g," ");}
 function makeJobCode(){
-  var t=document.getElementById("newTitle").value;
-  var c=document.getElementById("newCompany").value;
-  var l=document.getElementById("newLoc").value||"Germany";
-  var u=document.getElementById("newUrl").value||"#";
+  var t=clean(document.getElementById("f1").value);
+  var c=clean(document.getElementById("f2").value);
+  if(!t||!c){alert("Please kam se kam 1. Job Title aur 2. Company Name zaroor likhein");return;}
+  var web=clean(document.getElementById("f3").value);
+  var country=clean(document.getElementById("f4").value)||"Germany";
+  var city=clean(document.getElementById("f5").value);
+  var cat=clean(document.getElementById("f6").value);
+  var type=clean(document.getElementById("f7").value);
+  var sal=clean(document.getElementById("f8").value);
+  var hrs=clean(document.getElementById("f9").value);
+  var exp=clean(document.getElementById("f10").value);
+  var edu=clean(document.getElementById("f11").value);
+  var lang=clean(document.getElementById("f12").value);
+  var visa=clean(document.getElementById("f13").value);
+  var link=clean(document.getElementById("f14").value)||"#";
+  var loc=country; if(city) loc=city+", "+country;
   var d=new Date().toISOString().slice(0,10);
-  if(!t||!c){alert("Please Title aur Company likhein");return;}
-  lastJobCode='  {"title":"'+t+'","company":"'+c+'","location":"'+l+'","category":"New - Admin Added","type":"Full-time","salary":"","url":"'+u+'","date":"'+d+'"}';
+  lastJobCode='  {"title":"'+t+'","company":"'+c+'","website":"'+web+'","location":"'+loc+'","country":"'+country+'","city":"'+city+'","category":"'+cat+' - Admin Added","type":"'+type+'","salary":"'+sal+'","hours":"'+hrs+'","experience":"'+exp+'","education":"'+edu+'","language":"'+lang+'","visa":"'+visa+'","url":"'+link+'","date":"'+d+'"}';
   var o=document.getElementById("jobCodeOut");
   o.style.display="block";
   o.textContent="Is ko copy karke manual-jobs.json me paste karein:\n\n"+lastJobCode;
   document.getElementById("copyBtn").style.display="block";
 }
-function copyJobCode(){
-  navigator.clipboard.writeText(lastJobCode).then(function(){alert("Code Copy ho gaya! Ab manual-jobs.json me paste karein");});
-}
+function copyJobCode(){navigator.clipboard.writeText(lastJobCode).then(function(){alert("Code Copy ho gaya! Ab manual-jobs.json me paste karein");});}
 var EUROPE=["germany","poland","netherlands","france","czech","spain","italy","portugal","austria","belgium","sweden","denmark","finland","norway","ireland","greece","hungary","romania","croatia","slovakia","slovenia","lithuania","latvia","estonia","bulgaria","europe","berlin","munich","amsterdam","warsaw","paris","prague","vienna","madrid","lisbon","dublin","stockholm"];
 function isEurope(loc){loc=(loc||"").toLowerCase();if(loc==="worldwide")return false;if(loc.indexOf("usa")>=0)return false;for(var i=0;i<EUROPE.length;i++){if(loc.indexOf(EUROPE[i])>=0)return true;}return false;}
-function renderJobs(autoJobs, manualJobs, lastUpdated){
-  var eu=[];for(var i=0;i<autoJobs.length;i++){if(isEurope(autoJobs[i].location))eu.push(autoJobs[i]);}
-  if(eu.length===0)eu=autoJobs;
-  var finalJobs=manualJobs.concat(eu);
-  document.getElementById("count").textContent="All Europe Jobs - "+finalJobs.length+" | Updated: "+(lastUpdated||"").slice(0,10);
-  var html="";
-  for(var k=0;k<finalJobs.length;k++){
-    var j=finalJobs[k];
-    var isManual=(j.category||"").indexOf("Admin")>=0;
-    html+='<div class="card"><h3>'+(j.title||"")+' '+(isManual?'<span class="badge">NEW</span>':"")+'</h3><p>'+(j.company||"")+' - '+(j.location||"Europe")+'</p><p>'+(j.category||"General")+'</p><p class="date">📅 Date: '+(j.date||(lastUpdated||"").slice(0,10))+'</p><p><a href="'+(j.url||"#")+'" target="_blank">Apply Karein →</a></p></div>';
-  }
-  document.getElementById("jobs").innerHTML=html;
+function jobCard(j,lastUpdated){
+  var isManual=(j.category||"").indexOf("Admin")>=0;
+  var h='<div class="card"><h3>'+(j.title||"")+' '+(isManual?'<span class="badge">NEW</span>':"")+'</h3>';
+  h+='<p><b>'+(j.company||"")+'</b> - '+(j.location||"Europe")+'</p>';
+  if(j.website) h+='<p>🌐 Website: <a href="'+j.website+'" target="_blank">'+j.website+'</a></p>';
+  h+='<p>📂 Category: '+(j.category||"General")+' | ⏰ Type: '+(j.type||"")+'</p>';
+  if(j.salary) h+='<p>💶 Salary: '+j.salary+'</p>';
+  if(j.hours) h+='<p>🕒 Hours: '+j.hours+'</p>';
+  if(j.experience) h+='<p>🧑‍🏭 Experience: '+j.experience+'</p>';
+  if(j.education) h+='<p>🎓 Education: '+j.education+'</p>';
+  if(j.language) h+='<p>🗣️ Language: '+j.language+'</p>';
+  if(j.visa) h+='<p>🛂 Visa: '+j.visa+'</p>';
+  h+='<p class="date">📅 Date: '+(j.date||(lastUpdated||"").slice(0,10))+'</p>';
+  h+='<p><a href="'+(j.url||"#")+'" target="_blank">Apply Karein →</a></p></div>';
+  return h;
 }
 Promise.all([
   fetch("jobs.json?v="+Date.now()).then(function(r){return r.json();}).catch(function(){return {jobs:[],lastUpdated:""};}),
   fetch("manual-jobs.json?v="+Date.now()).then(function(r){return r.json();}).catch(function(){return {jobs:[]};})
 ]).then(function(all){
-  renderJobs(all[0].jobs||[], all[1].jobs||[], all[0].lastUpdated||"");
+  var auto=all[0].jobs||[]; var manual=all[1].jobs||[]; var lastUpdated=all[0].lastUpdated||"";
+  var eu=[]; for(var i=0;i<auto.length;i++){if(isEurope(auto[i].location))eu.push(auto[i]);} if(eu.length===0)eu=auto;
+  var finalJobs=manual.concat(eu);
+  document.getElementById("count").textContent="All Europe Jobs - "+finalJobs.length+" | Updated: "+(lastUpdated||"").slice(0,10);
+  var html=""; for(var k=0;k<finalJobs.length;k++){html+=jobCard(finalJobs[k],lastUpdated);}
+  document.getElementById("jobs").innerHTML=html;
 });
 </script>
 </body>
-  </html>
+</html>
