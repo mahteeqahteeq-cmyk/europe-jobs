@@ -25,7 +25,7 @@ label{font-weight:bold;font-size:13px;color:#1e2a5a}
 </style>
 </head>
 <body>
-<header><h1>🇪🇺 Europe Job Alerts</h1><p>Germany | Poland | Netherlands | France | Czech Republic - Daily Updated</p></header>
+<header><h1>🇪🇺 Europe Job Alerts</h1><p style="text-align:center; margin:5px 0;"><a href="about.html" style="color:white;">About Us</a> | <a href="privacy-policy.html" style="color:white;">Privacy Policy</a> | <a href="disclaimer.html" style="color:white;">Disclaimer</a></p><p>Germany | Poland | Netherlands | France | Czech Republic - Daily Updated</p></header>
 <div class="container">
 <h2>🛠️ Free Tools - 6 Tools</h2>
 <div class="card"><h3>1. 📄 CV Maker</h3><input id="cvName" placeholder="Full Name"><input id="cvJob" placeholder="Job Title"><textarea id="cvSkills" placeholder="Skills"></textarea><button onclick="makeCV()">Generate CV</button><div id="cvOut" class="out" style="display:none"></div></div>
@@ -123,5 +123,10 @@ Promise.all([
   document.getElementById("jobs").innerHTML=html;
 });
 </script>
+<div style="text-align:center; background:#1e2a5a; color:white; padding:15px; margin-top:20px;">
+<p style="margin:0; color:white;">Europe Job Alerts - Free Jobs Information</p>
+<p style="margin:8px 0;"><a href="about.html" style="color:white;">About Us</a> | <a href="privacy-policy.html" style="color:white;">Privacy Policy</a> | <a href="disclaimer.html" style="color:white;">Disclaimer</a> | <a href="index.html" style="color:white;">Home</a></p>
+<p style="margin:0; font-size:12px; color:#ddd;">We do not give jobs or visa. We only share job information.</p>
+ </div> 
 </body>
 </html>
