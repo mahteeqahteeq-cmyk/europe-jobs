@@ -3,70 +3,83 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europe Jobs - Real On-Site Jobs in Europe</title>
-<link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0f3d8a">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#eef2f7;color:#111;padding-bottom:80px}
-header{background:#0f3d8a;color:#fff;padding:20px 12px;text-align:center}header h1{font-size:28px}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#eef2f7;color:#111;padding-bottom:100px;overflow-x:hidden}
+header{background:#0f3d8a;color:#fff;padding:18px 10px;text-align:center}header h1{font-size:26px}
 .disclaimer{background:#fef9c3;color:#713f12;text-align:center;padding:10px;font-size:13px;font-weight:bold}
 nav{background:#fff;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px;position:sticky;top:0;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-nav button{padding:9px 13px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;font-weight:bold;cursor:pointer}
+nav button{padding:9px 12px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;font-weight:bold;cursor:pointer;font-size:13px}
 nav button.active{background:#0f3d8a;color:#fff}
-.wrap{max-width:1150px;margin:14px auto;padding:0 10px}
-.bar{background:#fff;padding:12px;border-radius:12px;display:flex;gap:8px;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.08)}
-.bar input{flex:2;min-width:180px;padding:11px;border:1px solid #ddd;border-radius:8px}
-.bar select{flex:1;min-width:150px;padding:11px;border:1px solid #ddd;border-radius:8px}
-.bar button{background:#0f3d8a;color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:bold;cursor:pointer}
+.wrap{max-width:1150px;margin:12px auto;padding:0 10px;width:100%}
+.bar{background:#fff;padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.bar input,.bar select{width:100%;padding:11px;border:1px solid #ddd;border-radius:8px}
+.bar button{background:#0f3d8a;color:#fff;border:0;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
 .cats,.types{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.cats button,.types button{padding:8px 14px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;cursor:pointer;font-weight:bold}
+.cats button,.types button{padding:8px 13px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;cursor:pointer;font-weight:bold;font-size:13px}
 .cats button.active,.types button.active{background:#0f3d8a;color:#fff}
-#jobs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+#jobs{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:700px){#jobs{grid-template-columns:repeat(2,1fr)}}
 .card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;gap:8px;position:relative}
 .badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;width:fit-content}
 .onsite{background:#dcfce7;color:#166534}.hybrid{background:#fef9c3;color:#854d0e}.remote{background:#dbeafe;color:#1e40af}.userposted{background:#ede9fe;color:#5b21b6}
 .card a{background:#16a34a;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold;display:block}
 .fav{position:absolute;top:12px;right:12px;font-size:20px;cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:50%;width:36px;height:36px;line-height:36px;text-align:center}
 .sharebtn{background:#fff;border:1px solid #ddd;padding:8px;border-radius:8px;cursor:pointer;font-weight:bold}
-.page{background:#fff;border-radius:12px;padding:20px;line-height:1.7}.page h2{margin-bottom:10px}.page p,.page li{margin-bottom:8px}
+.page{background:#fff;border-radius:12px;padding:18px;line-height:1.7}.page h2{margin-bottom:10px}
 .page input,.page textarea,.page select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.page button{background:#0f3d8a;color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:bold;cursor:pointer}
+.page button{background:#0f3d8a;color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
 .tool{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px}
 .tool input,.tool select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.tool button{background:#0f3d8a;color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer}
+.tool button{background:#0f3d8a;color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
 #more{display:block;margin:20px auto;background:#0f3d8a;color:#fff;border:0;padding:12px 26px;border-radius:8px;font-weight:bold;cursor:pointer}
-footer{background:#0f172a;color:#fff;text-align:center;padding:18px;margin-top:20px}footer a{color:#93c5fd;margin:0 6px;cursor:pointer;text-decoration:underline}
-.hidden{display:none}.wa{position:fixed;bottom:18px;right:16px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+footer{background:#0f172a;color:#fff;text-align:center;padding:18px;margin-top:20px}footer a{color:#93c5fd;margin:0 4px;cursor:pointer;text-decoration:underline;font-size:13px}
+.hidden{display:none!important}
+.wa{position:fixed;bottom:90px;right:12px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 canvas{max-width:100%;border:1px solid #ddd;border-radius:8px}
 label{font-weight:bold;font-size:13px}
 </style>
 </head>
 <body>
-<header><h1>🇪🇺 Europe Jobs</h1><p>Real Jobs from 7 Live Sources - Direct Apply - No Agent - No Fee</p></header>
+<header><h1>🇪🇺 Europe Jobs</h1><p>Real Jobs - Direct Apply - No Agent - No Fee</p></header>
 <div class="disclaimer">⚠️ DISCLAIMER: We are NOT an agent. We do NOT give jobs. We only give INFORMATION. Never pay money to anyone for a job.</div>
 <nav>
-<button class="active" onclick="show('jobs',this)">💼 Jobs</button>
-<button onclick="show('addjob',this)">➕ Add New Job</button>
-<button onclick="show('fav',this)">❤️ Saved (<span id="favCount">0</span>)</button>
-<button onclick="show('tools',this)">🛠️ 7 Tools</button>
-<button onclick="show('about',this)">ℹ️ About</button>
-<button onclick="show('privacy',this)">🔒 Privacy</button>
-<button onclick="show('terms',this)">📜 Terms</button>
-<button onclick="show('contact',this)">📞 Contact</button>
-<button onclick="show('delete',this)">🗑️ Delete Data</button>
-<button onclick="show('datasafety',this)">🛡️ Data Safety</button>
-<button onclick="show('graphic',this)">🎨 Icon / Graphic</button>
-<button onclick="show('aab',this)">📦 AAB File</button>
+<button class="active" onclick="showPage('jobs',this)">💼 Jobs</button>
+<button onclick="showPage('addjob',this)">➕ Add Job</button>
+<button onclick="showPage('fav',this)">❤️ Saved (<span id="favCount">0</span>)</button>
+<button onclick="showPage('tools',this)">🛠️ 7 Tools</button>
+<button onclick="showPage('about',this)">ℹ️ About</button>
+<button onclick="showPage('privacy',this)">🔒 Privacy</button>
+<button onclick="showPage('terms',this)">📜 Terms</button>
+<button onclick="showPage('contact',this)">📞 Contact</button>
+<button onclick="showPage('delete',this)">🗑️ Delete Data</button>
+<button onclick="showPage('datasafety',this)">🛡️ Data Safety</button>
+<button onclick="showPage('graphic',this)">🎨 Icon</button>
+<button onclick="showPage('aab',this)">📦 AAB</button>
 </nav>
 
-<!-- JOBS -->
 <div id="sec-jobs" class="wrap">
 <div class="bar">
-<input id="q" placeholder="Search - waiter, driver, warehouse, cleaner, cook, engineer...">
-<select id="country"><option value="">All Europe</option><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option><option>Belgium</option><option>Austria</option><option>Portugal</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Greece</option><option>Czech</option><option>Slovakia</option><option>Hungary</option><option>Romania</option><option>Croatia</option><option>Ireland</option><option>United Kingdom</option></select>
+<input id="q" placeholder="Search - waiter, driver, warehouse, cleaner, cook...">
+<select id="country"><option value="">All Europe</option><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option><option>Belgium</option><option>Austria</option><option>Portugal</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Greece</option><option>Czech</option><option>Romania</option><option>Croatia</option><option>Ireland</option><option>United Kingdom</option></select>
 <select id="sort"><option value="onsite">On-Site First</option><option value="new">Newest First</option><option value="az">A to Z</option></select>
 <button onclick="loadAll()">Search Jobs</button>
 </div>
-<div class="cats" id="cats"></div>
+<!-- CATEGORIES ARE NOW IN HTML - WILL ALWAYS SHOW -->
+<div class="cats">
+<button class="active" onclick="setCat('All',this)">All</button>
+<button onclick="setCat('Office / Admin',this)">Office / Admin</button>
+<button onclick="setCat('Engineer / IT',this)">Engineer / IT</button>
+<button onclick="setCat('Worker / Factory',this)">Worker / Factory</button>
+<button onclick="setCat('Driver / Delivery',this)">Driver / Delivery</button>
+<button onclick="setCat('Hotel / Restaurant',this)">Hotel / Restaurant</button>
+<button onclick="setCat('Warehouse',this)">Warehouse</button>
+<button onclick="setCat('Cleaning',this)">Cleaning</button>
+<button onclick="setCat('Cook / Kitchen',this)">Cook / Kitchen</button>
+<button onclick="setCat('Farm / Labour',this)">Farm / Labour</button>
+<button onclick="setCat('Nurse / Care',this)">Nurse / Care</button>
+<button onclick="setCat('Security',this)">Security</button>
+</div>
 <div class="types">
 <button class="active" onclick="setType('onsite',this)">🏢 On-Site Only</button>
 <button onclick="setType('hybrid',this)">🏢+🏠 Hybrid</button>
@@ -80,8 +93,7 @@ label{font-weight:bold;font-size:13px}
 <button id="retry" onclick="loadAll()" style="display:none;margin:20px auto;background:#dc2626;color:#fff;border:0;padding:12px 22px;border-radius:8px;font-weight:bold;cursor:pointer">Try Again 🔄</button>
 </div>
 
-<!-- ADD NEW JOB FORM - 16 QUESTIONS -->
-<div id="sec-addjob" class="wrap hidden"><div class="page"><h2>➕ Add New Job - 16 Questions</h2><p>Fill all 16 questions. Your job will appear on top of Jobs list as <b>User Posted Job</b>. It is saved only in this phone/browser.</p>
+<div id="sec-addjob" class="wrap hidden"><div class="page"><h2>➕ Add New Job - 16 Questions</h2><p>Fill all 16. Your job will appear on TOP as User Posted Job.</p>
 <label>1. Job Title *</label><input id="j1" placeholder="e.g. Warehouse Worker">
 <label>2. Company Name *</label><input id="j2" placeholder="e.g. ABC Logistics">
 <label>3. Country *</label><select id="j3"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option><option>Belgium</option><option>Austria</option><option>Portugal</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Greece</option><option>Czech</option><option>Romania</option><option>Croatia</option><option>Ireland</option><option>United Kingdom</option></select>
@@ -98,17 +110,15 @@ label{font-weight:bold;font-size:13px}
 <label>14. Food Provided?</label><select id="j14"><option>Yes</option><option>No</option></select>
 <label>15. Working Hours Per Day</label><select id="j15"><option>8 Hours</option><option>10 Hours</option><option>12 Hours</option><option>Flexible</option></select>
 <label>16. Last Date To Apply</label><input id="j16" type="date">
-<label>Job Description / Apply Link (Optional)</label><textarea id="jDesc" rows="3" placeholder="Write job details or paste Apply link - https://..."></textarea>
+<label>Job Description / Apply Link (Optional)</label><textarea id="jDesc" rows="3" placeholder="Write details or paste Apply link - https://..."></textarea>
 <button onclick="addNewJob()">Publish My Job →</button>
 <p id="addOut" style="margin-top:10px;font-weight:bold;color:green"></p>
 <h3 style="margin-top:16px">My Added Jobs</h3><div id="myJobs"></div>
 <button onclick="clearMyJobs()" style="background:#dc2626;margin-top:10px">Delete All My Added Jobs</button>
 </div></div>
 
-<!-- SAVED -->
 <div id="sec-fav" class="wrap hidden"><h2>❤️ Saved Jobs</h2><div id="favList" style="margin-top:10px"></div><button onclick="clearFav()" style="background:#dc2626;color:#fff;border:0;padding:10px 16px;border-radius:8px;margin-top:10px;cursor:pointer">Clear All Saved</button></div>
 
-<!-- 7 TOOLS -->
 <div id="sec-tools" class="wrap hidden"><h2>🛠️ 7 Free Tools</h2><br>
 <div class="tool"><h3>1. 📄 CV Maker</h3><input id="cvName" placeholder="Your Name"><input id="cvJob" placeholder="Job - Driver"><input id="cvExp" placeholder="Experience"><button onclick="makeCV()">Make CV</button><div id="cvOut" style="white-space:pre-line;margin-top:8px"></div></div>
 <div class="tool"><h3>2. ✉️ Cover Letter Maker</h3><input id="clName" placeholder="Name"><input id="clJob" placeholder="Job"><input id="clComp" placeholder="Company"><button onclick="makeCL()">Make Letter</button><div id="clOut" style="white-space:pre-line;margin-top:8px"></div></div>
@@ -116,14 +126,14 @@ label{font-weight:bold;font-size:13px}
 <div class="tool"><h3>4. 🛂 Visa Checker</h3><select id="visaCountry"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Portugal</option></select><button onclick="checkVisa()">Check</button><div id="visaOut" style="white-space:pre-line;margin-top:8px"></div></div>
 <div class="tool"><h3>5. 🎤 Interview Questions</h3><select id="intJob"><option>Driver</option><option>Waiter</option><option>Warehouse</option><option>Cleaner</option><option>Engineer</option></select><button onclick="showInt()">Show</button><div id="intOut" style="white-space:pre-line;margin-top:8px"></div></div>
 <div class="tool"><h3>6. 💱 Euro to PKR Converter</h3><input id="eur" type="number" placeholder="Euro"><button onclick="conv()">Convert</button><div id="eurOut" style="margin-top:8px"></div></div>
-<div class="tool"><h3>7. 🏠 Cost of Living Calculator - NEW</h3><select id="colCountry"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option></select><input id="colSal" type="number" placeholder="Your Monthly Salary in Euro"><button onclick="calcLiving()">Calculate Living Cost</button><div id="colOut" style="white-space:pre-line;margin-top:8px"></div></div>
+<div class="tool"><h3>7. 🏠 Cost of Living Calculator</h3><select id="colCountry"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option></select><input id="colSal" type="number" placeholder="Your Monthly Salary in Euro"><button onclick="calcLiving()">Calculate Living Cost</button><div id="colOut" style="white-space:pre-line;margin-top:8px"></div></div>
 </div>
 
-<div id="sec-about" class="wrap hidden"><div class="page"><h2>About Us</h2><p>Europe Jobs is a free job information portal. We collect jobs from 7 trusted public Live APIs.</p><p><b>We are NOT an agent. We do NOT give jobs. We only give INFORMATION.</b></p><ul><li>✅ 100% Free</li><li>✅ No Agent, No Fee</li><li>✅ Direct Apply</li><li>✅ On-Site Jobs First</li></ul></div></div>
+<div id="sec-about" class="wrap hidden"><div class="page"><h2>About Us</h2><p>Europe Jobs is a free job information portal. We collect jobs from trusted public Live APIs.</p><p><b>We are NOT an agent. We do NOT give jobs. We only give INFORMATION.</b></p><ul><li>✅ 100% Free</li><li>✅ No Agent, No Fee</li><li>✅ Direct Apply</li><li>✅ On-Site Jobs First</li></ul></div></div>
 <div id="sec-privacy" class="wrap hidden"><div class="page"><h2>Privacy Policy</h2><p><b>Last Updated: 2026</b></p><p>1. We do NOT collect CNIC, Passport, Bank details.</p><p>2. We do NOT collect Name, Email, Location. CV Tool data stays only in your browser.</p><p>3. Favorite Jobs are saved only on your device.</p><p>4. Apply Now takes you to company's website, which has its own Privacy Policy.</p><p>5. We do NOT sell your data.</p><p>6. Contact: mahteeqahteeq@gmail.com</p><p><b>Play Store Privacy URL:</b> https://your-website.com/privacy.html</p></div></div>
 <div id="sec-terms" class="wrap hidden"><div class="page"><h2>Terms & Conditions</h2><p>1. This website is only for information.</p><p>2. We do NOT promise a job.</p><p>3. Never pay money to anyone for a job. Anyone asking money is fraud.</p><p>4. Jobs come from third-party APIs. Always check company's official website before applying.</p></div></div>
-<div id="sec-contact" class="wrap hidden"><div class="page"><h2>Contact Us</h2><p><b>Email:</b> mahteeqahteeq@gmail.com</p><p><b>WhatsApp:</b> Use green button below.</p><p><b>Timing:</b> Mon-Fri, 9 AM - 6 PM</p><textarea id="msg" rows="4" placeholder="Write your message..."></textarea><button onclick="sendMsg()">Send via WhatsApp</button></div></div>
-<div id="sec-delete" class="wrap hidden"><div class="page"><h2>🗑️ Delete My Data</h2><p>There is NO Login / Account in this app. Only Saved Jobs, Added Jobs and Last Search are saved on your phone.</p><button onclick="deleteAll()" style="background:#dc2626">Delete All My Data Now</button><p id="delOut" style="margin-top:10px;font-weight:bold"></p><p>For email deletion: mahteeqahteeq@gmail.com - Subject: Delete My Data</p></div></div>
+<div id="sec-contact" class="wrap hidden"><div class="page"><h2>Contact Us</h2><p><b>Email:</b> mahteeqahteeq@gmail.com</p><p><b>WhatsApp:</b> Use green button.</p><p><b>Timing:</b> Mon-Fri, 9 AM - 6 PM</p><textarea id="msg" rows="4" placeholder="Write your message..."></textarea><button onclick="sendMsg()">Send via WhatsApp</button></div></div>
+<div id="sec-delete" class="wrap hidden"><div class="page"><h2>🗑️ Delete My Data</h2><p>There is NO Login / Account. Only Saved Jobs, Added Jobs and Last Search are saved on your phone.</p><button onclick="deleteAll()" style="background:#dc2626">Delete All My Data Now</button><p id="delOut" style="margin-top:10px;font-weight:bold"></p><p>For email deletion: mahteeqahteeq@gmail.com - Subject: Delete My Data</p></div></div>
 <div id="sec-datasafety" class="wrap hidden"><div class="page"><h2>🛡️ Data Safety - For Play Store</h2><pre style="background:#f8fafc;padding:12px;border-radius:8px;white-space:pre-line">Does app collect/share data? NO.
 Personal Info: No | Location: No | Photos: No | Contacts: No | Financial: No
 Data stored only on user's device. Not sent to server. Not shared.
@@ -132,22 +142,29 @@ Account Deletion: Available in app.</pre></div></div>
 <div id="sec-aab" class="wrap hidden"><div class="page"><h2>📦 How To Make AAB File?</h2><p>AAB file is NOT made inside index.html.</p><ol><li>Make your site live on GitHub Pages</li><li>Go to: pwabuilder.com</li><li>Paste your site link</li><li>Select Android, click Generate</li><li>You will get .aab file, upload it in Play Console &gt; Production</li></ol><p>$25 Developer Account is one-time fee.</p></div></div>
 
 <footer>
-<a onclick="show('about',null)">About</a> | <a onclick="show('privacy',null)">Privacy</a> | <a onclick="show('terms',null)">Terms</a> | <a onclick="show('contact',null)">Contact</a> | <a onclick="show('delete',null)">Delete Account</a>
+<a onclick="showPage('about',null)">About</a> | <a onclick="showPage('privacy',null)">Privacy</a> | <a onclick="showPage('terms',null)">Terms</a> | <a onclick="showPage('contact',null)">Contact</a> | <a onclick="showPage('delete',null)">Delete Account</a>
 <br><br>© 2026 Europe Jobs - We are NOT agent, We do NOT give jobs, We only give Information.
 </footer>
-<a class="wa" href="https://wa.me/923177033253?text=Hello%2C%20I%20want%20to%20ask%20about%20Europe%20Jobs" target="_blank">💬</a>
+<a class="wa" href="https://wa.me/923177033253?text=Hello" target="_blank">💬</a>
 
 <script>
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function show(sec,btn){['jobs','addjob','fav','tools','about','privacy','terms','contact','delete','datasafety','graphic','aab'].forEach(s=>document.getElementById('sec-'+s).classList.add('hidden'));document.getElementById('sec-'+sec).classList.remove('hidden');document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});if(sec==='fav')renderFav();if(sec==='addjob')renderMyJobs();}
-// 7 Tools
-function makeCV(){document.getElementById('cvOut').innerText=`CV - ${document.getElementById('cvName').value||'Your Name'}\nJob: ${document.getElementById('cvJob').value||'Worker'}\nExperience: ${document.getElementById('cvExp').value||'2 Years'}\nSkills: Hard Working, Punctual, Team Work`;}
-function makeCL(){document.getElementById('clOut').innerText=`Dear ${document.getElementById('clComp').value||'Company'} Team,\nMy name is ${document.getElementById('clName').value||'Your Name'}. I want to apply for ${document.getElementById('clJob').value||'the job'}. I am hard working and honest.\nThank you.`;}
-function calcSal(){let s=Number(document.getElementById('sal').value||0);document.getElementById('salOut').innerText=`Gross €${s} | Net €${(s*0.8).toFixed(0)} | PKR Rs ${(s*0.8*305).toLocaleString()}`;}
-function checkVisa(){document.getElementById('visaOut').innerText=`${document.getElementById('visaCountry').value} - You need: Passport, Job Offer, CV, Experience Proof. Never pay agent.`;}
-function showInt(){document.getElementById('intOut').innerText=`${document.getElementById('intJob').value} - 1. Tell me about yourself? 2. Why this job? 3. When can you join?`;}
-function conv(){let e=Number(document.getElementById('eur').value||0);document.getElementById('eurOut').innerText=`€${e} = Rs ${(e*305).toLocaleString()} PKR`;}
-function calcLiving(){let c=document.getElementById('colCountry').value,s=Number(document.getElementById('colSal').value||0);let costs={Germany:900,France:950,Spain:750,Italy:800,Poland:600,Netherlands:1000};let cost=costs[c]||800;let left=s-cost;document.getElementById('colOut').innerText=`Country: ${c}\nAverage Living Cost: €${cost} / month (Room + Food + Transport)\nYour Salary: €${s}\nYou Can Save: €${left} / month\nIn PKR Saving: Rs ${(left*305).toLocaleString()}`;}
+function showPage(sec,btn){
+  var all=['jobs','addjob','fav','tools','about','privacy','terms','contact','delete','datasafety','graphic','aab'];
+  for(var i=0;i<all.length;i++){var el=document.getElementById('sec-'+all[i]); if(el) el.classList.add('hidden');}
+  var target=document.getElementById('sec-'+sec); if(target) target.classList.remove('hidden');
+  var btns=document.querySelectorAll('nav button'); for(var j=0;j<btns.length;j++){btns[j].classList.remove('active');}
+  if(btn) btn.classList.add('active');
+  window.scrollTo(0,0);
+  if(sec==='fav') renderFav();
+  if(sec==='addjob') renderMyJobs();
+}
+function makeCV(){document.getElementById('cvOut').innerText='CV - '+(document.getElementById('cvName').value||'Your Name')+'\nJob: '+(document.getElementById('cvJob').value||'Worker')+'\nExperience: '+(document.getElementById('cvExp').value||'2 Years')+'\nSkills: Hard Working, Punctual, Team Work';}
+function makeCL(){document.getElementById('clOut').innerText='Dear '+(document.getElementById('clComp').value||'Company')+' Team,\nMy name is '+(document.getElementById('clName').value||'Your Name')+'. I want to apply for '+(document.getElementById('clJob').value||'the job')+'.';}
+function calcSal(){var s=Number(document.getElementById('sal').value||0);document.getElementById('salOut').innerText='Gross €'+s+' | Net €'+(s*0.8).toFixed(0)+' | PKR Rs '+((s*0.8*305).toLocaleString());}
+function checkVisa(){document.getElementById('visaOut').innerText=document.getElementById('visaCountry').value+' - You need: Passport, Job Offer, CV, Experience Proof. Never pay agent.';}
+function showInt(){document.getElementById('intOut').innerText=document.getElementById('intJob').value+' - 1. Tell me about yourself? 2. Why this job? 3. When can you join?';}
+function conv(){var e=Number(document.getElementById('eur').value||0);document.getElementById('eurOut').innerText='€'+e+' = Rs '+(e*305).toLocaleString()+' PKR';}
+function calcLiving(){var c=document.getElementById('colCountry').value,s=Number(document.getElementById('colSal').value||0);var costs={Germany:900,France:950,Spain:750,Italy:800,Poland:600,Netherlands:1000};var cost=costs[c]||800;var left=s-cost;document.getElementById('colOut').innerText='Country: '+c+'\nLiving Cost: €'+cost+' / month\nYour Salary: €'+s+'\nYou Can Save: €'+left+' / month';}
 function sendMsg(){window.open('https://wa.me/923177033253?text='+encodeURIComponent(document.getElementById('msg').value||'Hello'),'_blank');}
-function deleteAll(){localStorage.removeItem('favJobs');localStorage.removeItem('lastSearch');localStorage.removeItem('myJobs');favJobs=[];myJobs=[];document.getElementById('delOut').innerText='Done! All your data deleted.';renderFav();renderMyJobs();render();}
-function drawGraphic(){let c=document.getElementById('fg'),x=c.getContext('2d');x.fillStyle='#0f3d8a';x.fillRect(0,0,1024,500);x.fillStyle='#fff';x.font='bold 72px Arial';x.fillText('EUROPE JOBS',80,200);x.font='36px Arial';x.fillText('Real On-Site Jobs in Europe',80,270);x.fillText('No Agent - No Fee - Direct Apply',80,320);document.getElementById('dlFg').style.display='inline-block';document.getElementById('
+function deleteAll(){try{localStorage.removeItem('favJobs');l
