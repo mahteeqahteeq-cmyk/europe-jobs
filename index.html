@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Europe Jobs - All Europe Jobs</title>
+<title>Europe Jobs - On-Site Jobs in Europe</title>
 <style>
 body{font-family:Arial,sans-serif;background:#f2f2f2;margin:0;padding:10px}
 h1{text-align:center;color:#0b4db3}
@@ -15,119 +15,88 @@ h1{text-align:center;color:#0b4db3}
 .job p{margin:4px 0;color:#555;font-size:14px}
 .job a{display:inline-block;margin-top:8px;background:#0b4db3;color:#fff;padding:8px 14px;border-radius:6px;text-decoration:none}
 .tag{background:#e8f0ff;color:#0b4db3;padding:2px 8px;border-radius:20px;font-size:12px}
+.onsite{background:#e6ffe6;color:#0a7a0a;padding:2px 8px;border-radius:20px;font-size:12px;font-weight:bold}
 .ok{color:green}.fail{color:red}
 select{width:95%;max-width:600px;display:block;margin:5px auto;padding:10px;border-radius:8px}
+.note{max-width:700px;margin:10px auto;background:#fff3cd;padding:10px;border-radius:8px;font-size:13px}
 </style>
 </head>
 <body>
-<h1>🇪🇺 Europe Jobs</h1>
-<input id="search" placeholder="Search - Cleaner, Waiter, Driver, Security Guard, IT..." oninput="applyFilter()">
+<h1>🇪🇺 Europe Jobs - On-Site</h1>
+<p style="text-align:center">Yahan sirf woh jobs hain jahan aapko Europe ja kar office / hotel / factory me kaam karna hai.</p>
+<input id="search" placeholder="Search - Cleaner, Waiter, Driver, Security Guard..." oninput="applyFilter()">
 <select id="countryFilter" onchange="applyFilter()">
 <option value="">All Countries</option>
-<option>UK</option><option>France</option><option>Germany</option><option>Norway</option><option>Canada</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Poland</option><option>Ireland</option><option>Remote</option><option>Europe</option><option>USA</option>
+<option>UK</option><option>France</option><option>Germany</option><option>Norway</option><option>Canada</option><option>Italy</option><option>Spain</option><option>Netherlands</option><option>Poland</option><option>Ireland</option>
 </select>
-<div id="count">Loading jobs...</div>
+<div id="count">Loading On-Site jobs...</div>
+<div class="note">⚠️ Agar Adzuna / Jooble ki Key nahi dali to sirf Arbeitnow + EURES ki jobs aayengi. Key dalne ka tareeqa neeche bataya hai.</div>
 <div id="status">Status: Starting...</div>
 <div id="jobs"></div>
 <script>
+// ===== APNI FREE KEY YAHAN DALEN =====
+const ADZUNA_APP_ID = "APNI_ADZUNA_ID_YAHAN"; // developer.adzuna.com se free
+const ADZUNA_APP_KEY = "APNI_ADZUNA_KEY_YAHAN";
+const JOOBLE_KEY = "APNI_JOOBLE_KEY_YAHAN"; // jooble.org/api se free
+// ======================================
+
 let allJobs=[]; let statusLog=[];
 function fetchTimeout(url,ms=12000){ return Promise.race([fetch(url), new Promise((_,rej)=>setTimeout(()=>rej(new Error("timeout")),ms))]); }
-
-// FIX: AllOrigins /get/ wala data contents ke andar hota hai, usko kholna zaroori hai
-function tryParseSmart(txt){
-  txt=(txt||"").trim();
-  try{
-    let d=JSON.parse(txt);
-    // Agar AllOrigins get format hai to andar contents me asli data hai
-    if(d && typeof d.contents==="string"){
-      try{ return JSON.parse(d.contents); }catch(e){ return d.contents; }
-    }
-    return d;
-  }catch(e){ return txt; }
-}
+function tryParseSmart(txt){ txt=(txt||"").trim(); try{ let d=JSON.parse(txt); if(d && typeof d.contents==="string"){ try{ return JSON.parse(d.contents); }catch(e){ return d.contents; } } return d; }catch(e){ return txt; } }
 async function fetchSmart(url){
-  // 1. Direct
   try{ let r=await fetchTimeout(url,8000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
-  // 2. AllOrigins RAW
   try{ let r=await fetchTimeout("https://api.allorigins.win/raw?url="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
-  // 3. AllOrigins GET - iska format alag hai, upar tryParseSmart kholega
   try{ let r=await fetchTimeout("https://api.allorigins.win/get?url="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
-  // 4. Codetabs
-  try{ let r=await fetchTimeout("https://api.codetabs.com/v1/proxy?quest="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
   throw new Error("all fail");
 }
-function addStatus(name,count,ok){
-  statusLog.push(`<div><span class="${ok?'ok':'fail'}">${ok?'✅':'❌'}</span> ${name} : ${count} jobs</div>`);
-  document.getElementById("status").innerHTML="<b>Live Status:</b><br>"+statusLog.join("");
-}
+function addStatus(name,count,ok){ statusLog.push(`<div><span class="${ok?'ok':'fail'}">${ok?'✅':'❌'}</span> ${name} : ${count} jobs</div>`); document.getElementById("status").innerHTML="<b>Live Status - On-Site Sources:</b><br>"+statusLog.join(""); }
 function clean(s){ return (s||"").replace(/<[^>]*>/g,"").trim(); }
+
 async function loadJSON(name,country,url,mapper){
-  try{
-    let txt=await fetchSmart(url);
-    let d=tryParseSmart(txt);
-    // Agar d string hai to dobara parse karo
-    if(typeof d==="string"){ try{ d=JSON.parse(d); }catch(e){} }
-    let list=mapper(d)||[];
-    list.forEach(j=> allJobs.push({...j,country:j.country||country,category:name}));
-    addStatus(name,list.length,list.length>0);
-  }catch(e){ addStatus(name,0,false); }
+  try{ let txt=await fetchSmart(url); let d=tryParseSmart(txt); if(typeof d==="string"){ try{ d=JSON.parse(d); }catch(e){} } let list=mapper(d)||[]; list.forEach(j=> allJobs.push({...j,country:j.country||country,category:name,workType:"ON-SITE 🏢"})); addStatus(name,list.length,list.length>0); }catch(e){ addStatus(name,0,false); }
 }
 async function loadRSS(name,country,url){
-  try{
-    let txt=await fetchSmart(url);
-    let parsed=tryParseSmart(txt);
-    let xmlText = typeof parsed==="string" ? parsed : txt;
-    // Agar parsed object hai aur usme contents hai to wohi lo
-    if(parsed && parsed.contents) xmlText=parsed.contents;
-    let xml=new DOMParser().parseFromString(xmlText,"text/xml");
-    let items=xml.querySelectorAll("item, entry");
-    let list=[];
-    items.forEach((it,i)=>{
-      if(i>=25) return;
-      let title=clean(it.querySelector("title")?.textContent);
-      let link=it.querySelector("link")?.textContent || it.querySelector("link")?.getAttribute("href") || "#";
-      link=link.trim();
-      if(title && link!="#") list.push({title,company:name,location:country,date:"",link});
-    });
-    list.forEach(j=> allJobs.push({...j,country,category:name}));
-    addStatus(name,list.length,list.length>0);
-  }catch(e){ addStatus(name,0,false); }
+  try{ let txt=await fetchSmart(url); let parsed=tryParseSmart(txt); let xmlText=typeof parsed==="string"?parsed:txt; if(parsed && parsed.contents) xmlText=parsed.contents; let xml=new DOMParser().parseFromString(xmlText,"text/xml"); let items=xml.querySelectorAll("item, entry"); let list=[]; items.forEach((it,i)=>{ if(i>=25) return; let title=clean(it.querySelector("title")?.textContent); let link=it.querySelector("link")?.textContent || it.querySelector("link")?.getAttribute("href") || "#"; link=link.trim(); if(title && link!="#") list.push({title,company:name,location:country,date:"",link}); }); list.forEach(j=> allJobs.push({...j,country,category:name,workType:"ON-SITE 🏢"})); addStatus(name,list.length,list.length>0); }catch(e){ addStatus(name,0,false); }
 }
+
 async function loadJobs(){
   allJobs=[]; statusLog=[];
-  await Promise.allSettled([
-    loadJSON("Jobicy","Europe","https://jobicy.com/api/v2/remote-jobs?count=50&geo=Europe", d=>(d.jobs||[]).map(j=>({title:j.jobTitle,company:j.companyName,location:j.jobGeo,date:(j.pubDate||"").slice(0,10),link:j.url}))),
-    loadJSON("Jobicy World","Remote","https://jobicy.com/api/v2/remote-jobs?count=50", d=>(d.jobs||[]).map(j=>({title:j.jobTitle,company:j.companyName,location:j.jobGeo,date:(j.pubDate||"").slice(0,10),link:j.url}))),
-    loadJSON("Remotive","Remote","https://remotive.com/api/remote-jobs?limit=50", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
-    loadJSON("Remotive Marketing","Remote","https://remotive.com/api/remote-jobs?limit=50&category=marketing", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
-    loadJSON("Remotive Support","Remote","https://remotive.com/api/remote-jobs?limit=50&category=customer-service", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
-    loadJSON("RemoteOK","Remote","https://remoteok.com/api", d=>d.slice(1,60).filter(j=>j.position).map(j=>({title:j.position,company:j.company,location:j.location||"Remote",date:(j.date||"").slice(0,10),link:j.url}))),
-    // FIXED Arbeitnow - ab /get/ format ko bhi kholega
-    loadJSON("Arbeitnow","Germany / Europe","https://www.arbeitnow.com/api/job-board-api", d=>(d.data||[]).slice(0,80).map(j=>({title:j.title,company:j.company_name,location:j.location,date:(j.created_at||"").slice(0,10),link:j.url}))),
-    loadJSON("HackerNews Jobs","Remote","https://hn.algolia.com/api/v1/search?query=job&tags=story&hitsPerPage=30", d=>(d.hits||[]).map(j=>({title:j.title,company:"HackerNews",location:"Remote",date:(j.created_at||"").slice(0,10),link:j.url||("https://news.ycombinator.com/item?id="+j.objectID)}))),
-    loadRSS("We Work Remotely","Remote","https://weworkremotely.com/categories/remote-programming-jobs.rss"),
-    loadRSS("WWR Support","Remote","https://weworkremotely.com/categories/remote-customer-support-jobs.rss"),
-    loadRSS("WWR Design","Remote","https://weworkremotely.com/categories/remote-design-jobs.rss"),
-    loadRSS("WWR All Jobs","Remote","https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"),
-  ]);
+  let tasks=[];
+  // 1. Arbeitnow - Germany On-Site + Hybrid - FREE, NO KEY
+  tasks.push(loadJSON("Arbeitnow - Germany On-Site","Germany","https://www.arbeitnow.com/api/job-board-api", d=>(d.data||[]).filter(j=>!((j.job_types||[]).join(" ").toLowerCase().includes("remote"))).slice(0,80).map(j=>({title:j.title,company:j.company_name,location:j.location,date:(j.created_at||"").slice(0,10),link:j.url}))));
+  // 2. EURES - EU Official - RSS via Proxy
+  tasks.push(loadRSS("EURES - EU Official","Europe","https://eures.europa.eu/api/jobs/rss"));
+  // 3. Adzuna UK - Cleaner, Waiter etc - KEY CHAHIYE
+  if(ADZUNA_APP_ID!=="APNI_ADZUNA_ID_YAHAN"){
+    tasks.push(loadJSON("Adzuna UK - On-Site","UK",`https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=cleaner%20waiter%20driver%20security%20guard&content-type=application/json`, d=>(d.results||[]).map(j=>({title:j.title,company:j.company?.display_name||"Adzuna",location:j.location?.display_name||"UK",date:(j.created||"").slice(0,10),link:j.redirect_url}))));
+    tasks.push(loadJSON("Adzuna Germany - On-Site","Germany",`https://api.adzuna.com/v1/api/jobs/de/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=reinigungskraft%20kellner%20fahrer&content-type=application/json`, d=>(d.results||[]).map(j=>({title:j.title,company:j.company?.display_name||"Adzuna",location:j.location?.display_name||"Germany",date:(j.created||"").slice(0,10),link:j.redirect_url}))));
+    tasks.push(loadJSON("Adzuna France - On-Site","France",`https://api.adzuna.com/v1/api/jobs/fr/search/1?app_id=${ADZUNA_APP_ID}&app_key=${ADZUNA_APP_KEY}&results_per_page=50&what=nettoyage%20serveur%20chauffeur&content-type=application/json`, d=>(d.results||[]).map(j=>({title:j.title,company:j.company?.display_name||"Adzuna",location:j.location?.display_name||"France",date:(j.created||"").slice(0,10),link:j.redirect_url}))));
+  } else {
+    addStatus("Adzuna UK - KEY NAHI DALI",0,false);
+    addStatus("Adzuna Germany - KEY NAHI DALI",0,false);
+    addStatus("Adzuna France - KEY NAHI DALI",0,false);
+  }
+  // 4. Jooble - KEY CHAHIYE - POST method hai isliye direct browser me mushkil, isliye yahan status me batayenge
+  if(JOOBLE_KEY==="APNI_JOOBLE_KEY_YAHAN"){
+    addStatus("Jooble - KEY NAHI DALI - Neeche tareeqa dekhen",0,false);
+  }
+  await Promise.allSettled(tasks);
   let seen=new Set();
   allJobs=allJobs.filter(j=>{ let k=(j.title||"")+j.company; if(seen.has(k)) return false; seen.add(k); return true; });
-  try{ localStorage.setItem("europe_jobs_cache", JSON.stringify({time:Date.now(),jobs:allJobs})); }catch(e){}
-  document.getElementById("count").innerText=`All Europe Jobs - ${allJobs.length} | Updated: ${new Date().toISOString().slice(0,10)} | 12 Real Sources`;
+  document.getElementById("count").innerText=`On-Site Europe Jobs - ${allJobs.length} | Updated: ${new Date().toISOString().slice(0,10)}`;
   renderJobs(allJobs);
 }
 function renderJobs(list){
   document.getElementById("jobs").innerHTML=list.slice(0,400).map(j=>`
-    <div class="job"><h3>${j.title}</h3><p>${j.company} - ${j.location||""}</p><p>📍 ${j.country} | 📂 ${j.category} | 📅 ${j.date||""}</p><span class="tag">${j.country}</span><br><a href="${j.link}" target="_blank">Apply Karein →</a></div>
-  `).join("") || "<p style='text-align:center'>Koi job nahi mili</p>";
+    <div class="job"><h3>${j.title}</h3><p>${j.company} - ${j.location||""}</p><p>📍 ${j.country} | 📂 ${j.category} | 📅 ${j.date||""}</p><span class="onsite">ON-SITE 🏢 Europe ja kar kaam</span><br><a href="${j.link}" target="_blank">Apply Karein →</a></div>
+  `).join("") || "<p style='text-align:center'>Abhi On-Site jobs load nahi hui. Neeche Key dalne ka tareeqa dekhen.</p>";
 }
 function applyFilter(){
   let q=document.getElementById("search").value.toLowerCase();
   let c=document.getElementById("countryFilter").value;
   let f=allJobs.filter(j=>{ let okQ=(j.title+" "+j.company+" "+j.country+" "+(j.location||"")).toLowerCase().includes(q); let okC=!c || j.country===c || (j.location||"").includes(c); return okQ && okC; });
-  renderJobs(f); document.getElementById("count").innerText=`Found: ${f.length} jobs`;
+  renderJobs(f); document.getElementById("count").innerText=`Found: ${f.length} On-Site jobs`;
 }
-try{ let cache=JSON.parse(localStorage.getItem("europe_jobs_cache")||"null"); if(cache && cache.jobs && cache.jobs.length>0){ allJobs=cache.jobs; renderJobs(allJobs); document.getElementById("count").innerText=`Showing cached: ${allJobs.length} jobs - Loading new...`; } }catch(e){}
 loadJobs();
 </script>
 </body>
