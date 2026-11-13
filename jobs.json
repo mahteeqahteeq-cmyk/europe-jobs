@@ -1,200 +1,344 @@
 {
-  "lastUpdated": "2026-11-12T02:02:01.104036Z",
+  "lastUpdated": "2026-11-13T01:54:41.048902Z",
   "jobs": [
     {
-      "title": "SMB Account Executive (New Business)",
-      "company": "GitLab",
-      "location": "France,  Germany,  Netherlands,  Spain,  UK",
+      "title": "Regional BDR Team Manager",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Business Development",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161694-regional-bdr-team-manager",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "FinOps Data Engineer",
+      "company": "Supabase",
+      "location": "Anywhere",
+      "category": "Data Science & Analytics",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161693-finops-data-engineer",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Partner Sales Manager - IHV Alliances",
+      "company": "Canonical",
+      "location": "Anywhere",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161452-smb-account-executive-new-business",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161692-partner-sales-manager-ihv-alliances",
+      "date": "2026-11-12"
     },
     {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Italy)",
-      "company": "EverAI",
-      "location": "Italy",
-      "category": "HR & Recruiting",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161451-mid-senior-talent-acquisition-specialist-remote-italy",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "SMB Account Executive (Growth)",
-      "company": "GitLab",
-      "location": "France,  Germany,  Netherlands,  Spain,  UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161450-smb-account-executive-growth",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Hungary)",
-      "company": "EverAI",
-      "location": "Hungary",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161449-mid-senior-talent-acquisition-specialist-remote-hungary",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Professional Services Project Manager, Paris",
-      "company": "GitLab",
-      "location": "France",
-      "category": "Project & Program Management",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161448-senior-professional-services-project-manager-paris",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Resource Manager",
-      "company": "Precision Medicine Group",
-      "location": "Hungary,  Poland,  Romania,  Serbia,  Slovakia,  UK",
+      "title": "Product Manager - Auth",
+      "company": "Supabase",
+      "location": "Anywhere",
       "category": "Product & Operations",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161446-resource-manager",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161691-product-manager-auth",
+      "date": "2026-11-12"
     },
     {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Romania)",
-      "company": "EverAI",
-      "location": "Romania",
-      "category": "HR & Recruiting",
+      "title": "Partner Sales Director - IHV Alliances",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Business Development",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161445-mid-senior-talent-acquisition-specialist-remote-romania",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161689-partner-sales-director-ihv-alliances",
+      "date": "2026-11-12"
     },
     {
-      "title": "Senior Fullstack Engineer",
-      "company": "Toptal",
-      "location": "LATAM,  Europe",
+      "title": "Senior Accountant",
+      "company": "Supabase",
+      "location": "Anywhere",
+      "category": "Finance & Accounting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161688-senior-accountant-10",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Senior Engineering Manager, Consumer / New Verticals",
+      "company": "Flex",
+      "location": "Anywhere",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161444-senior-fullstack-engineer-4",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161687-senior-engineering-manager-consumer-new-verticals",
+      "date": "2026-11-12"
     },
     {
-      "title": "Commercial Account Executive, Netherlands",
-      "company": "GitLab",
+      "title": "Manager of Enterprise Open Source Sales Team",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161685-manager-of-enterprise-open-source-sales-team",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Early Childhood Teacher (PT)",
+      "company": "Think Academy US",
+      "location": "Anywhere",
+      "category": "Education & E-learning",
+      "type": [
+        "Part-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161684-early-childhood-teacher-pt-4",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Head of Ecosystem",
+      "company": "Supabase",
+      "location": "Anywhere",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161683-head-of-ecosystem",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Tech Lead - Python & AI",
+      "company": "Nearform",
+      "location": "UK",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161679-tech-lead-python-ai",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Linux Cryptography and Security Engineer",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161678-linux-cryptography-and-security-engineer",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Junior Ubuntu Software Engineer",
+      "company": "Canonical",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161675-junior-ubuntu-software-engineer",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Tech Lead",
+      "company": "Nearform",
+      "location": "UK",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161673-tech-lead-2",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu",
+      "company": "Canonical",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161672-graduate-software-engineer-open-source-and-linux-canonical-ubuntu-2",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Strategic Account Director (Perm, UK, Remote)",
+      "company": "Nearform",
+      "location": "UK",
+      "category": "Business Development",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161670-strategic-account-director-perm-uk-remote",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Engineering Manager - MLOps & Analytics",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161669-engineering-manager-mlops-analytics-2",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Engineering Manager - App Stores",
+      "company": "Canonical",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161665-engineering-manager-app-stores",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Embedded & Desktop Linux Systems Engineer - Optimisation",
+      "company": "Canonical",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161660-embedded-desktop-linux-systems-engineer-optimisation-2",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Senior Software Engineer - Golang",
+      "company": "Nearform",
+      "location": "UK",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161658-senior-software-engineer-golang-2",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Senior DevOps Engineer",
+      "company": "Nearform",
+      "location": "UK",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161653-senior-devops-engineer-13",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Senior Customer Support Executive, 6 month FTC (Remote in UK)",
+      "company": "Nivoda",
+      "location": "UK",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161649-senior-customer-support-executive-6-month-ftc-remote-in-uk",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Channel Partner Sales Executive",
+      "company": "Canonical",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161648-channel-partner-sales-executive",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Regional Sales Director - EMEA",
+      "company": "Energy Exemplar",
+      "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/161644-regional-sales-director-emea",
+      "date": "2026-11-12"
+    },
+    {
+      "title": "Enterprise Account Executive, Netherlands",
+      "company": "Horizon3.ai",
       "location": "Netherlands",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161443-commercial-account-executive-netherlands",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161643-enterprise-account-executive-netherlands-2",
+      "date": "2026-11-12"
     },
     {
-      "title": "Regulatory and Start Up Specialist",
-      "company": "Precision Medicine Group",
-      "location": "UK",
-      "category": "Healthcare & Medical",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161441-regulatory-and-start-up-specialist-2",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Security Analyst, Governance and Trust",
-      "company": "Chainguard",
-      "location": "Canada,  Germany,  UK,  USA",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161420-security-analyst-governance-and-trust-2",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Principal Software Engineer, Containers",
-      "company": "Chainguard",
-      "location": "Canada,  Germany,  UK,  USA",
+      "title": "Forward Deployed Engineer",
+      "company": "Nearform",
+      "location": "Italy",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161414-principal-software-engineer-containers",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161642-forward-deployed-engineer-10",
+      "date": "2026-11-12"
     },
     {
-      "title": "Sales Manager (Team Lead) \u2013 UK North",
-      "company": "Ajax Systems",
-      "location": "UK",
-      "category": "Sales",
+      "title": "Staff Software Engineer (L4)",
+      "company": "Twilio",
+      "location": "Ireland",
+      "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161372-sales-manager-team-lead-uk-north",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161641-staff-software-engineer-l4",
+      "date": "2026-11-12"
     },
     {
-      "title": "Senior Frontend Engineer - Remote Europe",
-      "company": "Reedsy",
-      "location": "Europe",
-      "category": "Software Engineering",
+      "title": "Company Operations Lead",
+      "company": "Elevenlabs",
+      "location": "UK,  USA",
+      "category": "Product & Operations",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161371-senior-frontend-engineer-remote-europe",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161640-company-operations-lead-2",
+      "date": "2026-11-12"
     },
     {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - France)",
-      "company": "EverAI",
-      "location": "France",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161370-mid-senior-talent-acquisition-specialist-remote-france",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Community Manager",
-      "company": "HyperHug",
-      "location": "Cyprus",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161369-senior-community-manager",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Lead Product Manager",
+      "title": "Senior Manager, Supplier Performance, FinCrime, Fraud & Disputes",
       "company": "Monzo",
       "location": "UK",
       "category": "Product & Operations",
@@ -202,164 +346,20 @@
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161368-lead-product-manager-4",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161639-senior-manager-supplier-performance-fincrime-fraud-disputes",
+      "date": "2026-11-12"
     },
     {
-      "title": "Staff AppSec / Product Security Engineer",
-      "company": "Filigran",
-      "location": "France",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161366-staff-appsec-product-security-engineer",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Ruby Engineer - Remote Europe",
-      "company": "Reedsy",
-      "location": "Europe",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161365-senior-ruby-engineer-remote-europe",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Portugal)",
-      "company": "EverAI",
-      "location": "Portugal",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161364-mid-senior-talent-acquisition-specialist-remote-portugal",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Live Ops Game Designer",
-      "company": "HyperHug",
-      "location": "Cyprus",
-      "category": "Creative & Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161363-live-ops-game-designer",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "CRM Manager",
-      "company": "Monzo",
+      "title": "Customer Success Manager - EMEA",
+      "company": "Energy Exemplar",
       "location": "UK",
-      "category": "Marketing & Sales",
+      "category": "Customer Support & Success",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/161362-crm-manager",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Sales Engineer, DACH",
-      "company": "Horizon3.ai",
-      "location": "Germany",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161361-senior-sales-engineer-dach-2",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Software Engineer, OS Integration",
-      "company": "Mozilla",
-      "location": "France",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161360-senior-software-engineer-os-integration",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Platform Engineer",
-      "company": "Filigran",
-      "location": "France",
-      "category": "DevOps & Infrastructure",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161359-senior-platform-engineer-7",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Software Engineer (Node/Vue/TypeScript) - Remote Europe",
-      "company": "Reedsy",
-      "location": "Europe",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161358-senior-software-engineer-node-vue-typescript-remote-europe",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Senior Director of Product Marketing",
-      "company": "Veriff",
-      "location": "Spain,  UK,  USA",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161357-senior-director-of-product-marketing",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Germany)",
-      "company": "EverAI",
-      "location": "Germany",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161356-mid-senior-talent-acquisition-specialist-remote-germany",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Principal/Senior VFX Artist",
-      "company": "HyperHug",
-      "location": "Cyprus",
-      "category": "Creative & Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161355-principal-senior-vfx-artist",
-      "date": "2026-11-11"
-    },
-    {
-      "title": "Complaints Policy Manager",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Legal & Compliance",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/161354-complaints-policy-manager",
-      "date": "2026-11-11"
+      "url": "https://jobicy.com/jobs/161638-customer-success-manager-emea-5",
+      "date": "2026-11-12"
     }
   ]
 }
