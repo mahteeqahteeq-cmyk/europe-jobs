@@ -3,45 +3,42 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Europe Jobs - Real On-Site Jobs in Europe</title>
-<meta name="theme-color" content="#0f3d8a">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:#eef2f7;color:#111;padding-bottom:100px;overflow-x:hidden}
-header{background:#0f3d8a;color:#fff;padding:18px 10px;text-align:center}header h1{font-size:26px}
+*{box-sizing:border-box;margin:0;padding:0;word-break:break-word}body{font-family:Arial,sans-serif;background:#eef2f7;color:#111;padding-bottom:100px;overflow-x:hidden;width:100%}
+header{background:#0f3d8a;color:#fff;padding:16px 10px;text-align:center}header h1{font-size:26px}
 .disclaimer{background:#fef9c3;color:#713f12;text-align:center;padding:10px;font-size:13px;font-weight:bold}
-nav{background:#fff;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px;position:sticky;top:0;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-nav button{padding:9px 12px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;font-weight:bold;cursor:pointer;font-size:13px}
+nav{background:#fff;display:flex;gap:5px;flex-wrap:wrap;justify-content:center;padding:8px;position:sticky;top:0;z-index:99;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+nav button{padding:8px 10px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;font-weight:bold;cursor:pointer;font-size:12px}
 nav button.active{background:#0f3d8a;color:#fff}
-.wrap{max-width:1150px;margin:12px auto;padding:0 10px;width:100%}
-.bar{background:#fff;padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.wrap{max-width:1150px;margin:10px auto;padding:0 8px;width:100%}
+.bar{background:#fff;padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:8px}
 .bar input,.bar select{width:100%;padding:11px;border:1px solid #ddd;border-radius:8px}
 .bar button{background:#0f3d8a;color:#fff;border:0;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
-.cats,.types{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-.cats button,.types button{padding:8px 13px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;cursor:pointer;font-weight:bold;font-size:13px}
+.cats,.types{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.cats button,.types button{padding:7px 11px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;cursor:pointer;font-weight:bold;font-size:12px}
 .cats button.active,.types button.active{background:#0f3d8a;color:#fff}
-#jobs{display:grid;grid-template-columns:1fr;gap:14px}
-@media(min-width:700px){#jobs{grid-template-columns:repeat(2,1fr)}}
-.card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.07);display:flex;flex-direction:column;gap:8px;position:relative}
+#jobs{display:grid;grid-template-columns:1fr;gap:12px}
+.card{background:#fff;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.07)}
 .badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;width:fit-content}
 .onsite{background:#dcfce7;color:#166534}.hybrid{background:#fef9c3;color:#854d0e}.remote{background:#dbeafe;color:#1e40af}.userposted{background:#ede9fe;color:#5b21b6}
 .card a{background:#16a34a;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold;display:block}
-.fav{position:absolute;top:12px;right:12px;font-size:20px;cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:50%;width:36px;height:36px;line-height:36px;text-align:center}
+.fav{position:absolute;top:10px;right:10px;font-size:18px;cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:50%;width:34px;height:34px;line-height:34px;text-align:center}
 .sharebtn{background:#fff;border:1px solid #ddd;padding:8px;border-radius:8px;cursor:pointer;font-weight:bold}
-.page{background:#fff;border-radius:12px;padding:18px;line-height:1.7}.page h2{margin-bottom:10px}
+.page{background:#fff;border-radius:12px;padding:16px;line-height:1.7}.page h2{margin-bottom:10px}
 .page input,.page textarea,.page select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.page button{background:#0f3d8a;color:#fff;border:0;padding:11px 18px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
-.tool{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px}
+.page button{background:#0f3d8a;color:#fff;border:0;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
+.tool{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px}
 .tool input,.tool select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.tool button{background:#0f3d8a;color:#fff;border:0;padding:10px 16px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
+.tool button{background:#0f3d8a;color:#fff;border:0;padding:10px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
 #more{display:block;margin:20px auto;background:#0f3d8a;color:#fff;border:0;padding:12px 26px;border-radius:8px;font-weight:bold;cursor:pointer}
-footer{background:#0f172a;color:#fff;text-align:center;padding:18px;margin-top:20px}footer a{color:#93c5fd;margin:0 4px;cursor:pointer;text-decoration:underline;font-size:13px}
+footer{background:#0f172a;color:#fff;text-align:center;padding:16px;margin-top:20px}footer a{color:#93c5fd;margin:0 3px;cursor:pointer;font-size:12px}
 .hidden{display:none!important}
-.wa{position:fixed;bottom:90px;right:12px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-canvas{max-width:100%;border:1px solid #ddd;border-radius:8px}
+.wa{position:fixed;bottom:90px;left:10px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:999;box-shadow:0 4px 12px rgba(0,0,0,.3)}
 label{font-weight:bold;font-size:13px}
 </style>
 </head>
 <body>
-<header><h1>🇪🇺 Europe Jobs</h1><p>Real Jobs - Direct Apply - No Agent - No Fee</p></header>
+<header><h1>🇪🇺 Europe Jobs</h1><p>Real Jobs - Direct Apply - No Agent - No Fee</p><p id="jsTest" style="font-size:12px;margin-top:4px">JS Loading...</p></header>
 <div class="disclaimer">⚠️ DISCLAIMER: We are NOT an agent. We do NOT give jobs. We only give INFORMATION. Never pay money to anyone for a job.</div>
 <nav>
 <button class="active" onclick="showPage('jobs',this)">💼 Jobs</button>
@@ -65,7 +62,6 @@ label{font-weight:bold;font-size:13px}
 <select id="sort"><option value="onsite">On-Site First</option><option value="new">Newest First</option><option value="az">A to Z</option></select>
 <button onclick="loadAll()">Search Jobs</button>
 </div>
-<!-- CATEGORIES ARE NOW IN HTML - WILL ALWAYS SHOW -->
 <div class="cats">
 <button class="active" onclick="setCat('All',this)">All</button>
 <button onclick="setCat('Office / Admin',this)">Office / Admin</button>
@@ -110,7 +106,7 @@ label{font-weight:bold;font-size:13px}
 <label>14. Food Provided?</label><select id="j14"><option>Yes</option><option>No</option></select>
 <label>15. Working Hours Per Day</label><select id="j15"><option>8 Hours</option><option>10 Hours</option><option>12 Hours</option><option>Flexible</option></select>
 <label>16. Last Date To Apply</label><input id="j16" type="date">
-<label>Job Description / Apply Link (Optional)</label><textarea id="jDesc" rows="3" placeholder="Write details or paste Apply link - https://..."></textarea>
+<label>Job Description / Apply Link (Optional)</label><textarea id="jDesc" rows="3" placeholder="Write details or paste Apply link"></textarea>
 <button onclick="addNewJob()">Publish My Job →</button>
 <p id="addOut" style="margin-top:10px;font-weight:bold;color:green"></p>
 <h3 style="margin-top:16px">My Added Jobs</h3><div id="myJobs"></div>
@@ -130,16 +126,13 @@ label{font-weight:bold;font-size:13px}
 </div>
 
 <div id="sec-about" class="wrap hidden"><div class="page"><h2>About Us</h2><p>Europe Jobs is a free job information portal. We collect jobs from trusted public Live APIs.</p><p><b>We are NOT an agent. We do NOT give jobs. We only give INFORMATION.</b></p><ul><li>✅ 100% Free</li><li>✅ No Agent, No Fee</li><li>✅ Direct Apply</li><li>✅ On-Site Jobs First</li></ul></div></div>
-<div id="sec-privacy" class="wrap hidden"><div class="page"><h2>Privacy Policy</h2><p><b>Last Updated: 2026</b></p><p>1. We do NOT collect CNIC, Passport, Bank details.</p><p>2. We do NOT collect Name, Email, Location. CV Tool data stays only in your browser.</p><p>3. Favorite Jobs are saved only on your device.</p><p>4. Apply Now takes you to company's website, which has its own Privacy Policy.</p><p>5. We do NOT sell your data.</p><p>6. Contact: mahteeqahteeq@gmail.com</p><p><b>Play Store Privacy URL:</b> https://your-website.com/privacy.html</p></div></div>
+<div id="sec-privacy" class="wrap hidden"><div class="page"><h2>Privacy Policy</h2><p><b>Last Updated: 2026</b></p><p>1. We do NOT collect CNIC, Passport, Bank details.</p><p>2. We do NOT collect Name, Email, Location. CV Tool data stays only in your browser.</p><p>3. Favorite Jobs are saved only on your device.</p><p>4. Apply Now takes you to company's website, which has its own Privacy Policy.</p><p>5. We do NOT sell your data.</p><p>6. Contact: mahteeqahteeq@gmail.com</p></div></div>
 <div id="sec-terms" class="wrap hidden"><div class="page"><h2>Terms & Conditions</h2><p>1. This website is only for information.</p><p>2. We do NOT promise a job.</p><p>3. Never pay money to anyone for a job. Anyone asking money is fraud.</p><p>4. Jobs come from third-party APIs. Always check company's official website before applying.</p></div></div>
 <div id="sec-contact" class="wrap hidden"><div class="page"><h2>Contact Us</h2><p><b>Email:</b> mahteeqahteeq@gmail.com</p><p><b>WhatsApp:</b> Use green button.</p><p><b>Timing:</b> Mon-Fri, 9 AM - 6 PM</p><textarea id="msg" rows="4" placeholder="Write your message..."></textarea><button onclick="sendMsg()">Send via WhatsApp</button></div></div>
 <div id="sec-delete" class="wrap hidden"><div class="page"><h2>🗑️ Delete My Data</h2><p>There is NO Login / Account. Only Saved Jobs, Added Jobs and Last Search are saved on your phone.</p><button onclick="deleteAll()" style="background:#dc2626">Delete All My Data Now</button><p id="delOut" style="margin-top:10px;font-weight:bold"></p><p>For email deletion: mahteeqahteeq@gmail.com - Subject: Delete My Data</p></div></div>
-<div id="sec-datasafety" class="wrap hidden"><div class="page"><h2>🛡️ Data Safety - For Play Store</h2><pre style="background:#f8fafc;padding:12px;border-radius:8px;white-space:pre-line">Does app collect/share data? NO.
-Personal Info: No | Location: No | Photos: No | Contacts: No | Financial: No
-Data stored only on user's device. Not sent to server. Not shared.
-Account Deletion: Available in app.</pre></div></div>
+<div id="sec-datasafety" class="wrap hidden"><div class="page"><h2>🛡️ Data Safety - For Play Store</h2><p>Does app collect or share data? NO.</p><p>Personal Info: No. Location: No. Photos: No. Contacts: No. Financial: No.</p><p>Data stored only on your device. Not sent to server. Not shared.</p><p>Account Deletion: Available in app.</p></div></div>
 <div id="sec-graphic" class="wrap hidden"><div class="page"><h2>🎨 Feature Graphic + App Icon</h2><p>Click Generate, then Download. Feature Graphic 1024x500, Icon 512x512.</p><button onclick="drawGraphic()">Generate Feature Graphic</button><br><br><canvas id="fg" width="1024" height="500"></canvas><br><br><a id="dlFg" download="feature-graphic-1024x500.png" style="display:none"><button>Download Feature Graphic</button></a><br><br><button onclick="drawIcon()">Generate App Icon</button><br><br><canvas id="ic" width="512" height="512"></canvas><br><br><a id="dlIc" download="app-icon-512x512.png" style="display:none"><button>Download App Icon</button></a></div></div>
-<div id="sec-aab" class="wrap hidden"><div class="page"><h2>📦 How To Make AAB File?</h2><p>AAB file is NOT made inside index.html.</p><ol><li>Make your site live on GitHub Pages</li><li>Go to: pwabuilder.com</li><li>Paste your site link</li><li>Select Android, click Generate</li><li>You will get .aab file, upload it in Play Console &gt; Production</li></ol><p>$25 Developer Account is one-time fee.</p></div></div>
+<div id="sec-aab" class="wrap hidden"><div class="page"><h2>📦 How To Make AAB File?</h2><p>AAB file is NOT made inside index.html.</p><ol><li>Make your site live on GitHub Pages</li><li>Go to pwabuilder.com</li><li>Paste your site link</li><li>Select Android, click Generate</li><li>You will get .aab file, upload it in Play Console Production</li></ol><p>$25 Developer Account is one-time fee.</p></div></div>
 
 <footer>
 <a onclick="showPage('about',null)">About</a> | <a onclick="showPage('privacy',null)">Privacy</a> | <a onclick="showPage('terms',null)">Terms</a> | <a onclick="showPage('contact',null)">Contact</a> | <a onclick="showPage('delete',null)">Delete Account</a>
@@ -148,6 +141,7 @@ Account Deletion: Available in app.</pre></div></div>
 <a class="wa" href="https://wa.me/923177033253?text=Hello" target="_blank">💬</a>
 
 <script>
+document.getElementById('jsTest').innerText='JS Working ✅ V12 Loaded';
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function showPage(sec,btn){
   var all=['jobs','addjob','fav','tools','about','privacy','terms','contact','delete','datasafety','graphic','aab'];
@@ -159,12 +153,13 @@ function showPage(sec,btn){
   if(sec==='fav') renderFav();
   if(sec==='addjob') renderMyJobs();
 }
-function makeCV(){document.getElementById('cvOut').innerText='CV - '+(document.getElementById('cvName').value||'Your Name')+'\nJob: '+(document.getElementById('cvJob').value||'Worker')+'\nExperience: '+(document.getElementById('cvExp').value||'2 Years')+'\nSkills: Hard Working, Punctual, Team Work';}
-function makeCL(){document.getElementById('clOut').innerText='Dear '+(document.getElementById('clComp').value||'Company')+' Team,\nMy name is '+(document.getElementById('clName').value||'Your Name')+'. I want to apply for '+(document.getElementById('clJob').value||'the job')+'.';}
+function makeCV(){document.getElementById('cvOut').innerText='CV - '+(document.getElementById('cvName').value||'Your Name')+'\nJob: '+(document.getElementById('cvJob').value||'Worker')+'\nExperience: '+(document.getElementById('cvExp').value||'2 Years');}
+function makeCL(){document.getElementById('clOut').innerText='Dear '+(document.getElementById('clComp').value||'Company')+' Team, My name is '+(document.getElementById('clName').value||'Your Name')+'. I want to apply for '+(document.getElementById('clJob').value||'the job')+'.';}
 function calcSal(){var s=Number(document.getElementById('sal').value||0);document.getElementById('salOut').innerText='Gross €'+s+' | Net €'+(s*0.8).toFixed(0)+' | PKR Rs '+((s*0.8*305).toLocaleString());}
 function checkVisa(){document.getElementById('visaOut').innerText=document.getElementById('visaCountry').value+' - You need: Passport, Job Offer, CV, Experience Proof. Never pay agent.';}
 function showInt(){document.getElementById('intOut').innerText=document.getElementById('intJob').value+' - 1. Tell me about yourself? 2. Why this job? 3. When can you join?';}
 function conv(){var e=Number(document.getElementById('eur').value||0);document.getElementById('eurOut').innerText='€'+e+' = Rs '+(e*305).toLocaleString()+' PKR';}
-function calcLiving(){var c=document.getElementById('colCountry').value,s=Number(document.getElementById('colSal').value||0);var costs={Germany:900,France:950,Spain:750,Italy:800,Poland:600,Netherlands:1000};var cost=costs[c]||800;var left=s-cost;document.getElementById('colOut').innerText='Country: '+c+'\nLiving Cost: €'+cost+' / month\nYour Salary: €'+s+'\nYou Can Save: €'+left+' / month';}
+function calcLiving(){var c=document.getElementById('colCountry').value,s=Number(document.getElementById('colSal').value||0);var costs={Germany:900,France:950,Spain:750,Italy:800,Poland:600,Netherlands:1000};var cost=costs[c]||800;document.getElementById('colOut').innerText='Country: '+c+'\nLiving Cost: €'+cost+' / month\nYour Salary: €'+s+'\nYou Can Save: €'+(s-cost)+' / month';}
 function sendMsg(){window.open('https://wa.me/923177033253?text='+encodeURIComponent(document.getElementById('msg').value||'Hello'),'_blank');}
-function deleteAll(){try{localStorage.removeItem('favJobs');l
+function deleteAll(){try{localStorage.removeItem('favJobs');localStorage.removeItem('lastSearch');localStorage.removeItem('myJobs');}catch(e){}favJobs=[];myJobs=[];document.getElementById('delOut').innerText='Done! All your data deleted.';renderFav();renderMyJobs();render();}
+function drawGraphic(){var c=document.getElementById('fg'),x=c.getContext('2d');x.fillStyle='#0f3d8a';x.fillRect(0,0,1024,500);x.fillStyle=
