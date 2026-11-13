@@ -30,23 +30,30 @@ select{width:95%;max-width:600px;display:block;margin:5px auto;padding:10px;bord
 <div id="status">Status: Starting...</div>
 <div id="jobs"></div>
 <script>
-let allJobs=[];
-let statusLog=[];
-function fetchTimeout(url,ms=12000){
-  return Promise.race([fetch(url), new Promise((_,rej)=>setTimeout(()=>rej(new Error("timeout")),ms))]);
+let allJobs=[]; let statusLog=[];
+function fetchTimeout(url,ms=12000){ return Promise.race([fetch(url), new Promise((_,rej)=>setTimeout(()=>rej(new Error("timeout")),ms))]); }
+
+// FIX: AllOrigins /get/ wala data contents ke andar hota hai, usko kholna zaroori hai
+function tryParseSmart(txt){
+  txt=(txt||"").trim();
+  try{
+    let d=JSON.parse(txt);
+    // Agar AllOrigins get format hai to andar contents me asli data hai
+    if(d && typeof d.contents==="string"){
+      try{ return JSON.parse(d.contents); }catch(e){ return d.contents; }
+    }
+    return d;
+  }catch(e){ return txt; }
 }
-// 3 Proxy - ek fail ho to dusra, dusra fail ho to teesra
 async function fetchSmart(url){
-  let proxies=[
-    "https://api.allorigins.win/raw?url="+encodeURIComponent(url),
-    "https://api.codetabs.com/v1/proxy?quest="+encodeURIComponent(url),
-    "https://corsproxy.io/?url="+encodeURIComponent(url)
-  ];
-  // Pehle direct try karo - Jobicy, Remotive direct chalte hain
-  try{ let r=await fetchTimeout(url,8000); if(r.ok) return await r.text(); }catch(e){}
-  for(let p of proxies){
-    try{ let r=await fetchTimeout(p,10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
-  }
+  // 1. Direct
+  try{ let r=await fetchTimeout(url,8000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
+  // 2. AllOrigins RAW
+  try{ let r=await fetchTimeout("https://api.allorigins.win/raw?url="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
+  // 3. AllOrigins GET - iska format alag hai, upar tryParseSmart kholega
+  try{ let r=await fetchTimeout("https://api.allorigins.win/get?url="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
+  // 4. Codetabs
+  try{ let r=await fetchTimeout("https://api.codetabs.com/v1/proxy?quest="+encodeURIComponent(url),10000); if(r.ok){ let t=await r.text(); if(t && t.length>100) return t; } }catch(e){}
   throw new Error("all fail");
 }
 function addStatus(name,count,ok){
@@ -54,27 +61,31 @@ function addStatus(name,count,ok){
   document.getElementById("status").innerHTML="<b>Live Status:</b><br>"+statusLog.join("");
 }
 function clean(s){ return (s||"").replace(/<[^>]*>/g,"").trim(); }
-
 async function loadJSON(name,country,url,mapper){
   try{
     let txt=await fetchSmart(url);
-    let d=JSON.parse(txt);
+    let d=tryParseSmart(txt);
+    // Agar d string hai to dobara parse karo
+    if(typeof d==="string"){ try{ d=JSON.parse(d); }catch(e){} }
     let list=mapper(d)||[];
     list.forEach(j=> allJobs.push({...j,country:j.country||country,category:name}));
-    addStatus(name,list.length,true);
+    addStatus(name,list.length,list.length>0);
   }catch(e){ addStatus(name,0,false); }
 }
 async function loadRSS(name,country,url){
   try{
     let txt=await fetchSmart(url);
-    let xml=new DOMParser().parseFromString(txt,"text/xml");
+    let parsed=tryParseSmart(txt);
+    let xmlText = typeof parsed==="string" ? parsed : txt;
+    // Agar parsed object hai aur usme contents hai to wohi lo
+    if(parsed && parsed.contents) xmlText=parsed.contents;
+    let xml=new DOMParser().parseFromString(xmlText,"text/xml");
     let items=xml.querySelectorAll("item, entry");
     let list=[];
     items.forEach((it,i)=>{
       if(i>=25) return;
       let title=clean(it.querySelector("title")?.textContent);
       let link=it.querySelector("link")?.textContent || it.querySelector("link")?.getAttribute("href") || "#";
-      // RSS me link me kabhi CDATA hota hai, usko saaf karo
       link=link.trim();
       if(title && link!="#") list.push({title,company:name,location:country,date:"",link});
     });
@@ -85,30 +96,19 @@ async function loadRSS(name,country,url){
 async function loadJobs(){
   allJobs=[]; statusLog=[];
   await Promise.allSettled([
-    // 1. Jobicy - Pehle se chal raha hai
     loadJSON("Jobicy","Europe","https://jobicy.com/api/v2/remote-jobs?count=50&geo=Europe", d=>(d.jobs||[]).map(j=>({title:j.jobTitle,company:j.companyName,location:j.jobGeo,date:(j.pubDate||"").slice(0,10),link:j.url}))),
-    // 2. Jobicy All
     loadJSON("Jobicy World","Remote","https://jobicy.com/api/v2/remote-jobs?count=50", d=>(d.jobs||[]).map(j=>({title:j.jobTitle,company:j.companyName,location:j.jobGeo,date:(j.pubDate||"").slice(0,10),link:j.url}))),
-    // 3. Remotive
     loadJSON("Remotive","Remote","https://remotive.com/api/remote-jobs?limit=50", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
-    // 4. Remotive - Design / Support / Marketing - alag category
     loadJSON("Remotive Marketing","Remote","https://remotive.com/api/remote-jobs?limit=50&category=marketing", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
-    // 5. RemoteOK - ab Proxy se chalega
+    loadJSON("Remotive Support","Remote","https://remotive.com/api/remote-jobs?limit=50&category=customer-service", d=>(d.jobs||[]).map(j=>({title:j.title,company:j.company_name,location:j.candidate_required_location,date:(j.publication_date||"").slice(0,10),link:j.url}))),
     loadJSON("RemoteOK","Remote","https://remoteok.com/api", d=>d.slice(1,60).filter(j=>j.position).map(j=>({title:j.position,company:j.company,location:j.location||"Remote",date:(j.date||"").slice(0,10),link:j.url}))),
-    // 6. Arbeitnow - ab Proxy se chalega, pehle direct tha isliye fail hua
+    // FIXED Arbeitnow - ab /get/ format ko bhi kholega
     loadJSON("Arbeitnow","Germany / Europe","https://www.arbeitnow.com/api/job-board-api", d=>(d.data||[]).slice(0,80).map(j=>({title:j.title,company:j.company_name,location:j.location,date:(j.created_at||"").slice(0,10),link:j.url}))),
-    // 7. The Muse - USA / Europe / Canada ki asli jobs, Cleaner, Waiter bhi hoti hain
-    loadJSON("The Muse","USA / Europe","https://www.themuse.com/api/public/jobs?page=0", d=>(d.results||[]).map(j=>({title:j.name,company:j.company?.name||"Muse",location:(j.locations||[]).map(l=>l.name).join(", "),date:(j.publication_date||"").slice(0,10),link:j.refs?.landing_page||j.refs?.company_page||"https://www.themuse.com/jobs"}))),
-    // 8. The Muse Page 2
-    loadJSON("The Muse 2","Canada / Europe","https://www.themuse.com/api/public/jobs?page=1", d=>(d.results||[]).map(j=>({title:j.name,company:j.company?.name||"Muse",location:(j.locations||[]).map(l=>l.name).join(", "),date:(j.publication_date||"").slice(0,10),link:j.refs?.landing_page||"https://www.themuse.com/jobs"}))),
-    // 9. HackerNews - Algolia API, hamesha chalta hai
     loadJSON("HackerNews Jobs","Remote","https://hn.algolia.com/api/v1/search?query=job&tags=story&hitsPerPage=30", d=>(d.hits||[]).map(j=>({title:j.title,company:"HackerNews",location:"Remote",date:(j.created_at||"").slice(0,10),link:j.url||("https://news.ycombinator.com/item?id="+j.objectID)}))),
-    // 10. We Work Remotely - ab 3 Proxy se chalega
     loadRSS("We Work Remotely","Remote","https://weworkremotely.com/categories/remote-programming-jobs.rss"),
-    // 11. We Work Remotely - Customer Support
     loadRSS("WWR Support","Remote","https://weworkremotely.com/categories/remote-customer-support-jobs.rss"),
-    // 12. Jobicy RSS Backup
-    loadRSS("Jobicy RSS","Europe","https://jobicy.com/feed/"),
+    loadRSS("WWR Design","Remote","https://weworkremotely.com/categories/remote-design-jobs.rss"),
+    loadRSS("WWR All Jobs","Remote","https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"),
   ]);
   let seen=new Set();
   allJobs=allJobs.filter(j=>{ let k=(j.title||"")+j.company; if(seen.has(k)) return false; seen.add(k); return true; });
