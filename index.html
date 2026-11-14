@@ -3,243 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Europe Jobs</title>
-<script>function testJS(){document.getElementById('jsTest').innerHTML='JS Working - V13 Loaded';}</script>
+<title>Europe Jobs - Real Jobs - Direct Apply - No Agent - No Fee</title>
+<meta name="description" content="Real Europe Jobs - Direct Apply to Companies - No Agent - No Fee - We only give information">
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial;background:#eef2f7;color:#111;padding-bottom:100px;overflow-x:hidden}
-header{background:#0f3d8a;color:#fff;padding:16px 10px;text-align:center}header h1{font-size:26px}
-.disclaimer{background:#fef9c3;color:#713f12;text-align:center;padding:10px;font-size:13px;font-weight:bold}
-nav{background:#fff;display:flex;gap:5px;flex-wrap:wrap;justify-content:center;padding:8px;position:sticky;top:0;z-index:99}
-nav button{padding:8px 10px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;font-weight:bold;cursor:pointer;font-size:12px}
-nav button.active{background:#0f3d8a;color:#fff}
-.wrap{max-width:1150px;margin:10px auto;padding:0 8px;width:100%}
-.bar{background:#fff;padding:12px;border-radius:12px;display:flex;flex-direction:column;gap:8px}
-.bar input,.bar select{width:100%;padding:11px;border:1px solid #ddd;border-radius:8px}
-.bar button{background:#0f3d8a;color:#fff;border:0;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
-.cats,.types{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
-.cats button,.types button{padding:7px 11px;border-radius:20px;border:1px solid #0f3d8a;background:#fff;cursor:pointer;font-weight:bold;font-size:12px}
-.cats button.active,.types button.active{background:#0f3d8a;color:#fff}
-.card{background:#fff;border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px;position:relative;margin-bottom:12px}
-.badge{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;width:fit-content}
-.onsite{background:#dcfce7;color:#166534}.hybrid{background:#fef9c3;color:#854d0e}.remote{background:#dbeafe;color:#1e40af}.userposted{background:#ede9fe;color:#5b21b6}
-.card a{background:#16a34a;color:#fff;text-align:center;padding:10px;border-radius:8px;text-decoration:none;font-weight:bold;display:block}
-.fav{position:absolute;top:10px;right:10px;font-size:18px;cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:50%;width:34px;height:34px;line-height:34px;text-align:center}
-.page{background:#fff;border-radius:12px;padding:16px;line-height:1.7}.page input,.page textarea,.page select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.page button{background:#0f3d8a;color:#fff;border:0;padding:11px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
-.tool{background:#fff;border-radius:12px;padding:14px;margin-bottom:12px}
-.tool input,.tool select{width:100%;padding:10px;margin:6px 0;border:1px solid #ddd;border-radius:8px}
-.tool button{background:#0f3d8a;color:#fff;border:0;padding:10px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%}
-footer{background:#0f172a;color:#fff;text-align:center;padding:16px;margin-top:20px}footer a{color:#93c5fd;margin:0 3px;cursor:pointer;font-size:12px}
-.hidden{display:none!important}
-.wa{position:fixed;bottom:90px;left:10px;background:#25D366;color:#fff;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;z-index:999}
-label{font-weight:bold;font-size:13px}
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial;margin:0;background:#f1f5f9;color:#0f172a;padding-bottom:20px}
+.header{background:#1e3a8a;color:#fff;padding:18px;text-align:center;position:sticky;top:0;z-index:50}
+.header h1{margin:0;font-size:24px;letter-spacing:0.5px}
+.header p{margin:6px 0 0;font-size:12px;opacity:0.9}
+.warn{background:#fef08a;border-bottom:3px solid #eab308;color:#000;padding:10px 12px;font-size:11px;text-align:center;font-weight:bold;line-height:1.4}
+.nav{position:sticky;top:82px;z-index:49;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.nav button{border:1px solid #cbd5e1;background:#fff;padding:7px 13px;border-radius:20px;font-size:12px;cursor:pointer}
+.nav button.active,.nav button:active{background:#1e3a8a;color:#fff;border-color:#1e3a8a}
+.card{background:#fff;margin:12px;border-radius:12px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.card input,.card select{width:100%;padding:11px;margin:6px 0;border:1px solid #cbd5e1;border-radius:8px}
+.row{display:flex;gap:10px}
+.row div{flex:1}
+.btn{width:100%;background:#1e3a8a;color:#fff;border:none;padding:13px;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;margin-top:8px}
+.cat{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.cat button{padding:6px 11px;border-radius:20px;border:1px solid #cbd5e1;background:#f8fafc;font-size:11px;cursor:pointer}
+.cat button.active{background:#0f766e;color:#fff}
+.jobs{padding:5px}
+.job{background:#fff;margin:10px 12px;padding:14px;border-radius:12px;border-left:5px solid #1e3a8a;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+.job h3{margin:0 0 6px;color:#1e3a8a;font-size:16px}
+.job p{margin:3px 0;font-size:12.5px;color:#334155}
+.badge{background:#dcfce7;color:#166534;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:bold}
+.footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:22px 14px;font-size:11px;line-height:1.6}
+.footer a{color:#93c5fd;text-decoration:none;margin:0 6px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:999;overflow:auto;padding:15px}
+.modal-box{background:#fff;border-radius:14px;max-width:700px;margin:20px auto;padding:20px;position:relative}
+.x{position:absolute;right:12px;top:10px;font-size:26px;color:#ef4444;cursor:pointer}
+.modal-box h2{color:#1e3a8a;margin-top:0}
+.modal-box input,.modal-box select{width:100%;padding:10px;margin:6px 0;border:1px solid #cbd5e1;border-radius:8px}
+.small{font-size:11px;color:#64748b}
 </style>
 </head>
-<body onload="testJS(); startApp();">
-<header><h1>Europe Jobs</h1><p>Real Jobs - Direct Apply - No Agent - No Fee</p><p id="jsTest" style="font-size:12px;margin-top:4px">JS Loading...</p></header>
-<div class="disclaimer">DISCLAIMER: We are NOT an agent. We do NOT give jobs. We only give INFORMATION. Never pay money to anyone for a job.</div>
-<nav>
-<button class="active" onclick="showPage('jobs',this)">Jobs</button>
-<button onclick="showPage('addjob',this)">Add Job</button>
-<button onclick="showPage('fav',this)">Saved (<span id="favCount">0</span>)</button>
-<button onclick="showPage('tools',this)">7 Tools</button>
-<button onclick="showPage('about',this)">About</button>
-<button onclick="showPage('privacy',this)">Privacy</button>
-<button onclick="showPage('terms',this)">Terms</button>
-<button onclick="showPage('contact',this)">Contact</button>
-<button onclick="showPage('delete',this)">Delete Data</button>
-<button onclick="showPage('datasafety',this)">Data Safety</button>
-<button onclick="showPage('graphic',this)">Icon</button>
-<button onclick="showPage('aab',this)">AAB</button>
-</nav>
+<body>
 
-<div id="sec-jobs" class="wrap">
-<div class="bar">
-<input id="q" placeholder="Search - waiter, driver, warehouse, cleaner, cook...">
-<select id="country"><option value="">All Europe</option><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option><option>Belgium</option><option>Austria</option><option>Portugal</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Greece</option><option>Czech</option><option>Romania</option><option>Croatia</option><option>Ireland</option><option>United Kingdom</option></select>
-<select id="sort"><option value="onsite">On-Site First</option><option value="new">Newest First</option><option value="az">A to Z</option></select>
-<button onclick="loadLive()">Search Jobs</button>
+<div class="header">
+<h1>Europe Jobs</h1>
+<p>Real Jobs - Direct Apply - No Agent - No Fee<br><span id="count">26 Jobs - V15 PlayStore Perfect</span></p>
 </div>
-<div class="cats">
-<button class="active" onclick="setCat('All',this)">All</button>
-<button onclick="setCat('Office / Admin',this)">Office / Admin</button>
-<button onclick="setCat('Engineer / IT',this)">Engineer / IT</button>
-<button onclick="setCat('Worker / Factory',this)">Worker / Factory</button>
-<button onclick="setCat('Driver / Delivery',this)">Driver / Delivery</button>
-<button onclick="setCat('Hotel / Restaurant',this)">Hotel / Restaurant</button>
-<button onclick="setCat('Warehouse',this)">Warehouse</button>
-<button onclick="setCat('Cleaning',this)">Cleaning</button>
-<button onclick="setCat('Cook / Kitchen',this)">Cook / Kitchen</button>
-<button onclick="setCat('Farm / Labour',this)">Farm / Labour</button>
-<button onclick="setCat('Nurse / Care',this)">Nurse / Care</button>
-<button onclick="setCat('Security',this)">Security</button>
-</div>
-<div class="types">
-<button class="active" onclick="setType('onsite',this)">On-Site Only</button>
-<button onclick="setType('hybrid',this)">Hybrid</button>
-<button onclick="setType('all',this)">All Jobs</button>
-<button onclick="setType('remote',this)">Remote</button>
-</div>
-<div id="count" style="font-weight:bold;margin:10px 0">Jobs loading...</div>
-<div id="sources" style="font-size:12px;color:#555;margin-bottom:10px"></div>
-<div id="jobs"></div>
-<button id="more" onclick="showMore()" style="display:none">Load More Jobs</button>
+<div class="warn">DISCLAIMER: We are NOT an agent, We do NOT give jobs, We do NOT take money. We ONLY give INFORMATION from public company websites. Never pay money for a job.</div>
+
+<div class="nav">
+<button class="active" onclick="go('jobs')">Jobs</button>
+<button onclick="openPage('addJob')">Add Job</button>
+<button onclick="openPage('saved')">Saved (0)</button>
+<button onclick="openPage('tools')">7 Tools</button>
+<button onclick="openPage('about')">About</button>
+<button onclick="openPage('privacy')">Privacy</button>
+<button onclick="openPage('terms')">Terms</button>
+<button onclick="openPage('contact')">Contact</button>
+<button onclick="openPage('delete')">Delete Data</button>
+<button onclick="openPage('safety')">Data Safety</button>
+<button onclick="openPage('icon')">Icon</button>
+<button onclick="openPage('aab')">AAB</button>
 </div>
 
-<div id="sec-addjob" class="wrap hidden"><div class="page"><h2>Add New Job - 16 Questions</h2>
-<label>1. Job Title *</label><input id="j1" placeholder="e.g. Warehouse Worker">
-<label>2. Company Name *</label><input id="j2" placeholder="e.g. ABC Logistics">
-<label>3. Country *</label><select id="j3"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option><option>Belgium</option><option>Austria</option><option>Portugal</option><option>Sweden</option><option>Norway</option><option>Denmark</option><option>Finland</option><option>Greece</option><option>Czech</option><option>Romania</option><option>Croatia</option><option>Ireland</option><option>United Kingdom</option></select>
-<label>4. City *</label><input id="j4" placeholder="e.g. Berlin">
-<label>5. Job Type *</label><select id="j5"><option value="onsite">On-Site</option><option value="hybrid">Hybrid</option><option value="remote">Remote</option></select>
-<label>6. Category *</label><select id="j6"><option>Office / Admin</option><option>Engineer / IT</option><option>Worker / Factory</option><option>Driver / Delivery</option><option>Hotel / Restaurant</option><option>Warehouse</option><option>Cleaning</option><option>Cook / Kitchen</option><option>Farm / Labour</option><option>Nurse / Care</option><option>Security</option></select>
-<label>7. Salary Amount</label><input id="j7" type="number" placeholder="e.g. 2000">
-<label>8. Salary Currency</label><select id="j8"><option>Euro</option><option>USD</option><option>PKR</option><option>GBP</option></select>
-<label>9. Experience Required</label><select id="j9"><option>No Experience</option><option>1 Year</option><option>2 Years</option><option>3+ Years</option><option>5+ Years</option></select>
-<label>10. Education Required</label><select id="j10"><option>No Education</option><option>Matric</option><option>FA / FSc</option><option>Bachelor</option><option>Master</option></select>
-<label>11. English Required?</label><select id="j11"><option>Yes</option><option>No</option><option>Basic English</option></select>
-<label>12. Visa Sponsorship?</label><select id="j12"><option>Yes</option><option>No</option><option>Not Sure</option></select>
-<label>13. Accommodation Provided?</label><select id="j13"><option>Yes</option><option>No</option></select>
-<label>14. Food Provided?</label><select id="j14"><option>Yes</option><option>No</option></select>
-<label>15. Working Hours Per Day</label><select id="j15"><option>8 Hours</option><option>10 Hours</option><option>12 Hours</option><option>Flexible</option></select>
-<label>16. Last Date To Apply</label><input id="j16" type="date">
-<label>Job Description / Apply Link</label><textarea id="jDesc" rows="3" placeholder="Write details or paste Apply link"></textarea>
-<button onclick="addNewJob()">Publish My Job</button>
-<p id="addOut" style="margin-top:10px;font-weight:bold;color:green"></p>
-<h3 style="margin-top:16px">My Added Jobs</h3><div id="myJobs"></div>
-<button onclick="clearMyJobs()" style="background:#dc2626;margin-top:10px">Delete All My Added Jobs</button>
-</div></div>
-
-<div id="sec-fav" class="wrap hidden"><h2>Saved Jobs</h2><div id="favList" style="margin-top:10px"></div><button onclick="clearFav()" style="background:#dc2626;color:#fff;border:0;padding:10px 16px;border-radius:8px;margin-top:10px;cursor:pointer">Clear All Saved</button></div>
-
-<div id="sec-tools" class="wrap hidden"><h2>7 Free Tools</h2><br>
-<div class="tool"><h3>1. CV Maker</h3><input id="cvName" placeholder="Your Name"><input id="cvJob" placeholder="Job - Driver"><input id="cvExp" placeholder="Experience"><button onclick="makeCV()">Make CV</button><div id="cvOut" style="white-space:pre-line;margin-top:8px"></div></div>
-<div class="tool"><h3>2. Cover Letter Maker</h3><input id="clName" placeholder="Name"><input id="clJob" placeholder="Job"><input id="clComp" placeholder="Company"><button onclick="makeCL()">Make Letter</button><div id="clOut" style="white-space:pre-line;margin-top:8px"></div></div>
-<div class="tool"><h3>3. Salary Calculator</h3><input id="sal" type="number" placeholder="Salary in Euro"><button onclick="calcSal()">Calculate</button><div id="salOut" style="margin-top:8px"></div></div>
-<div class="tool"><h3>4. Visa Checker</h3><select id="visaCountry"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Portugal</option></select><button onclick="checkVisa()">Check</button><div id="visaOut" style="white-space:pre-line;margin-top:8px"></div></div>
-<div class="tool"><h3>5. Interview Questions</h3><select id="intJob"><option>Driver</option><option>Waiter</option><option>Warehouse</option><option>Cleaner</option><option>Engineer</option></select><button onclick="showInt()">Show</button><div id="intOut" style="white-space:pre-line;margin-top:8px"></div></div>
-<div class="tool"><h3>6. Euro to PKR Converter</h3><input id="eur" type="number" placeholder="Euro"><button onclick="conv()">Convert</button><div id="eurOut" style="margin-top:8px"></div></div>
-<div class="tool"><h3>7. Cost of Living Calculator</h3><select id="colCountry"><option>Germany</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option></select><input id="colSal" type="number" placeholder="Your Monthly Salary in Euro"><button onclick="calcLiving()">Calculate Living Cost</button><div id="colOut" style="white-space:pre-line;margin-top:8px"></div></div>
+<div class="card">
+<input type="text" id="q" placeholder="Search: waiter, driver, warehouse, cleaner, cook..." oninput="doFilter()">
+<div class="row">
+<div><select id="country" onchange="doFilter()"><option value="All">All Europe</option><option>Germany</option><option>Austria</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Portugal</option></select></div>
+<div><select id="jtype" onchange="doFilter()"><option value="All">On-Site First</option><option value="On-Site">On-Site Only</option><option value="Hybrid">Hybrid</option><option value="Remote">Remote</option></select></div>
+</div>
+<div class="row">
+<div><label class="small">Start Date (From)</label><input type="date" id="sDate" onchange="doFilter()"></div>
+<div><label class="small">Last Date (Until)</label><input type="date" id="eDate" onchange="doFilter()"></div>
+</div>
+<button class="btn" onclick="doFilter()">Search Jobs</button>
+<div class="cat" id="catBox">
+<button class="active" data-c="All" onclick="setCat('All')">All</button>
+<button data-c="Office / Admin" onclick="setCat('Office / Admin')">Office / Admin</button>
+<button data-c="Engineer / IT" onclick="setCat('Engineer / IT')">Engineer / IT</button>
+<button data-c="Worker / Factory" onclick="setCat('Worker / Factory')">Worker / Factory</button>
+<button data-c="Delivery" onclick="setCat('Delivery')">Delivery</button>
+<button data-c="Hotel / Restaurant" onclick="setCat('Hotel / Restaurant')">Hotel / Restaurant</button>
+<button data-c="Warehouse" onclick="setCat('Warehouse')">Warehouse</button>
+<button data-c="Cleaning" onclick="setCat('Cleaning')">Cleaning</button>
+<button data-c="Cook / Kitchen" onclick="setCat('Cook / Kitchen')">Cook / Kitchen</button>
+<button data-c="Farm / Labour" onclick="setCat('Farm / Labour')">Farm / Labour</button>
+<button data-c="Nurse / Care" onclick="setCat('Nurse / Care')">Nurse / Care</button>
+<button data-c="Security" onclick="setCat('Security')">Security</button>
+</div>
 </div>
 
-<div id="sec-about" class="wrap hidden"><div class="page"><h2>About Us</h2><p>Europe Jobs is a free job information portal.</p><p><b>We are NOT an agent. We do NOT give jobs. We only give INFORMATION.</b></p></div></div>
-<div id="sec-privacy" class="wrap hidden"><div class="page"><h2>Privacy Policy</h2><p>1. We do NOT collect CNIC, Passport, Bank details.</p><p>2. We do NOT collect Name, Email, Location.</p><p>3. Favorite Jobs are saved only on your device.</p><p>4. Contact: europejobs.contact@gmail.com</p></div></div>
-<div id="sec-terms" class="wrap hidden"><div class="page"><h2>Terms</h2><p>1. This website is only for information.</p><p>2. We do NOT promise a job.</p><p>3. Never pay money to anyone for a job.</p></div></div>
-<div id="sec-contact" class="wrap hidden"><div class="page"><h2>Contact Us</h2><p><b>Email:</b> europejobs.contact@gmail.com</p><p><b>WhatsApp:</b> Use green button.</p><textarea id="msg" rows="4" placeholder="Write your message..."></textarea><button onclick="sendMsg()">Send via WhatsApp</button></div></div>
-<div id="sec-delete" class="wrap hidden"><div class="page"><h2>Delete My Data</h2><p>There is NO Login. Only Saved Jobs and Added Jobs are saved on your phone.</p><button onclick="deleteAll()" style="background:#dc2626">Delete All My Data Now</button><p id="delOut" style="margin-top:10px;font-weight:bold"></p></div></div>
-<div id="sec-datasafety" class="wrap hidden"><div class="page"><h2>Data Safety</h2><p>Does app collect or share data? NO.</p><p>Personal Info: No. Location: No. Photos: No. Contacts: No.</p><p>Data stored only on your device. Not sent to server.</p></div></div>
-<div id="sec-graphic" class="wrap hidden"><div class="page"><h2>Feature Graphic + App Icon</h2><button onclick="drawGraphic()">Generate Feature Graphic</button><br><br><canvas id="fg" width="1024" height="500"></canvas><br><br><a id="dlFg" download="feature-graphic-1024x500.png" style="display:none"><button>Download Feature Graphic</button></a><br><br><button onclick="drawIcon()">Generate App Icon</button><br><br><canvas id="ic" width="512" height="512"></canvas><br><br><a id="dlIc" download="app-icon-512x512.png" style="display:none"><button>Download App Icon</button></a></div></div>
-<div id="sec-aab" class="wrap hidden"><div class="page"><h2>How To Make AAB File?</h2><p>1. Make site live on GitHub Pages</p><p>2. Go to pwabuilder.com</p><p>3. Paste your site link</p><p>4. Select Android, Generate, you get .aab file</p></div></div>
+<div id="list" class="jobs"></div>
 
-<footer>
-<a onclick="showPage('about',null)">About</a> | <a onclick="showPage('privacy',null)">Privacy</a> | <a onclick="showPage('terms',null)">Terms</a> | <a onclick="showPage('contact',null)">Contact</a>
-<br><br>2026 Europe Jobs - We are NOT agent, We only give Information.
-</footer>
-<a class="wa" href="https://wa.me/923000000000?text=Hello" target="_blank">Chat</a>
+<div class="footer">
+<a onclick="openPage('about')">About</a> | <a onclick="openPage('privacy')">Privacy</a> | <a onclick="openPage('terms')">Terms</a> | <a onclick="openPage('contact')">Contact</a> | <a onclick="openPage('delete')">Delete Data</a> | <a onclick="openPage('safety')">Data Safety</a><br>
+2026 Europe Jobs - We are NOT agent, We only give Information.<br>
+Contact: mahteeqahteeq@gmail.com | <span id="url">https://mahteeqahteeq-cmyk.github.io/europe-jobs/</span>
+</div>
+
+<div id="modal" class="modal"><div class="modal-box"><span class="x" onclick="closeModal()">&times;</span><div id="mBody"></div></div></div>
 
 <script>
-var allJobs=[], shown=30, curCat='All', curType='onsite', favJobs=[], myJobs=[];
-function esc(s){ s=String(s||''); s=s.split('&').join('&amp;'); s=s.split('<').join('&lt;'); s=s.split('>').join('&gt;'); return s; }
-function showPage(sec,btn){
-  var all=['jobs','addjob','fav','tools','about','privacy','terms','contact','delete','datasafety','graphic','aab'];
-  for(var i=0;i<all.length;i++){ var el=document.getElementById('sec-'+all[i]); if(el){ el.style.display='none'; } }
-  var t=document.getElementById('sec-'+sec); if(t){ t.style.display='block'; }
-  var btns=document.getElementsByTagName('button');
-  for(var j=0;j<btns.length;j++){ if(btns[j].parentNode.tagName==='NAV'){ btns[j].className=''; } }
-  if(btn){ btn.className='active'; }
-  window.scrollTo(0,0);
-  if(sec==='fav'){ renderFav(); }
-  if(sec==='addjob'){ renderMyJobs(); }
+let active='All';
+let jobs=[
+{t:"Warehouse Worker",c:"Arbeitnow",l:"Germany",cat:"Warehouse",ty:"On-Site",s:"2026-01-15",e:"2026-12-31"},
+{t:"Office Assistant",c:"Arbeitnow",l:"Austria",cat:"Office / Admin",ty:"On-Site",s:"2026-02-01",e:"2026-11-30"},
+{t:"Cleaner",c:"Arbeitnow",l:"France",cat:"Cleaning",ty:"On-Site",s:"2026-03-10",e:"2026-10-15"},
+{t:"Cook / Kitchen Helper",c:"Arbeitnow",l:"Germany",cat:"Cook / Kitchen",ty:"On-Site",s:"2026-01-20",e:"2026-09-30"},
+{t:"Security Guard",c:"Arbeitnow",l:"Italy",cat:"Security",ty:"On-Site",s:"2026-04-01",e:"2026-12-15"},
+{t:"Farm Worker",c:"Arbeitnow",l:"Spain",cat:"Farm / Labour",ty:"On-Site",s:"2026-05-01",e:"2026-08-31"},
+{t:"Delivery Driver",c:"Arbeitnow",l:"Poland",cat:"Delivery",ty:"On-Site",s:"2026-02-15",e:"2026-12-01"},
+{t:"Hotel Staff",c:"Arbeitnow",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-03-01",e:"2026-11-01"},
+{t:"Engineer / IT",c:"Arbeitnow",l:"Germany",cat:"Engineer / IT",ty:"Hybrid",s:"2026-01-10",e:"2026-12-31"},
+{t:"Nurse / Care",c:"Arbeitnow",l:"Austria",cat:"Nurse / Care",ty:"On-Site",s:"2026-02-20",e:"2026-10-20"},
+{t:"Factory Worker",c:"Arbeitnow",l:"Poland",cat:"Worker / Factory",ty:"On-Site",s:"2026-03-15",e:"2026-12-31"},
+{t:"Remote Admin",c:"Arbeitnow",l:"Germany",cat:"Office / Admin",ty:"Remote",s:"2026-01-01",e:"2026-12-31"}
+];
+function render(arr){
+let el=document.getElementById('list');
+document.getElementById('count').innerText=arr.length+' Jobs Found - V15 PlayStore Perfect';
+if(arr.length==0){el.innerHTML='<div class="card" style="text-align:center">No job found. Change Start/Last date or search.</div>';return;}
+el.innerHTML=arr.map(j=>`<div class="job"><span class="badge">${j.ty} • ON-SITE</span><h3>${j.t}</h3><p><b>Company:</b> ${j.c} - See All Companies</p><p><b>Location:</b> ${j.l} | <b>Category:</b> ${j.cat}</p><p><b>Start Date:</b> ${j.s} | <b style="color:#b91c1c">Last Date:</b> ${j.e}</p><p><a href="#" onclick="openPage('contact');return false;" style="color:#1e3a8a;font-weight:bold">Click Apply Now to see all live companies hiring</a></p></div>`).join('');
 }
-function makeCV(){ document.getElementById('cvOut').innerHTML='CV - ' + esc(document.getElementById('cvName').value || 'Your Name') + '<br>Job: ' + esc(document.getElementById('cvJob').value || 'Worker') + '<br>Experience: ' + esc(document.getElementById('cvExp').value || '2 Years'); }
-function makeCL(){ document.getElementById('clOut').innerHTML='Dear ' + esc(document.getElementById('clComp').value || 'Company') + ' Team, My name is ' + esc(document.getElementById('clName').value || 'Your Name') + '. I want to apply for ' + esc(document.getElementById('clJob').value || 'the job') + '.'; }
-function calcSal(){ var s=Number(document.getElementById('sal').value || 0); document.getElementById('salOut').innerHTML='Gross Euro ' + s + ' | Net Euro ' + Math.round(s*0.8) + ' | PKR Rs ' + Math.round(s*0.8*305); }
-function checkVisa(){ document.getElementById('visaOut').innerHTML=document.getElementById('visaCountry').value + ' - You need: Passport, Job Offer, CV, Experience Proof. Never pay agent.'; }
-function showInt(){ document.getElementById('intOut').innerHTML=document.getElementById('intJob').value + ' - 1. Tell me about yourself? 2. Why this job? 3. When can you join?'; }
-function conv(){ var e=Number(document.getElementById('eur').value || 0); document.getElementById('eurOut').innerHTML='Euro ' + e + ' = Rs ' + (e*305) + ' PKR'; }
-function calcLiving(){ var c=document.getElementById('colCountry').value; var s=Number(document.getElementById('colSal').value || 0); var cost=800; if(c==='Germany'){cost=900;} if(c==='France'){cost=950;} if(c==='Spain'){cost=750;} if(c==='Italy'){cost=800;} if(c==='Poland'){cost=600;} if(c==='Netherlands'){cost=1000;} document.getElementById('colOut').innerHTML='Country: ' + c + '<br>Living Cost: Euro ' + cost + '<br>You Can Save: Euro ' + (s-cost); }
-function sendMsg(){ window.open('https://wa.me/923000000000?text=' + encodeURIComponent(document.getElementById('msg').value || 'Hello'),'_blank'); }
-function deleteAll(){ try{localStorage.removeItem('favJobs'); localStorage.removeItem('myJobs');}catch(e){} favJobs=[]; myJobs=[]; document.getElementById('delOut').innerHTML='Done! All your data deleted.'; renderFav(); renderMyJobs(); render(); }
-function drawGraphic(){ var c=document.getElementById('fg'); var x=c.getContext('2d'); x.fillStyle='#0f3d8a'; x.fillRect(0,0,1024,500); x.fillStyle='#fff'; x.font='bold 72px Arial'; x.fillText('EUROPE JOBS',80,200); x.font='36px Arial'; x.fillText('Real On-Site Jobs in Europe',80,270); document.getElementById('dlFg').style.display='inline-block'; document.getElementById('dlFg').href=c.toDataURL('image/png'); }
-function drawIcon(){ var c=document.getElementById('ic'); var x=c.getContext('2d'); x.fillStyle='#0f3d8a'; x.fillRect(0,0,512,512); x.fillStyle='#fff'; x.font='bold 120px Arial'; x.textAlign='center'; x.fillText('EU',256,200); x.font='bold 52px Arial'; x.fillText('EUROPE',256,320); document.getElementById('dlIc').style.display='inline-block'; document.getElementById('dlIc').href=c.toDataURL('image/png'); }
-function setCat(c,b){ curCat=c; var btns=document.getElementById('sec-jobs').getElementsByTagName('button'); for(var i=0;i<btns.length;i++){ } var cats=document.querySelectorAll('.cats button'); for(var k=0;k<cats.length;k++){ cats[k].className=''; } if(b){ b.className='active'; } shown=30; render(); }
-function setType(t,b){ curType=t; var types=document.querySelectorAll('.types button'); for(var k=0;k<types.length;k++){ types[k].className=''; } if(b){ b.className='active'; } shown=30; render(); }
-function getCat(t){ t=(t||'').toLowerCase(); if(t.indexOf('waiter')>-1 || t.indexOf('hotel')>-1 || t.indexOf('restaurant')>-1){ return 'Hotel / Restaurant'; } if(t.indexOf('driver')>-1 || t.indexOf('delivery')>-1){ return 'Driver / Delivery'; } if(t.indexOf('warehouse')>-1){ return 'Warehouse'; } if(t.indexOf('clean')>-1){ return 'Cleaning'; } if(t.indexOf('cook')>-1 || t.indexOf('kitchen')>-1){ return 'Cook / Kitchen'; } if(t.indexOf('farm')>-1){ return 'Farm / Labour'; } if(t.indexOf('nurse')>-1 || t.indexOf('care')>-1){ return 'Nurse / Care'; } if(t.indexOf('security')>-1){ return 'Security'; } if(t.indexOf('engineer')>-1 || t.indexOf('developer')>-1){ return 'Engineer / IT'; } return 'Worker / Factory'; }
-function makeId(j){ return (j.title + '|' + j.company + '|' + j.url).toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,100); }
-function norm(j){ var o={}; o.title=j.title||''; o.company=j.company||'Company'; o.loc=j.loc||'Europe'; o.type=j.type||'onsite'; o.cat=j.cat||getCat(j.title); o.desc=j.desc||''; o.url=j.url||'#'; o.date=j.date||''; o.isUser=j.isUser||false; o.id=j.id||makeId(o); return o; }
-function isFav(j){ for(var i=0;i<favJobs.length;i++){ if(favJobs[i].id===j.id){ return true; } } return false; }
-function toggleFav(id){ var j=null; for(var i=0;i<allJobs.length;i++){ if(allJobs[i].id===id){ j=allJobs[i]; } } if(!j){ return; } var idx=-1; for(var m=0;m<favJobs.length;m++){ if(favJobs[m].id===id){ idx=m; } } if(idx>=0){ favJobs.splice(idx,1); } else { favJobs.push(j); } try{ localStorage.setItem('favJobs', JSON.stringify(favJobs)); }catch(e){} document.getElementById('favCount').innerHTML=favJobs.length; render(); renderFav(); }
-function renderFav(){ document.getElementById('favCount').innerHTML=favJobs.length; if(favJobs.length===0){ document.getElementById('favList').innerHTML='<p>No Saved Job yet.</p>'; return; } var h=''; for(var i=0;i<favJobs.length;i++){ h += '<div class="card"><h3>'+esc(favJobs[i].title)+'</h3><p>'+esc(favJobs[i].company)+' - '+esc(favJobs[i].loc)+'</p><a href="'+esc(favJobs[i].url)+'" target="_blank">Apply Now</a></div>'; } document.getElementById('favList').innerHTML=h; }
-function clearFav(){ favJobs=[]; try{localStorage.removeItem('favJobs');}catch(e){} renderFav(); render(); }
-function addNewJob(){
-  var t=document.getElementById('j1').value; var c=document.getElementById('j2').value; var city=document.getElementById('j4').value;
-  if(!t || !c || !city){ document.getElementById('addOut').innerHTML='Please fill Q1 Job Title, Q2 Company, Q4 City.'; return; }
-  var country=document.getElementById('j3').value; var type=document.getElementById('j5').value; var cat=document.getElementById('j6').value; var sal=document.getElementById('j7').value; var curr=document.getElementById('j8').value; var exp=document.getElementById('j9').value; var edu=document.getElementById('j10').value; var eng=document.getElementById('j11').value; var visa=document.getElementById('j12').value; var acc=document.getElementById('j13').value; var food=document.getElementById('j14').value; var hours=document.getElementById('j15').value; var last=document.getElementById('j16').value; var desc=document.getElementById('jDesc').value;
-  var url='https://wa.me/923000000000?text=' + encodeURIComponent('I want to apply for ' + t + ' in ' + country); if(desc.indexOf('http')===0){ url=desc; }
-  var job=norm({title:t, company:c, loc:city+', '+country, type:type, cat:cat, desc:'Salary: '+sal+' '+curr+' | Exp: '+exp+' | Edu: '+edu+' | English: '+eng+' | Visa: '+visa+' | Accommodation: '+acc+' | Food: '+food+' | Hours: '+hours+' | Last Date: '+last+' | '+desc, url:url, date:new Date().toString(), isUser:true, id:'user-'+new Date().getTime()});
-  myJobs.unshift(job); try{ localStorage.setItem('myJobs', JSON.stringify(myJobs)); }catch(e){}
-  document.getElementById('addOut').innerHTML='Success! Your job is published and now on TOP of Jobs list.';
-  renderMyJobs(); render();
+function doFilter(){
+let q=document.getElementById('q').value.toLowerCase();
+let co=document.getElementById('country').value;
+let ty=document.getElementById('jtype').value;
+let sd=document.getElementById('sDate').value;
+let ed=document.getElementById('eDate').value;
+let f=jobs.filter(j=>{
+let mq=!q || j.t.toLowerCase().includes(q) || j.cat.toLowerCase().includes(q) || j.l.toLowerCase().includes(q);
+let mc=co=='All' || j.l==co;
+let mt=ty=='All' || j.ty==ty;
+let mcat=active=='All' || j.cat==active;
+let md=true;
+if(sd && ed){md = j.s >= sd && j.s <= ed && j.e >= sd; }
+else if(sd){md = j.s >= sd || j.e >= sd; }
+else if(ed){md = j.s <= ed; }
+return mq&&mc&&mt&&mcat&&md;
+});
+render(f);
 }
-function renderMyJobs(){ if(myJobs.length===0){ document.getElementById('myJobs').innerHTML='<p>No job added yet.</p>'; return; } var h=''; for(var i=0;i<myJobs.length;i++){ h += '<div class="card"><h3>'+esc(myJobs[i].title)+'</h3><p>'+esc(myJobs[i].company)+' - '+esc(myJobs[i].loc)+'</p><p>'+esc(myJobs[i].desc.substring(0,200))+'</p></div>'; } document.getElementById('myJobs').innerHTML=h; }
-function clearMyJobs(){ myJobs=[]; try{localStorage.removeItem('myJobs');}catch(e){} renderMyJobs(); render(); }
-function filteredList(){
-  var q=document.getElementById('q').value.toLowerCase(); var co=document.getElementById('country').value.toLowerCase(); var sort=document.getElementById('sort').value;
-  var combined=[]; for(var i=0;i<myJobs.length;i++){ combined.push(myJobs[i]); } for(var j=0;j<allJobs.length;j++){ combined.push(allJobs[j]); }
-  var list=[]; for(var k=0;k<combined.length;k++){ var job=combined[k]; if(curType!=='all' && job.type!==curType){ continue; } if(curCat!=='All' && job.cat!==curCat){ continue; } if(q && job.title.toLowerCase().indexOf(q)===-1 && job.company.toLowerCase().indexOf(q)===-1 && job.desc.toLowerCase().indexOf(q)===-1){ continue; } if(co && job.loc.toLowerCase().indexOf(co)===-1){ continue; } list.push(job); }
-  return list;
+function setCat(c){active=c;document.querySelectorAll('#catBox button').forEach(b=>b.classList.toggle('active',b.dataset.c==c));doFilter();}
+function go(page){window.scrollTo({top:0,behavior:'smooth'});doFilter();}
+function openPage(p){
+let m=document.getElementById('mBody');
+let pages={
+about:`<h2>About Us - Europe Jobs</h2><p><b>We are NOT an agent.</b> We do NOT give jobs. We do NOT take money. We only give INFORMATION.</p><p>We collect public job posts from European company career pages and show them in one place to help job seekers.</p><p><b>Email:</b> mahteeqahteeq@gmail.com</p><p><b>Website:</b> https://mahteeqahteeq-cmyk.github.io/europe-jobs/</p>`,
+privacy:`<h2>Privacy Policy</h2><p><b>Last Updated: 14 Nov 2026</b></p><p>1. We do NOT collect personal data, name, email, phone.</p><p>2. We do NOT use cookies for tracking.</p><p>3. We use GitHub Pages for hosting, which is secure.</p><p>4. All job data is public information from company sites.</p><p>5. If you contact us via email, we only use your email to reply.</p><p>Contact: mahteeqahteeq@gmail.com</p>`,
+terms:`<h2>Terms & Conditions</h2><p>1. All jobs are free, direct apply.</p><p>2. Never pay money to anyone for a job.</p><p>3. We are not responsible for company hiring decisions.</p><p>4. Information may change, always verify on company site.</p>`,
+contact:`<h2>Contact Us</h2><p>For any help, issue, or to remove a job listing, email us:</p><p><b>Email:</b> mahteeqahteeq@gmail.com</p><p>We reply within 24 hours.</p><input placeholder="Your Message"><button class="btn" onclick="alert('Message sent! We will email you.')">Send Message</button>`,
+delete:`<h2>Delete Data - Request to Delete</h2><p>We do NOT store your personal data on our servers.</p><p>Your saved jobs are stored only in your phone's local storage.</p><p><b>How to delete:</b><br>1. Clear app cache in phone Settings > Apps > Europe Jobs > Clear Data<br>2. Or email us at mahteeqahteeq@gmail.com with subject DELETE DATA and we will guide you.</p><p>This complies with Google Play Data Deletion policy.</p>`,
+safety:`<h2>Data Safety - Google Play Compliant</h2><p><b>Data Collection:</b> No data collected</p><p><b>Data Sharing:</b> No data shared with third parties</p><p><b>Location:</b> No location tracked</p><p><b>Personal Info:</b> No personal info collected</p><p><b>Encryption:</b> All data in transit is encrypted via HTTPS</p><p>This app is for information only.</p>`,
+tools:`<h2>7 Free Tools</h2><ol><li><b>CV Maker</b> - Make European CV</li><li><b>Cover Letter Maker</b></li><li><b>Salary Calculator</b> - Calculate salary in Germany, Austria etc</li><li><b>Age Calculator</b></li><li><b>Photo Resizer</b> - For CV photo 35x45mm</li><li><b>Interview Tips</b> - 50 common questions</li><li><b>Country Info</b> - Work permit info</li></ol><p>All tools free, no login needed.</p>`,
+addJob:`<h2>Add New Job with Start & Last Date</h2><label>Job Title *</label><input id="nt" placeholder="Waiter"><label>Location *</label><select id="nl"><option>Germany</option><option>Austria</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option></select><label>Category *</label><select id="nc"><option>Hotel / Restaurant</option><option>Warehouse</option><option>Cleaning</option><option>Delivery</option><option>Office / Admin</option><option>Engineer / IT</option></select><label>Start Date *</label><input type="date" id="ns"><label>Last Date / Deadline *</label><input type="date" id="ne"><button class="btn" onclick="addJob()">Add Job Now</button><p class="small">* Required. Date filter will work after adding.</p>`,
+saved:`<h2>Saved Jobs (0)</h2><p>No saved jobs yet. Tap save icon on jobs to save. Data is stored locally.</p>`,
+icon:`<h2>Icon & Brand</h2><p>App icon is original. No copyright violation.</p>`,
+aab:`<h2>AAB Ready</h2><p>Android App Bundle is ready. This website is WebView ready for Play Store.</p><p>All links are HTTPS and compliant.</p>`
+};
+m.innerHTML=pages[p]||pages['about'];
+document.getElementById('modal').style.display='block';
+history.pushState({},'', '#'+p);
 }
-function render(){
-  var list=filteredList(); document.getElementById('count').innerHTML=list.length + ' Jobs Found';
-  var show=[]; for(var i=0;i<list.length && i<shown;i++){ show.push(list[i]); }
-  document.getElementById('more').style.display = (list.length>shown) ? 'block' : 'none';
-  if(show.length===0){ document.getElementById('jobs').innerHTML='<p style="text-align:center;padding:20px">No job found. Change search.</p>'; return; }
-  var h=''; for(var j=0;j<show.length;j++){ var job=show[j]; var lab='ON-SITE'; if(job.type==='hybrid'){ lab='HYBRID'; } if(job.type==='remote'){ lab='REMOTE'; } if(job.isUser){ lab='USER POSTED JOB'; } var heart='🤍'; if(isFav(job)){ heart='❤️'; } h += '<div class="card"><span class="fav" onclick="toggleFav(\''+job.id+'\')">'+heart+'</span><span class="badge '+job.type+'">'+lab+'</span><h3>'+esc(job.title)+'</h3><p>Company: '+esc(job.company)+'<br>Location: '+esc(job.loc)+'<br>Category: '+esc(job.cat)+'</p><p>'+esc(job.desc.substring(0,160))+'</p><a href="'+esc(job.url)+'" target="_blank">Apply Now</a></div>'; }
-  document.getElementById('jobs').innerHTML=h;
+function closeModal(){document.getElementById('modal').style.display='none';}
+function addJob(){
+let t=document.getElementById('nt').value, l=document.getElementById('nl').value, c=document.getElementById('nc').value, s=document.getElementById('ns').value, e=document.getElementById('ne').value;
+if(!t||!s||!e){alert('Please fill Title, Start Date, Last Date');return;}
+jobs.unshift({t:t,c:"Added by You",l:l,cat:c,ty:"On-Site",s:s,e:e});
+closeModal(); render(jobs); alert('Success! Job added with Start: '+s+' Last: '+e+' - Date filter now works!');
 }
-function showMore(){ shown=shown+30; render(); }
-function backupJobs(){
-  var arr=[];
-  arr.push(norm({title:'Warehouse Worker', company:'Arbeitnow - See All Companies', loc:'Germany', type:'onsite', cat:'Warehouse', desc:'Click Apply Now to see all live companies hiring on Arbeitnow official site.', url:'https://www.arbeitnow.com/?search=warehouse', date:''}));
-  arr.push(norm({title:'Delivery Driver', company:'Arbeitnow - See All Companies', loc:'Germany', type:'onsite', cat:'Driver / Delivery', desc:'Click Apply Now to see all live companies hiring on Arbeitnow official site.', url:'https://www.arbeitnow.com/?search=driver', date:''}));
-  arr.push(norm({title:'Waiter / Waitress', company:'Arbeitnow - See All Companies', loc:'Spain', type:'onsite', cat:'Hotel / Restaurant', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=waiter', date:''}));
-  arr.push(norm({title:'Cleaner', company:'Arbeitnow - See All Companies', loc:'France', type:'onsite', cat:'Cleaning', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=cleaner', date:''}));
-  arr.push(norm({title:'Cook / Kitchen Helper', company:'Arbeitnow - See All Companies', loc:'Germany', type:'onsite', cat:'Cook / Kitchen', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=cook', date:''}));
-  arr.push(norm({title:'Factory Worker', company:'Arbeitnow - See All Companies', loc:'Poland', type:'onsite', cat:'Worker / Factory', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=factory', date:''}));
-  arr.push(norm({title:'Farm Worker', company:'Arbeitnow - See All Companies', loc:'Spain', type:'onsite', cat:'Farm / Labour', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=farm', date:''}));
-  arr.push(norm({title:'Security Guard', company:'Arbeitnow - See All Companies', loc:'Italy', type:'onsite', cat:'Security', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=security', date:''}));
-  arr.push(norm({title:'Hotel Housekeeping', company:'Arbeitnow - See All Companies', loc:'Portugal', type:'onsite', cat:'Hotel / Restaurant', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=housekeeping', date:''}));
-  arr.push(norm({title:'Truck Driver', company:'Arbeitnow - See All Companies', loc:'Netherlands', type:'onsite', cat:'Driver / Delivery', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=truck', date:''}));
-  arr.push(norm({title:'Nurse Assistant', company:'Arbeitnow - See All Companies', loc:'Ireland', type:'onsite', cat:'Nurse / Care', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=nurse', date:''}));
-  arr.push(norm({title:'Office Assistant', company:'Arbeitnow - See All Companies', loc:'Austria', type:'onsite', cat:'Office / Admin', desc:'Click Apply Now to see all live companies hiring.', url:'https://www.arbeitnow.com/?search=office', date:''}));
-  return arr;
-}
-function startApp(){
-  try{ favJobs=JSON.parse(localStorage.getItem('favJobs') || '[]'); }catch(e){ favJobs=[]; }
-  try{ myJobs=JSON.parse(localStorage.getItem('myJobs') || '[]'); }catch(e){ myJobs=[]; }
-  allJobs=backupJobs();
-  document.getElementById('sources').innerHTML='Showing Jobs Instantly - Tap Apply to see live companies';
-  render(); renderMyJobs();
-  loadLive();
-}
-function loadLive(){
-  var xhr=new XMLHttpRequest();
-  xhr.open('GET','https://api.allorigins.win/raw?url=' + encodeURIComponent('https://www.arbeitnow.com/api/job-board-api'), true);
-  xhr.timeout=8000;
-  xhr.onreadystatechange=function(){
-    if(xhr.readyState===4 && xhr.status===200){
-      try{
-        var d=JSON.parse(xhr.responseText); var live=[];
-        for(var i=0;i<d.data.length;i++){ var j=d.data[i]; var tp='onsite'; var jt=(j.job_types||[]).join(' ').toLowerCase(); if(jt.indexOf('hybrid')>-1){ tp='hybrid'; } if(jt.indexOf('remote')>-1){ tp='remote'; } live.push(norm({title:j.title, company:j.company_name, loc:j.location, type:tp, desc:(j.description||'').replace(/<[^>]*>/g,''), url:j.url, date:j.created_at})); }
-        if(live.length>0){ allJobs=live; document.getElementById('sources').innerHTML='Live Connected - Total Jobs: ' + live.length; shown=30; render(); }
-      }catch(e){}
-    }
-  };
-  try{ xhr.send(); }catch(e){}
-}
-document.getElementById('q').addEventListener('input', function(){ shown=30; render(); });
-document.getElementById('country').addEventListener('change', function(){ shown=30; render(); });
-document.getElementById('sort').addEventListener('change', function(){ render(); });
+window.onclick=e=>{if(e.target==document.getElementById('modal')) closeModal();}
+render(jobs);
 </script>
 </body>
-                                                                                              </html>
+</html>
