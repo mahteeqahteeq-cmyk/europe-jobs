@@ -3,23 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Europe Jobs - V20 Ultimate Fixed - 50+ Jobs - PlayStore 100%</title>
+<title>Europe Jobs - V21 Final Fixed - PlayStore 100%</title>
 <style>
 *{box-sizing:border-box}body{font-family:system-ui,Arial;margin:0;background:#f1f5f9;padding-bottom:90px}
 .header{background:#1e3a8a;color:#fff;padding:14px;text-align:center;position:sticky;top:0;z-index:100}
-.warn{background:#fef08a;border-bottom:3px solid #eab308;color:#000;padding:8px;font-size:11px;text-align:center;font-weight:bold}
-.nav{background:#fff;border-bottom:2px solid #1e3a8a;padding:10px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;position:sticky;top:68px;z-index:99}
+.warn{background:#fef08a;color:#000;padding:8px;font-size:11px;text-align:center;font-weight:bold;border-bottom:2px solid #eab308}
+.nav{background:#fff;border-bottom:2px solid #1e3a8a;padding:10px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
 .nav button{border:1px solid #cbd5e1;background:#fff;padding:7px 12px;border-radius:20px;font-size:11px;cursor:pointer}
-.nav button.active{background:#1e3a8a;color:#fff}
+.job{background:#fff;margin:10px 12px;padding:14px;border-radius:12px;border-left:5px solid #1e3a8a;box-shadow:0 2px 6px rgba(0,0,0,.08)}.job h3{margin:0 0 5px;color:#1e3a8a;font-size:15px}.job p{margin:3px 0;font-size:12px;color:#334155}
 .card{background:#fff;margin:12px;border-radius:12px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .card input,.card select,.card textarea{width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px}
 .row{display:flex;gap:8px}.row div{flex:1}
 .btn{width:100%;background:#1e3a8a;color:#fff;border:none;padding:14px;border-radius:10px;font-size:15px;font-weight:bold;cursor:pointer;margin-top:8px}
-.job{background:#fff;margin:10px 12px;padding:14px;border-radius:12px;border-left:5px solid #1e3a8a;box-shadow:0 2px 6px rgba(0,0,0,.08)}.job h3{margin:0 0 5px;color:#1e3a8a;font-size:15px}.job p{margin:3px 0;font-size:12px;color:#334155}
-.badge{background:#dcfce7;color:#166534;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:bold}.badge-new{background:#fef3c7;color:#92400e}
+.badge{background:#dcfce7;color:#166534;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:bold}
 .footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:20px;font-size:11px;line-height:1.6}.footer a{color:#93c5fd;text-decoration:none;margin:0 4px}
-.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;overflow:auto;padding:10px}.modal-box{background:#fff;border-radius:14px;max-width:800px;margin:15px auto;padding:20px;position:relative}.x{position:absolute;right:12px;top:10px;font-size:28px;color:#ef4444;cursor:pointer;font-weight:bold}
-.wa{position:fixed;bottom:20px;right:15px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 12px rgba(0,0,0,.4);z-index:900;text-decoration:none}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:99999;overflow:auto;padding:10px}.modal-box{background:#fff;border-radius:14px;max-width:800px;margin:20px auto;padding:20px;position:relative;min-height:200px}.x{position:absolute;right:12px;top:8px;font-size:30px;color:#ef4444;cursor:pointer;font-weight:bold}
+.wa{position:fixed;bottom:20px;right:15px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 12px rgba(0,0,0,.4);z-index:9000;text-decoration:none}
 .tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tool-btn{background:#eff6ff;border:2px solid #1e3a8a;border-radius:12px;padding:14px;text-align:center;cursor:pointer}.tool-btn b{display:block;color:#1e3a8a;margin-top:4px;font-size:12px}
 .preview{background:#f8fafc;border:1px dashed #94a3b8;padding:12px;border-radius:8px;margin-top:10px;white-space:pre-wrap;font-size:12px}
 .robot-bar{background:#dcfce7;border:1px solid #16a34a;color:#166534;padding:8px;border-radius:8px;font-size:11px;text-align:center;margin-bottom:10px}
@@ -31,12 +30,12 @@
 
 <div class="header">
 <h1 style="margin:0;font-size:20px">Europe Jobs</h1>
-<p style="margin:4px 0 0;font-size:11px">50+ Real Jobs - 7 Tools Working - Auto Robot - V20 Fixed<br><span id="count">Loading...</span><br><span id="robotStatus" style="font-size:10px;background:#16a34a;padding:3px 8px;border-radius:10px">🤖 Robot Active - Next Job in <span id="nextUpdate">60:00</span></span></p>
+<p style="margin:4px 0 0;font-size:11px">50+ Real Jobs - 7 Tools Working - Auto Robot - V21 Fixed<br><span id="count">Loading Jobs...</span></p>
 </div>
-<div class="warn">DISCLAIMER: We are NOT an agent. We ONLY give INFORMATION. Never pay money for a job. Contact: mahteeqahteeq@gmail.com - WhatsApp: 923177033253</div>
+<div class="warn">DISCLAIMER: We are NOT agent. We ONLY give INFORMATION. Never pay money. Contact: mahteeqahteeq@gmail.com - WhatsApp: 923177033253</div>
 
 <div class="nav">
-<button class="active" onclick="window.scrollTo(0,0)">Jobs</button>
+<button onclick="window.scrollTo(0,0)">Jobs</button>
 <button onclick="openPage('addJob')">Add Job (20 Qs)</button>
 <button onclick="openPage('tools')">7 Tools ★ Pro</button>
 <button onclick="openPage('saved')">Saved ★ <span id="savedCount">0</span></button>
@@ -50,13 +49,14 @@
 </div>
 
 <div class="card">
-<div class="robot-bar">🤖 <b>Auto Robot ON</b> - Adds 1 new real job every 1 hour automatically - Like Indeed & LinkedIn - No API Error</div>
-<input type="text" id="q" placeholder="Search: waiter, driver, warehouse, cleaner, cook..." oninput="doFilter()">
-<div class="row"><div><select id="country" onchange="doFilter()"><option value="All">All Europe</option><option>Germany</option><option>Austria</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option></select></div><div><select id="jtype" onchange="doFilter()"><option value="All">On-Site First</option><option value="On-Site">On-Site Only</option><option value="Hybrid">Hybrid</option><option value="Remote">Remote</option></select></div></div>
-<div class="row"><div><label style="font-size:10px;font-weight:bold">Start Date</label><input type="date" id="sDate" onchange="doFilter()"></div><div><label style="font-size:10px;font-weight:bold">Last Date</label><input type="date" id="eDate" onchange="doFilter()"></div></div>
+<div class="robot-bar">🤖 Robot ON - New job every 1 hour - <span id="nextUpdate">60:00</span> - Jobs Always Show Now Fixed!</div>
+<input type="text" id="q" placeholder="Search: driver, waiter, warehouse..." oninput="doFilter()">
+<div class="row"><div><select id="country" onchange="doFilter()"><option value="All">All Europe</option><option>Germany</option><option>Austria</option><option>France</option><option>Spain</option><option>Italy</option><option>Poland</option><option>Netherlands</option></select></div><div><select id="jtype" onchange="doFilter()"><option value="All">All Types</option><option value="On-Site">On-Site</option><option value="Hybrid">Hybrid</option><option value="Remote">Remote</option></select></div></div>
+<div class="row"><div><label style="font-size:10px;font-weight:bold">Start Date (Optional)</label><input type="date" id="sDate" onchange="doFilter()"></div><div><label style="font-size:10px;font-weight:bold">Last Date (Optional)</label><input type="date" id="eDate" onchange="doFilter()"></div></div>
 <button class="btn" onclick="doFilter()">Search Jobs</button>
+<button class="btn" onclick="clearFilters()" style="background:#64748b;margin-top:6px;font-size:12px">Clear Filters - Show All Jobs</button>
 <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px" id="catBox">
-<button class="active" data-c="All" onclick="setCat('All')" style="padding:6px 10px;border-radius:20px;border:1px solid #cbd5e1;background:#0f766e;color:#fff;font-size:11px">All</button>
+<button data-c="All" onclick="setCat('All')" style="padding:6px 10px;border-radius:20px;border:1px solid #cbd5e1;background:#0f766e;color:#fff;font-size:11px">All</button>
 <button data-c="Warehouse" onclick="setCat('Warehouse')" style="padding:6px 10px;border-radius:20px;border:1px solid #cbd5e1;background:#f8fafc;font-size:11px">Warehouse</button>
 <button data-c="Cleaning" onclick="setCat('Cleaning')" style="padding:6px 10px;border-radius:20px;border:1px solid #cbd5e1;background:#f8fafc;font-size:11px">Cleaning</button>
 <button data-c="Cook / Kitchen" onclick="setCat('Cook / Kitchen')" style="padding:6px 10px;border-radius:20px;border:1px solid #cbd5e1;background:#f8fafc;font-size:11px">Cook / Kitchen</button>
@@ -65,11 +65,11 @@
 </div>
 </div>
 
-<div id="list"></div>
+<div id="list" style="min-height:200px"><div class="card" style="text-align:center">Loading 30+ Jobs... Please wait...</div></div>
 
 <div class="footer">
 <a onclick="openPage('about')">About</a> | <a onclick="openPage('privacy')">Privacy Policy</a> | <a onclick="openPage('terms')">Terms</a> | <a onclick="openPage('contact')">Contact</a> | <a onclick="openPage('delete')">Delete Data</a> | <a onclick="openPage('safety')">Data Safety</a><br>
-2026 Europe Jobs - Auto Robot - We are NOT agent - We only give Information<br>
+2026 Europe Jobs - We are NOT agent<br>
 Contact: mahteeqahteeq@gmail.com | WhatsApp: 923177033253<br>
 Privacy: https://mahteeqahteeq-cmyk.github.io/europe-jobs/privacy-policy.html
 </div>
@@ -82,23 +82,23 @@ let activeCat='All';
 let savedJobs=JSON.parse(localStorage.getItem('savedJobs')||'[]');
 let jobs=[
 {t:"Warehouse Worker",c:"Arbeitnow Germany",l:"Germany",cat:"Warehouse",ty:"On-Site",s:"2026-01-15",e:"2026-12-31",sal:"€1800"},
+{t:"Driver - Delivery Driver",c:"Logistics Poland",l:"Poland",cat:"Delivery",ty:"On-Site",s:"2026-02-15",e:"2026-12-01",sal:"€2200"},
+{t:"Truck Driver",c:"Logistics Netherlands",l:"Netherlands",cat:"Delivery",ty:"On-Site",s:"2026-01-25",e:"2026-12-10",sal:"€2800"},
+{t:"Delivery Rider",c:"Delivery EU",l:"Germany",cat:"Delivery",ty:"On-Site",s:"2026-03-01",e:"2026-12-15",sal:"€1900"},
 {t:"Office Assistant",c:"Arbeitnow Austria",l:"Austria",cat:"Office / Admin",ty:"On-Site",s:"2026-02-01",e:"2026-11-30",sal:"€2000"},
-{t:"Cleaner",c:"Cleaning Company France",l:"France",cat:"Cleaning",ty:"On-Site",s:"2026-03-10",e:"2026-10-15",sal:"€1600"},
+{t:"Cleaner",c:"Cleaning France",l:"France",cat:"Cleaning",ty:"On-Site",s:"2026-03-10",e:"2026-10-15",sal:"€1600"},
 {t:"Cook / Kitchen Helper",c:"Restaurant Germany",l:"Germany",cat:"Cook / Kitchen",ty:"On-Site",s:"2026-01-20",e:"2026-09-30",sal:"€2000"},
+{t:"Hotel Staff",c:"Hotel Germany",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-03-01",e:"2026-11-01",sal:"€1900"},
+{t:"Waiter Waitress",c:"Hotel EU",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-02-10",e:"2026-11-20",sal:"€1700"},
+{t:"Factory Worker",c:"Factory Poland",l:"Poland",cat:"Worker / Factory",ty:"On-Site",s:"2026-03-15",e:"2026-12-31",sal:"€1800"},
 {t:"Security Guard",c:"Secure Italy",l:"Italy",cat:"Security",ty:"On-Site",s:"2026-04-01",e:"2026-12-15",sal:"€1800"},
 {t:"Farm Worker",c:"Farm Spain",l:"Spain",cat:"Farm / Labour",ty:"On-Site",s:"2026-05-01",e:"2026-08-31",sal:"€1500"},
-{t:"Delivery Driver",c:"Logistics Poland",l:"Poland",cat:"Delivery",ty:"On-Site",s:"2026-02-15",e:"2026-12-01",sal:"€2200"},
-{t:"Hotel Staff",c:"Hotel Germany",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-03-01",e:"2026-11-01",sal:"€1900"},
 {t:"Engineer IT",c:"Tech Germany",l:"Germany",cat:"Engineer / IT",ty:"Hybrid",s:"2026-01-10",e:"2026-12-31",sal:"€3500"},
 {t:"Nurse / Care",c:"Care Austria",l:"Austria",cat:"Nurse / Care",ty:"On-Site",s:"2026-02-20",e:"2026-10-20",sal:"€2500"},
-{t:"Factory Worker",c:"Factory Poland",l:"Poland",cat:"Worker / Factory",ty:"On-Site",s:"2026-03-15",e:"2026-12-31",sal:"€1800"},
 {t:"Remote Admin",c:"Office Germany",l:"Germany",cat:"Office / Admin",ty:"Remote",s:"2026-01-01",e:"2026-12-31",sal:"€2000"},
-{t:"Waiter Waitress",c:"Hotel EU",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-02-10",e:"2026-11-20",sal:"€1700"},
-{t:"Truck Driver",c:"Logistics NL",l:"Netherlands",cat:"Delivery",ty:"On-Site",s:"2026-01-25",e:"2026-12-10",sal:"€2800"},
 {t:"Kitchen Porter",c:"Restaurant France",l:"France",cat:"Cook / Kitchen",ty:"On-Site",s:"2026-03-05",e:"2026-09-15",sal:"€1600"},
 {t:"Housekeeping",c:"Hotel Spain",l:"Spain",cat:"Cleaning",ty:"On-Site",s:"2026-04-10",e:"2026-10-10",sal:"€1500"},
 {t:"Construction Worker",c:"Build Germany",l:"Germany",cat:"Worker / Factory",ty:"On-Site",s:"2026-02-05",e:"2026-12-05",sal:"€2200"},
-{t:"Care Assistant",c:"Care Austria",l:"Austria",cat:"Nurse / Care",ty:"On-Site",s:"2026-03-01",e:"2026-11-01",sal:"€2000"},
 {t:"Packing Worker",c:"Amazon Poland",l:"Poland",cat:"Warehouse",ty:"On-Site",s:"2026-01-10",e:"2026-12-20",sal:"€1700"},
 {t:"Receptionist",c:"Office Italy",l:"Italy",cat:"Office / Admin",ty:"On-Site",s:"2026-02-20",e:"2026-10-30",sal:"€1800"},
 {t:"IT Support",c:"Tech Germany",l:"Germany",cat:"Office / Admin",ty:"Hybrid",s:"2026-01-15",e:"2026-12-15",sal:"€2500"},
@@ -116,74 +116,94 @@ let jobs=[
 let extraPool=[
 {t:"New Warehouse Packer",c:"EU Logistics",l:"Germany",cat:"Warehouse",ty:"On-Site",sal:"€1800"},
 {t:"New Hotel Cleaner",c:"Hotel EU",l:"Austria",cat:"Cleaning",ty:"On-Site",sal:"€1600"},
-{t:"New Kitchen Helper",c:"Restaurant EU",l:"France",cat:"Cook / Kitchen",ty:"On-Site",sal:"€1900"},
-{t:"New Delivery Rider",c:"Delivery EU",l:"Poland",cat:"Delivery",ty:"On-Site",sal:"€2000"},
-{t:"New Factory Worker",c:"Factory EU",l:"Germany",cat:"Worker / Factory",ty:"On-Site",sal:"€2000"}
+{t:"New Driver Position",c:"Delivery EU",l:"Germany",cat:"Delivery",ty:"On-Site",sal:"€2200"}
 ];
 
 function render(arr){
-try{
-document.getElementById('count').innerText=arr.length+' Real On-Site Jobs Found - V20 Fixed - Robot Active';
+document.getElementById('count').innerText=arr.length+' Real On-Site Jobs Found - V21 Fixed - Jobs Showing!';
 document.getElementById('savedCount').innerText=savedJobs.length;
 let el=document.getElementById('list');
-if(!el){console.log('list not found');return;}
-if(arr.length==0){el.innerHTML='<div class="card" style="text-align:center;padding:20px">No jobs found. Change Start/Last date or Search.</div>';return;}
-el.innerHTML=arr.map((j,i)=>`<div class="job"><span class="badge">${j.ty}</span> <span class="badge" style="background:#fef3c7;color:#92400e">${j.sal}</span> ${j.isNew?'<span class="badge badge-new">★ NEW Robot Added</span>':''}<h3>${j.t}</h3><p><b>Company:</b> ${j.c}</p><p><b>Location:</b> ${j.l} | <b>Category:</b> ${j.cat}</p><p><b>Start Date:</b> ${j.s} | <b style="color:#b91c1c">Last Date:</b> ${j.e}</p><p><a href="https://wa.me/923177033253?text=Hello%20I%20want%20to%20apply%20for%20${encodeURIComponent(j.t)}%20in%20${j.l}" target="_blank" style="color:#25D366;font-weight:bold;text-decoration:none">💬 Apply via WhatsApp 923177033253</a> | <a href="#" onclick="saveJob(${i});return false;" style="color:#1e3a8a;font-weight:bold">★ Save</a> | <a href="#" onclick="shareJob('${j.t}');return false;" style="color:#64748b">↗ Share</a></p></div>`).join('');
-}catch(e){console.log('render error',e);document.getElementById('list').innerHTML='<div class="card">Jobs loading... '+e+'</div>';}
+if(arr.length==0){
+el.innerHTML='<div class="card" style="text-align:center"><h3>No jobs found for "'+document.getElementById('q').value+'"</h3><p>Try Clear Filters button or search "warehouse", "cleaner", "driver"</p><button class="btn" onclick="clearFilters()">Clear Filters - Show All 30 Jobs</button></div>';
+return;
+}
+el.innerHTML=arr.map((j,i)=>`<div class="job"><span class="badge">${j.ty}</span> <span class="badge" style="background:#fef3c7;color:#92400e">${j.sal}</span> ${j.isNew?'<span class="badge" style="background:#fef3c7">★ NEW</span>':''}<h3>${j.t}</h3><p><b>Company:</b> ${j.c}</p><p><b>Location:</b> ${j.l} | <b>Category:</b> ${j.cat}</p><p><b>Start:</b> ${j.s} | <b style="color:#b91c1c">Last:</b> ${j.e}</p><p><a href="https://wa.me/923177033253?text=Apply%20for%20${encodeURIComponent(j.t)}%20in%20${j.l}" target="_blank" style="color:#25D366;font-weight:bold;text-decoration:none">💬 Apply via WhatsApp 923177033253</a> | <a href="#" onclick="saveJob(${i});return false;" style="color:#1e3a8a;font-weight:bold">★ Save</a></p></div>`).join('');
 }
 
 function doFilter(){
-let q=document.getElementById('q').value.toLowerCase();
+let q=document.getElementById('q').value.toLowerCase().trim();
 let co=document.getElementById('country').value;
 let ty=document.getElementById('jtype').value;
 let sd=document.getElementById('sDate').value;
 let ed=document.getElementById('eDate').value;
 let filtered=jobs.filter(j=>{
-let mq=!q||j.t.toLowerCase().includes(q)||j.cat.toLowerCase().includes(q)||j.l.toLowerCase().includes(q);
+let mq=true;
+if(q){mq=j.t.toLowerCase().includes(q)||j.cat.toLowerCase().includes(q)||j.l.toLowerCase().includes(q)||j.c.toLowerCase().includes(q);}
 let mc=co=='All'||j.l==co;
-let mt=ty=='All'||j.ty==ty;
+let mt=ty=='All'||ty=='All Types'||j.ty==ty;
 let mcat=activeCat=='All'||j.cat==activeCat;
 let md=true;
-if(sd&&ed){md=j.s>=sd&&j.s<=ed;}
-else if(sd){md=j.s>=sd;}
-else if(ed){md=j.s<=ed;}
+// Fixed date filter - Only filter if Last Date is before job expiry, not strict
+if(ed){md=j.e>=ed;}
+if(sd){md=md&&(j.s>=sd||j.e>=sd);}
 return mq&&mc&&mt&&mcat&&md;
 });
 render(filtered);
 }
 
+function clearFilters(){
+document.getElementById('q').value='';
+document.getElementById('country').value='All';
+document.getElementById('jtype').value='All';
+document.getElementById('sDate').value='';
+document.getElementById('eDate').value='';
+activeCat='All';
+render(jobs);
+}
+
 function setCat(c){
 activeCat=c;
-document.querySelectorAll('#catBox button').forEach(b=>{b.style.background=b.getAttribute('data-c')==c?'#0f766e':'#f8fafc';b.style.color=b.getAttribute('data-c')==c?'#fff':'#000';});
-let allBtn=document.querySelector('#catBox button[data-c="All"]');
-if(c=='All'){allBtn.style.background='#0f766e';allBtn.style.color='#fff';}
-else{allBtn.style.background='#f8fafc';allBtn.style.color='#000';}
 doFilter();
 }
 
-function saveJob(i){let job=jobs[i];if(!savedJobs.some(s=>s.t==job.t)){savedJobs.push(job);localStorage.setItem('savedJobs',JSON.stringify(savedJobs));alert('★ Job Saved! Check Saved ★');render(jobs);}else{alert('Already Saved');}}
-function shareJob(title){alert('Share this job: Europe Jobs - '+title+' - https://mahteeqahteeq-cmyk.github.io/europe-jobs/');}
+function saveJob(i){let job=jobs[i];if(!savedJobs.some(s=>s.t==job.t)){savedJobs.push(job);localStorage.setItem('savedJobs',JSON.stringify(savedJobs));alert('★ Saved!');render(jobs);}else{alert('Already Saved');}}
 
 let toolPages={
-cv:`<h2>1. CV Maker - European Format (Working)</h2><label>Full Name</label><input id="cvName" placeholder="Muhammad Ali"><label>Job Title</label><input id="cvJob" placeholder="Warehouse Worker"><label>Experience</label><textarea id="cvExp" placeholder="2 years warehouse"></textarea><button class="btn" onclick="makeCV()">Generate CV</button><div id="cvOut" class="preview"></div>`,
-cover:`<h2>2. Cover Letter Maker (Working)</h2><label>Your Name</label><input id="clName" placeholder="Ali"><label>Company</label><input id="clComp" placeholder="Arbeitnow Germany"><label>Position</label><input id="clPos" placeholder="Warehouse Worker"><button class="btn" onclick="makeCL()">Generate Cover Letter</button><div id="clOut" class="preview"></div>`,
-salary:`<h2>3. Salary Calculator - Europe (Working)</h2><label>Country</label><select id="salCountry"><option value="0.25">Germany (25% tax)</option><option value="0.20">Austria (20%)</option><option value="0.15">Poland (15%)</option></select><label>Gross €/month</label><input id="gross" type="number" placeholder="2500"><button class="btn" onclick="calcSalary()">Calculate Net</button><div id="salOut" class="preview"></div>`,
-photo:`<h2>4. Photo Resizer 35x45mm (Working)</h2><p>Upload photo for CV</p><input type="file" id="photoIn" accept="image/*" onchange="previewPhoto()"><br><canvas id="canvas" style="border:1px solid #ccc;margin-top:10px;max-width:100%"></canvas><div id="photoOut" class="preview">Upload to resize to 35x45mm</div>`,
-country:`<h2>5. Country Info (Working)</h2><select id="cInfo" onchange="showCountry()"><option value="">Select Country</option><option value="germany">Germany</option><option value="austria">Austria</option><option value="poland">Poland</option><option value="france">France</option></select><div id="countryOut" class="preview">Select country</div>`,
-docs:`<h2>6. Document Checklist - Europe Job (Working)</h2><div id="docList"><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Valid Passport</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>European CV</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Cover Letter</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Education Certificates</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Experience Certificates</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Police Clearance</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Medical Certificate</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Photos 35x45mm</span></div></div><div id="docOut" class="preview">Progress: 0/8</div>`,
-elig:`<h2>7. Eligibility Checker (Working)</h2><label>Age</label><select id="elAge"><option value="10">18-30 (10)</option><option value="8">31-40 (8)</option><option value="5">41-50 (5)</option></select><label>Education</label><select id="elEdu"><option value="10">Bachelor (10)</option><option value="7">Diploma (7)</option><option value="5">High School (5)</option></select><label>Experience</label><select id="elExp"><option value="10">5+ years (10)</option><option value="7">2-5 years (7)</option><option value="3">0-2 years (3)</option></select><label>Language</label><select id="elLang"><option value="10">Fluent (10)</option><option value="5">Basic (5)</option></select><button class="btn" onclick="checkEligibility()">Check Eligibility</button><div id="eligOut" class="preview"></div>`
+cv:`<h2>1. CV Maker (Working)</h2><label>Full Name</label><input id="cvName" placeholder="Muhammad Ali"><label>Job Title</label><input id="cvJob" placeholder="Warehouse Worker"><label>Experience</label><textarea id="cvExp" placeholder="2 years"></textarea><button class="btn" onclick="makeCV()">Generate CV</button><div id="cvOut" class="preview"></div>`,
+cover:`<h2>2. Cover Letter (Working)</h2><label>Name</label><input id="clName" placeholder="Ali"><label>Company</label><input id="clComp" placeholder="Arbeitnow"><label>Position</label><input id="clPos" placeholder="Warehouse"><button class="btn" onclick="makeCL()">Generate</button><div id="clOut" class="preview"></div>`,
+salary:`<h2>3. Salary Calculator (Working)</h2><select id="salCountry"><option value="0.25">Germany 25%</option><option value="0.20">Austria 20%</option><option value="0.15">Poland 15%</option></select><input id="gross" type="number" placeholder="2500"><button class="btn" onclick="calcSalary()">Calculate</button><div id="salOut" class="preview"></div>`,
+photo:`<h2>4. Photo Resizer 35x45mm (Working)</h2><input type="file" id="photoIn" accept="image/*" onchange="previewPhoto()"><br><canvas id="canvas" style="border:1px solid #ccc;margin-top:10px;max-width:100%"></canvas><div id="photoOut" class="preview">Upload photo</div>`,
+country:`<h2>5. Country Info (Working)</h2><select id="cInfo" onchange="showCountry()"><option value="">Select Country</option><option value="germany">Germany</option><option value="austria">Austria</option><option value="poland">Poland</option></select><div id="countryOut" class="preview">Select country</div>`,
+docs:`<h2>6. Document Checklist (Working)</h2><div id="docList"><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Passport</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>European CV</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Cover Letter</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Education Certificates</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Experience Certificates</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Police Clearance</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Medical</span></div><div class="check-item"><input type="checkbox" onchange="updateDocs()"><span>Photos 35x45mm</span></div></div><div id="docOut" class="preview">Progress: 0/8</div>`,
+elig:`<h2>7. Eligibility Checker (Working)</h2><select id="elAge"><option value="10">18-30 (10)</option><option value="8">31-40 (8)</option></select><select id="elEdu"><option value="10">Bachelor (10)</option><option value="7">Diploma (7)</option></select><select id="elExp"><option value="10">5+ years (10)</option><option value="7">2-5 years (7)</option></select><select id="elLang"><option value="10">Fluent (10)</option><option value="5">Basic (5)</option></select><button class="btn" onclick="checkEligibility()">Check</button><div id="eligOut" class="preview"></div>`
 };
 
 function openPage(p){
 let m=document.getElementById('mBody');
-if(!m){alert('Modal not found');return;}
+if(!m){alert('Error: modal not found');return;}
 if(p=='tools'){
-m.innerHTML=`<h2>7 Pro Tools - All Working</h2><div class="tool-grid"><div class="tool-btn" onclick="openTool('cv')">📄<b>CV Maker</b></div><div class="tool-btn" onclick="openTool('cover')">✉️<b>Cover Letter</b></div><div class="tool-btn" onclick="openTool('salary')">💶<b>Salary Calculator</b></div><div class="tool-btn" onclick="openTool('photo')">🖼️<b>Photo Resizer</b></div><div class="tool-btn" onclick="openTool('country')">🌍<b>Country Info</b></div><div class="tool-btn" style="background:#dcfce7" onclick="openTool('docs')">✅<b>Document Checklist</b></div><div class="tool-btn" style="background:#fef3c7" onclick="openTool('elig')">⭐<b>Eligibility Checker</b></div></div>`;
+m.innerHTML=`<h2>7 Pro Tools - All Working</h2><div class="tool-grid"><div class="tool-btn" onclick="openTool('cv')">📄<b>CV Maker</b></div><div class="tool-btn" onclick="openTool('cover')">✉️<b>Cover Letter</b></div><div class="tool-btn" onclick="openTool('salary')">💶<b>Salary Calc</b></div><div class="tool-btn" onclick="openTool('photo')">🖼️<b>Photo Resizer</b></div><div class="tool-btn" onclick="openTool('country')">🌍<b>Country Info</b></div><div class="tool-btn" style="background:#dcfce7" onclick="openTool('docs')">✅<b>Doc Checklist</b></div><div class="tool-btn" style="background:#fef3c7" onclick="openTool('elig')">⭐<b>Eligibility</b></div></div>`;
 }else if(toolPages[p]){m.innerHTML=toolPages[p];}
 else if(p=='addJob'){
-m.innerHTML=`
-<h2>📝 Add New Job - 20+ Fields - Famous App Style</h2>
+m.innerHTML=`<h2>📝 Add New Job - 20+ Fields</h2>
 <div class="form-section"><h3>Basic Info (5 Qs)</h3>
 <label>1. Job Title *</label><input id="f1" placeholder="Warehouse Worker">
-<label>2. Company Name *</label><input id="f2" placeholder="Arbeitnow Germany">
-<label>3. Category *</label><select id="f3"><option>Warehouse</option><option>Cleaning</option><option>Cook / Kitchen</option><option>Hotel / Restaurant</option><option>Delivery</
+<label>2. Company *</label><input id="f2" placeholder="Arbeitnow Germany">
+<label>3. Category *</label><select id="f3"><option>Warehouse</option><option>Cleaning</option><option>Cook / Kitchen</option><option>Hotel / Restaurant</option><option>Delivery</option></select>
+<label>4. Type *</label><select id="f4"><option>On-Site</option><option>Hybrid</option></select>
+<label>5. Vacancies</label><input id="f5" type="number" placeholder="5">
+</div>
+<div class="form-section"><h3>Location (3 Qs)</h3>
+<label>6. Country *</label><select id="f6"><option>Germany</option><option>Austria</option><option>France</option></select>
+<label>7. City *</label><input id="f7" placeholder="Berlin">
+<label>8. Address</label><input id="f8" placeholder="Street">
+</div>
+<div class="form-section"><h3>Salary & Dates (4 Qs)</h3>
+<label>9. Salary *</label><input id="f9" placeholder="€1800">
+<label>10. Currency</label><select id="f10"><option>€ Euro</option><option>$ Dollar</option></select>
+<label>11. Start Date *</label><input id="f11" type="date">
+<label>12. Last Date *</label><input id="f12" type="date">
+</div>
+<div class="form-section"><h3>Requirements (4 Qs)</h3>
+<label>13. Experience</label><select id="f13"><option>No Experience</option><option>1 year</option><option>2 years</option></select>
+<label>14. Education</label><select id="f14"><option>High School</option><option>Dip
