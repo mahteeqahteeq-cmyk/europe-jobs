@@ -206,4 +206,52 @@ m.innerHTML=`<h2>📝 Add New Job - 20+ Fields</h2>
 </div>
 <div class="form-section"><h3>Requirements (4 Qs)</h3>
 <label>13. Experience</label><select id="f13"><option>No Experience</option><option>1 year</option><option>2 years</option></select>
-<label>14. Education</label><select id="f14"><option>High School</option><option>Dip
+<label>14. Education</label><select id="f14"><option>Any</option><option>Matric</option><option>FA / FSc</option><option>Bachelor</option><option>Master</option></select>
+</div>
+
+<div class="form-section"><h3>Requirements (4 Qs)</h3>
+<label>15. Age</label><input id="f15" placeholder="e.g. 18-45">
+<label>16. Language</label><select id="f16"><option>English</option><option>Urdu</option><option>English + Local</option></select>
+<label>17. Experience Years</label><input id="f17" placeholder="e.g. 2 Years">
+<label>18. Skills</label><input id="f18" placeholder="e.g. Driving, Cooking">
+</div>
+
+<div class="form-section"><h3>Contact (2 Qs)</h3>
+<label>19. WhatsApp Number</label><input id="f19" placeholder="923XXXXXXXXX">
+<label>20. Email</label><input id="f20" placeholder="example@gmail.com">
+</div>
+
+<div class="form-section"><h3>Description</h3>
+<label>Job Details</label><textarea id="f21" rows="4" placeholder="Write full job details here..."></textarea>
+</div>
+
+<button onclick="saveNewJob()" style="width:100%;padding:14px;background:#16a34a;color:#fff;border:0;border-radius:10px;font-size:17px;font-weight:bold;">Save Job</button>
+`;
+document.getElementById('modal').style.display='flex';
+}
+
+function closeModal(){
+  document.getElementById('modal').style.display='none';
+}
+
+function saveNewJob(){
+  let title=document.getElementById('f1').value;
+  let company=document.getElementById('f2').value;
+  if(!title){ alert('Please write Job Title'); return; }
+  let newJob = {
+    t: title,
+    c: company,
+    cat: document.getElementById('f3').value,
+    type: document.getElementById('f4').value,
+    vac: document.getElementById('f5').value,
+    country: document.getElementById('f6').value,
+    city: document.getElementById('f7').value,
+    sal: document.getElementById('f9').value,
+    desc: document.getElementById('f21').value,
+    wa: document.getElementById('f19').value
+  };
+  jobs.unshift(newJob);
+  if(typeof render==='function'){ render(); }
+  closeModal();
+  alert('Job Saved!');
+  }
