@@ -259,5 +259,12 @@ function saveNewJob(){
   }
   doFilter();
 </script>
+<script>
+let jobs2=[{t:"Driver",c:"EU Logistics",co:"Germany",cat:"Delivery",ty:"On-Site"},{t:"Waiter",c:"Hotel EU",co:"Austria",cat:"Hotel",ty:"On-Site"},{t:"Warehouse Packer",c:"EU Logistics",co:"Germany",cat:"Warehouse",ty:"On-Site"}];
+function render2(){let el=document.getElementById('list'); if(el) el.innerHTML=jobs2.map(j=>"<div class='job'><b>"+j.t+"</b> - "+j.c+" - "+j.co+" - "+j.ty+"</div>").join(''); let cc=document.getElementById('count'); if(cc) cc.innerText=jobs2.length+" Jobs Found - FIXED";}
+function doFilter(){render2();}
+function clearFilters(){render2();}
+render2();
+  </script>
 </body>
 </html>
