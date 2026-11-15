@@ -243,7 +243,7 @@ let jobs2=[];
 let jobsFiltered=[];
 let isLoading=true;
 let lastUpdateTime=new Date();
-let savedJobs=JSON.parse(localStorage.getItem('savedJobs')||'[]');
+let savedJobs=[]; try{savedJobs=JSON.parse(localStorage.getItem('savedJobs')||'[]');}catch(e){savedJobs=[];}
 let myJobs=JSON.parse(localStorage.getItem('myJobs')||'[]');
 function fmtDate(s){if(!s) return "Today"; try{let d=new Date(s); if(isNaN(d)) return "Today"; return d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();}catch(e){return "Today";}}
 function lastDate(s){try{let d=new Date(s||Date.now()); if(isNaN(d)) d=new Date(); d.setDate(d.getDate()+30); return d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();}catch(e){return "Check Official Page";}}
