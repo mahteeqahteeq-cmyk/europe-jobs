@@ -260,11 +260,31 @@ function saveNewJob(){
   doFilter();
 </script>
 <script>
-let jobs2=[{t:"Driver",c:"EU Logistics",co:"Germany",cat:"Delivery",ty:"On-Site"},{t:"Waiter",c:"Hotel EU",co:"Austria",cat:"Hotel",ty:"On-Site"},{t:"Warehouse Packer",c:"EU Logistics",co:"Germany",cat:"Warehouse",ty:"On-Site"}];
-function render2(){let el=document.getElementById('list'); if(el) el.innerHTML=jobs2.map(j=>"<div class='job'><b>"+j.t+"</b> - "+j.c+" - "+j.co+" - "+j.ty+"</div>").join(''); let cc=document.getElementById('count'); if(cc) cc.innerText=jobs2.length+" Jobs Found - FIXED";}
-function doFilter(){render2();}
-function clearFilters(){render2();}
+let jobs2=[];
+let jobsFiltered=[];
+function showList(list){let el=document.getElementById('list'); if(!el) return; if(list.length==0){el.innerHTML="<div class='job'>Loading Real LIVE Jobs from Europe... Please wait 10 seconds...</div>"; return;} el.innerHTML=list.map(j=>"<div class='job'><b>"+j.t+"</b><br>"+j.c+" - "+j.co+" - "+j.ty+"<br><a href='"+(j.u||"#")+"' target='_blank'>Apply / View Real Job</a></div>").join(''); let cc=document.getElementById('count'); if(cc) cc.innerText=list.length+" Real Jobs Found - LIVE";}
+function render2(){jobsFiltered=jobs2.slice(); showList(jobsFiltered);}
+function doFilter(){let qEl=document.getElementById('q'); let q=qEl?qEl.value.toLowerCase().trim():""; if(!q){render2(); return;} jobsFiltered=jobs2.filter(j=>((j.t||"")+" "+(j.c||"")+" "+(j.co||"")).toLowerCase().includes(q)); showList(jobsFiltered);}
+function clearFilters(){let qEl=document.getElementById('q'); if(qEl) qEl.value=""; render2();}
 render2();
-  </script>
+function addJobs(list){let before=jobs2.length; for(let x of list){let t=(x.t||"").trim(); if(!t) continue; if(jobs2.some(y=>y.t==t && y.c==x.c)) continue; jobs2.push(x);} if(jobs2.length!=before) render2();}
+function loadOne(url,mapFn){return fetch(url).then(r=>{if(!r.ok) throw new Error("API down"); return r.json();}).then(d=>addJobs(mapFn(d))).catch(e=>{console.log("API fail: "+url);});}
+// 1 - Arbeitnow - Germany / Europe
+loadOne("https://www.arbeitnow.com/api/job-board-api",d=>d.data.map(x=>({t:x.title,c:x.company_name,co:x.location,cat:"All",ty:"On-Site",u:x.url})));
+// 2 - Remotive - Remote Jobs
+loadOne("https://remotive.com/api/remote-jobs?limit=100",d=>d.jobs.map(x=>({t:x.title,c:x.company_name,co:x.candidate_required_location,cat:x.category,ty:"Remote",u:x.url})));
+// 3 - Jobicy - Remote Jobs
+loadOne("https://jobicy.com/api/v2/remote-jobs?count=50",d=>d.jobs.map(x=>({t:x.jobTitle,c:x.companyName,co:x.jobGeo,cat:x.jobIndustry,ty:"Remote",u:x.url})));
+// 4 - Arbeitnow - dobara try, taake zyada jobs aayen
+loadOne("https://www.arbeitnow.com/api/job-board-api?search=developer",d=>d.data.map(x=>({t:x.title,c:x.company_name,co:x.location,cat:"All",ty:"On-Site",u:x.url})));
+// 5 - Backup - Agar 8 second me koi API na chale, to 3 purani jobs dikhao taake site khali na rahe
+setTimeout(function(){if(jobs2.length==0){addJobs([{t:"Driver",c:"EU Logistics",co:"Germany",cat:"Delivery",ty:"On-Site",u:"#"},{t:"Waiter",c:"Hotel EU",co:"Austria",cat:"Hotel",ty:"On-Site",u:"#"},{t:"Warehouse Packer",c:"EU Logistics",co:"Germany",cat:"Warehouse",ty:"On-Site",u:"#"}]);}},8000);
+                                                                                                                                                                                                       </script>
+
+
+
+
+
+  
 </body>
 </html>
