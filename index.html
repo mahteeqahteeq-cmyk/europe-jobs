@@ -237,28 +237,7 @@ function closeModal(){
 }
 
 function saveNewJob(){
-  let title=document.getElementById('f1').value;
-  let company=document.getElementById('f2').value;
-  if(!title){ alert('Please write Job Title'); return; }
-  let newJob = {
-    t: title,
-    c: company,
-    cat: document.getElementById('f3').value,
-    type: document.getElementById('f4').value,
-    vac: document.getElementById('f5').value,
-    country: document.getElementById('f6').value,
-    city: document.getElementById('f7').value,
-    sal: document.getElementById('f9').value,
-    desc: document.getElementById('f21').value,
-    wa: document.getElementById('f19').value
-  };
-  jobs.unshift(newJob);
-  if(typeof render==='function'){ render(); }
-  closeModal();
-  alert('Job Saved!');
-  }
-  doFilter();
-</script>
+
 <script>
 let jobs2=[];
 let jobsFiltered=[];
