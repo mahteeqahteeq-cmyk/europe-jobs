@@ -120,9 +120,11 @@ let extraPool=[
 ];
 
 function render(arr){
-document.getElementById('count').innerText=arr.length+' Real On-Site Jobs Found - V21 Fixed - Jobs Showing!';
-document.getElementById('savedCount').innerText=savedJobs.length;
-let el=document.getElementById('list');
+let cc=document.getElementById('count'); if(cc) cc.innerText=arr.length+' Real On-Site Jobs Found';
+let sc=document.getElementById('savedCount'); if(sc) sc.innerText=savedJobs.length;
+let el=document.getElementById('list'); if(!el) return;
+
+
 if(arr.length==0){
 el.innerHTML='<div class="card" style="text-align:center"><h3>No jobs found for "'+document.getElementById('q').value+'"</h3><p>Try Clear Filters button or search "warehouse", "cleaner", "driver"</p><button class="btn" onclick="clearFilters()">Clear Filters - Show All 30 Jobs</button></div>';
 return;
