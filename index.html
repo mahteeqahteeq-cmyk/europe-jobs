@@ -267,5 +267,171 @@ addR([{t:"Warehouse Worker - Check Official Page",c:"EU Logistics",co:"Germany",
 },12000);
 })();
  </script> 
+ <script>
+// BIG PAGES V3 - 200% Checked - About 3 Parts + Privacy + Terms + Disclaimer + Contact + Safety
+(function(){
+var EMAIL="mahteeqahteeq@gmail.com";
+var WA="+923177033253";
+var WA_LINK="https://wa.me/923177033253";
+
+window.CLOSE_BIG=function(){
+  var m=document.getElementById("modal");
+  if(m){ m.style.display="none"; }
+  var d=document.getElementById("bigPageWrap");
+  if(d){ d.remove(); }
+  window.scrollTo(0,0);
+};
+
+function bigPage(title, bodyHtml){
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  var foot="<br><br><button onclick='window.CLOSE_BIG()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;font-size:15px;'>Back to Jobs / Wapis Jobs Par Jayen</button>";
+  if(m && mb){
+    mb.innerHTML="<h2 style='color:#1e3a8a;margin-top:0;font-size:22px;'>"+title+"</h2>"+bodyHtml+foot;
+    m.style.display="block";
+    window.scrollTo(0,0);
+    return;
+  }
+  var old=document.getElementById("bigPageWrap");
+  if(old){ old.remove(); }
+  var div=document.createElement("div");
+  div.id="bigPageWrap";
+  div.style.cssText="position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:99999;overflow:auto;padding:20px;";
+  div.innerHTML="<button onclick='window.CLOSE_BIG()' style='padding:10px 20px;background:#ef4444;color:white;border:none;border-radius:8px;'>X Close</button><h2 style='color:#1e3a8a'>"+title+"</h2>"+bodyHtml+foot;
+  document.body.appendChild(div);
+  window.scrollTo(0,0);
+}
+
+window.openPage=function(p){
+  p=String(p||"").toLowerCase();
+  if(p=="jobs"||p=="home"||p==""){ window.scrollTo(0,0); return; }
+  if(p.indexOf("whatsapp")>-1){ window.open(WA_LINK,"_blank"); return; }
+
+  if(p.indexOf("about")>-1){
+    var aboutHtml="";
+    aboutHtml+="<h3 style='color:#1e3a8a'>PART 1 - Hum Kaun Hain?</h3>";
+    aboutHtml+="<p>Europe Jobs ek <b>FREE information website</b> hai. Hum Europe ki real jobs ki information dete hain.</p>";
+    aboutHtml+="<p>Hum Pakistan aur doosre mulkon ke logon ko sahi information dena chahte hain, taake wo fraud se bach saken.</p>";
+    aboutHtml+="<h3 style='color:#1e3a8a'>PART 2 - Hum Kya Karte Hain / Kya NAHI Karte?</h3>";
+    aboutHtml+="<p><b>Hum karte hain:</b><br>1. Real jobs ki information dete hain.<br>2. Posted Date, Apply Date, Last Date batate hain.<br>3. Apply ka seedha company ka link dete hain.</p>";
+    aboutHtml+="<p><b>Hum NAHI karte:</b><br>1. Hum AGENT NAHI hain.<br>2. Hum paisa NAHI lete.<br>3. Hum passport NAHI lete.<br>4. Hum visa NAHI lagwate.<br>5. Hum job guarantee NAHI dete.<br>6. Hum kisi ko Europe NAHI bhejte.</p>";
+    aboutHtml+="<h3 style='color:#1e3a8a'>PART 3 - Contact / Rabta</h3>";
+    aboutHtml+="<p><b>Email:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"<br><b>Website:</b> Europe Jobs</p>";
+    aboutHtml+="<p>Note: Job ke liye hamesha official website par apply karein.</p>";
+    bigPage("About Us - Europe Jobs", aboutHtml);
+    return;
+  }
+
+  if(p.indexOf("privacy")>-1){
+    var privHtml="";
+    privHtml+="<h3>Privacy Policy - Full</h3><p><b>Last Updated: 16 Nov 2026</b></p>";
+    privHtml+="<p><b>1. Hum kya NAHI mangte:</b><br>Hum aap ka naam, password, passport, CNIC, bank detail nahi mangte.</p>";
+    privHtml+="<p><b>2. Aap ka data kahan rehta hai:</b><br>Aap ka saved data aap ke mobile me rehta hai. Humare server par nahi jata.</p>";
+    privHtml+="<p><b>3. Cookies / Tracking:</b><br>Hum cookies ya tracking nahi karte. Hum aap ki location track nahi karte.</p>";
+    privHtml+="<p><b>4. Jobs kahan se aati hain:</b><br>Jobs third-party public APIs (Arbeitnow, Remotive, Jobicy) se aati hain.</p>";
+    privHtml+="<p><b>5. Apply karne par kya hota hai:</b><br>Apply dabane par aap seedha company ki website par jate hain. Wahan ki privacy policy us company ki hogi.</p>";
+    privHtml+="<p><b>6. Delete Data:</b><br>Delete Data dabane par aap ka saved data delete ho jata hai.</p>";
+    privHtml+="<p><b>7. Bachon ki Privacy:</b><br>Ye website 18 saal se kam umar ke bachon ke liye nahi hai.</p>";
+    privHtml+="<p><b>8. Hum data bechte nahi:</b><br>Hum aap ka data kisi ko bechte nahi, kisi ko dete nahi.</p>";
+    privHtml+="<p><b>9. WhatsApp / Email:</b><br>Agar aap khud humein WhatsApp ya Email karte hain, to sirf wahi baat humare paas hogi jo aap ne khud bheji.</p>";
+    privHtml+="<p><b>10. Contact:</b><br><b>Email:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>";
+    bigPage("Privacy Policy - Full", privHtml);
+    return;
+  }
+
+  if(p.indexOf("term")>-1){
+    var termHtml="";
+    termHtml+="<h3>Terms & Conditions - Full</h3>";
+    termHtml+="<p><b>1.</b> Ye website sirf <b>INFORMATION</b> ke liye hai.</p>";
+    termHtml+="<p><b>2.</b> Sari jobs third-party companies ki hain. Hum unki malik nahi hain.</p>";
+    termHtml+="<p><b>3.</b> Apply karne se pehle official website par <b>Last Date, Salary, Visa, Rehne ki jagah</b> zaroor check karein.</p>";
+    termHtml+="<p><b>4.</b> Kisi agent ko paisa dene par nuqsan ke hum zimmedar nahi hain.</p>";
+    termHtml+="<p><b>5.</b> Salary, Visa, Rehne ki jagah company khud batayegi, hum nahi.</p>";
+    termHtml+="<p><b>6.</b> Hum koi job guarantee nahi dete.</p>";
+    termHtml+="<p><b>7.</b> Agar koi job fake lage to humein batayen, hum usko hata denge.</p>";
+    termHtml+="<p><b>8.</b> Website ka galat istemal karna mana hai.</p>";
+    termHtml+="<p><b>9.</b> Terms kabhi bhi badal sakte hain. Naye terms yahin dikhenge.</p>";
+    termHtml+="<p><b>10. Contact:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>";
+    bigPage("Terms & Conditions - Full", termHtml);
+    return;
+  }
+
+  if(p.indexOf("disclaimer")>-1 || p.indexOf("disclaim")>-1){
+    var discHtml="";
+    discHtml+="<h3>Disclaimer - Zaroor Parhen</h3>";
+    discHtml+="<p><b>1. We are NOT agent.</b> Hum agent nahi hain.</p>";
+    discHtml+="<p><b>2. We ONLY give INFORMATION.</b> Hum sirf information dete hain.</p>";
+    discHtml+="<p><b>3. Never pay money.</b> Kisi ko bhi job ke liye paisa mat dein. Asli job ke liye kabhi paisa nahi lagta.</p>";
+    discHtml+="<p><b>4. Verify yourself.</b> Har job ko official website par khud check karein.</p>";
+    discHtml+="<p><b>5. No Guarantee.</b> Hum job, visa ya salary ki guarantee nahi dete.</p>";
+    discHtml+="<p><b>6. Fraud se bachen.</b> Agar koi kahe 'Visa pakka hai, paisa bhejo' to wo 100% FRAUD hai.</p>";
+    discHtml+="<p><b>7. Hum zimmedar nahi:</b> Agar aap kisi teesre bande ko paisa de den to uska nuqsan humara nahi hoga.</p>";
+    discHtml+="<p><b>Contact:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>";
+    bigPage("Disclaimer - Zaroor Parhen", discHtml);
+    return;
+  }
+
+  if(p.indexOf("contact")>-1){
+    var conHtml="";
+    conHtml+="<h3>Contact Us - Full</h3>";
+    conHtml+="<p><b>Email:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>";
+    conHtml+="<p><b>Kis ke liye rabta karein?</b><br>- Job add karwani ho<br>- Koi job fake lage<br>- Website me koi masla ho<br>- Koi fraud wala banda aap se paisa mange</p>";
+    conHtml+="<p><b>Reply kab milega?</b><br>Hum 24-48 ghante me jawab dene ki koshish karte hain.</p>";
+    conHtml+="<p><a href='"+WA_LINK+"' target='_blank' style='display:block;text-align:center;padding:14px;background:#25D366;color:white;text-decoration:none;border-radius:10px;font-weight:bold;margin-bottom:10px;'>WhatsApp Par Rabta Karen</a></p>";
+    conHtml+="<p><a href='mailto:"+EMAIL+"' style='display:block;text-align:center;padding:14px;background:#1e3a8a;color:white;text-decoration:none;border-radius:10px;font-weight:bold;'>Email Par Rabta Karen</a></p>";
+    bigPage("Contact Us - Full", conHtml);
+    return;
+  }
+
+  if(p.indexOf("safety")>-1){
+    var safeHtml="";
+    safeHtml+="<h3>Data Safety - Full - Zaroor Parhen</h3>";
+    safeHtml+="<p><b>1.</b> Kabhi agent ko paisa mat dein.</p>";
+    safeHtml+="<p><b>2.</b> Kabhi passport original kisi ko mat dein.</p>";
+    safeHtml+="<p><b>3.</b> Kabhi OTP, password, bank code kisi ko mat batayen.</p>";
+    safeHtml+="<p><b>4.</b> Asli company WhatsApp par paisa nahi mangti.</p>";
+    safeHtml+="<p><b>5.</b> Offer aaye to official website par check karein.</p>";
+    safeHtml+="<p><b>6.</b> 'Visa pakka hai, paisa bhejo' = FRAUD hai.</p>";
+    safeHtml+="<p><b>7.</b> Kisi anjaan link par apna CNIC ya passport ki photo mat bhejen.</p>";
+    safeHtml+="<p><b>8.</b> Free visa ya free ticket ka jhansa fraud hota hai.</p>";
+    safeHtml+="<p><b>9.</b> Pehle paisa, baad me visa - ye hamesha jhoot hota hai.</p>";
+    safeHtml+="<h3>Agar fraud ho jaye to kya karein?</h3>";
+    safeHtml+="<p>Foran apne qareebi police station aur apne bank ko batayen. Aur humein bhi batayen taake hum us job ko hata saken.</p>";
+    safeHtml+="<p><b>Contact:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>";
+    bigPage("Data Safety - Full", safeHtml);
+    return;
+  }
+
+  if(p.indexOf("delete")>-1){
+    try{ localStorage.clear(); }catch(e){}
+    bigPage("Delete Data - Data Delete Ho Gaya","<p>Aap ka saved data delete kar diya gaya hai.</p><p><b>1.</b> Saved Jobs delete ho gayi.</p><p><b>2.</b> Aap ki history delete ho gayi.</p><p><b>3.</b> Agar dobara Save karna hai to kisi job ke neeche <b>Save Job</b> dabayen.</p>");
+    return;
+  }
+
+  if(p.indexOf("saved")>-1){
+    try{
+      var s=JSON.parse(localStorage.getItem("savedJobs")||"[]");
+      if(s.length==0){ bigPage("Saved Jobs","<p>Aap ne abhi koi job save nahi ki.</p><p>Kisi job ke neeche <b>Save Job</b> dabayen.</p>"); return; }
+      var h="<h3>Aap ki Saved Jobs ("+s.length+"):</h3>";
+      for(var i=0;i<s.length;i++){ h+="<div style='background:#f1f5f9;padding:12px;margin:8px 0;border-radius:8px;'><b>"+(s[i].t||"Job")+"</b><br>"+(s[i].c||"")+" - "+(s[i].co||s[i].l||"")+"</div>"; }
+      bigPage("Saved Jobs",h);
+    }catch(e){ bigPage("Saved Jobs","<p>Saved Jobs load nahi ho rahi.</p>"); }
+    return;
+  }
+
+  if(p.indexOf("tool")>-1){
+    bigPage("7 Tools - Sab Tools","<p><b>1. CV Maker</b> - Apna CV banayen.<br><b>2. Cover Letter</b> - Company ko khat likhen.<br><b>3. Salary Calculator</b> - Salary ka hisab lagayen.<br><b>4. Interview Tips</b> - Interview ki tayyari.<br><b>5. Visa Checklist</b> - Visa ke kagaz.<br><b>6. Document Checklist</b> - Har job ke kagaz.<br><b>7. Job Alerts</b> - WhatsApp par alert.</p><p>Tools ke liye agle step me hum 7 Tools ko bhi alag alag bada kar denge.</p>");
+    return;
+  }
+
+  if(p.indexOf("add")>-1){
+    bigPage("Add New Job","<p>Job add karne ke liye humein WhatsApp par job bhejen: <b>"+WA+"</b></p><p><b>Email:</b> "+EMAIL+"</p>");
+    return;
+  }
+
+  bigPage("Information","<p>Information jald aa rahi hai.</p><p><b>Contact:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>");
+};
+})();
+ </script>
 </body>
 </html>
