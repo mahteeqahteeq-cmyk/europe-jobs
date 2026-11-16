@@ -433,5 +433,62 @@ window.openPage=function(p){
 };
 })();
  </script>
+ <script>
+// ADD JOB 22 QUESTIONS V3 - English Form - Q13 Passport + License Upload - 200% Checked
+(function(){
+var EMAIL="mahteeqahteeq@gmail.com";
+var WA="+923177033253";
+var OLD_OPEN=window.openPage;
+
+function closeAdd(){
+  var m=document.getElementById("modal");
+  if(m){ m.style.display="none"; }
+  if(window.CLOSE_BIG){ window.CLOSE_BIG(); }
+  window.scrollTo(0,0);
+}
+
+function showAddForm(){
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  if(!m||!mb){
+    alert("Modal not found, please refresh page.");
+    return;
+  }
+  var h="";
+  h+="<h2 style='color:#1e3a8a;margin-top:0'>Add New Job - Fill All 22 Questions</h2>";
+  h+="<p style='background:#fef3c7;padding:10px;border-radius:8px;'><b>Note:</b> Job will be added only after filling all 22 questions. Do not add fake job. Contact: "+EMAIL+" / "+WA+"</p>";
+  h+="<label><b>1. Job Title *</b></label><input id='q1' placeholder='Example: Warehouse Worker' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>2. Company Name *</b></label><input id='q2' placeholder='Full company name' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>3. Country *</b></label><select id='q3' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Germany</option><option>Poland</option><option>Netherlands</option><option>France</option><option>Spain</option><option>Italy</option><option>Austria</option><option>Czech Republic</option><option>Romania</option><option>Other Europe</option></select>";
+  h+="<label><b>4. City *</b></label><input id='q4' placeholder='Example: Berlin' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>5. Job Category *</b></label><select id='q5' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Warehouse</option><option>Cleaning</option><option>Cook / Kitchen</option><option>Hotel / Restaurant</option><option>Delivery</option><option>Driver</option><option>Factory</option><option>Farm</option><option>Care / Nurse</option><option>IT / Office</option><option>Other</option></select>";
+  h+="<label><b>6. Job Type</b></label><select id='q6' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>On-Site</option><option>Remote</option><option>Hybrid</option></select>";
+  h+="<label><b>7. Salary Amount? (Example: 1800)</b></label><input id='q7' placeholder='1800' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>8. Salary Currency?</b></label><select id='q8' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Euro - EUR</option><option>PLN - Poland Zloty</option><option>Other</option></select>";
+  h+="<label><b>9. Working Hours Per Day?</b></label><input id='q9' placeholder='Example: 8 Hours' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>10. Experience Required?</b></label><select id='q10' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>No Experience - Fresh Can Apply</option><option>1 Year</option><option>2 Years</option><option>More Than 3 Years</option></select>";
+  h+="<label><b>11. Education Required?</b></label><select id='q11' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Matric</option><option>FA / FSc</option><option>BA / BSc</option><option>No Education Required</option></select>";
+  h+="<label><b>12. Age Limit?</b></label><input id='q12' placeholder='Example: 18-45' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>13. Upload Documents - Passport + Driving License * NEW</b></label><div style='background:#f1f5f9;padding:12px;border-radius:8px;margin:5px 0;'><p style='margin:4px 0'><b>13A. Upload Passport Copy:</b></p><input id='q13a' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'><p style='margin:10px 0 4px'><b>13B. Upload Driving License Copy:</b></p><input id='q13b' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'><p style='font-size:11px;color:#64748b;'>Note: For safety, do NOT upload original passport number here. Only upload copy if company asks. If you do not have license, leave 13B empty.</p></div>";
+  h+="<label><b>14. Language Required?</b></label><select id='q14' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>English Is Enough</option><option>German Required</option><option>Local Language Required</option><option>No Language Required</option></select>";
+  h+="<label><b>15. Who Will Provide Visa?</b></label><select id='q15' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide Visa</option><option>Company Will Provide Work Permit</option><option>You Must Have Your Own Visa</option></select>";
+  h+="<label><b>16. Accommodation?</b></label><select id='q16' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>Company Will Provide - Money Will Be Deducted</option><option>You Have To Arrange Yourself</option></select>";
+  h+="<label><b>17. Food?</b></label><select id='q17' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>You Have To Arrange Yourself</option><option>Allowance Will Be Given</option></select>";
+  h+="<label><b>18. Transport?</b></label><select id='q18' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>You Have To Arrange Yourself</option></select>";
+  h+="<label><b>19. Contract Duration?</b></label><select id='q19' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>1 Year</option><option>2 Years</option><option>6 Months</option><option>Permanent</option></select>";
+  h+="<label><b>20. Posted Date - When Was Job Posted?</b></label><input id='q20' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>21. Last Date - Last Date To Apply?</b></label><input id='q21' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>22. Apply Link / Email / WhatsApp - Where To Apply? *</b></label><input id='q22' placeholder='https://company.com/jobs or email' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>Job Full Description</b></label><textarea id='qDesc' rows='4' placeholder='What will be the work? What is the duty?' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'></textarea>";
+  h+="<p style='font-size:12px;'><input type='checkbox' id='qAgree'> I confirm that this job is <b>real</b>, I have not written any lie. I understand fake job will be removed.</p>";
+  h+="<button onclick='window.SAVE_22_JOB()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;font-size:15px;'>Submit - Add Job</button>";
+  h+="<button onclick='window.CLOSE_BIG()' style='width:100%;padding:12px;background:#64748b;color:white;border:none;border-radius:10px;margin-top:8px;'>Back to Jobs</button>";
+  mb.innerHTML=h;
+  m.style.display="block";
+  window.scrollTo(0,0);
+}
+
+window.SAVE_22_JOB=function(){
+  function val(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
 </body>
 </html>
