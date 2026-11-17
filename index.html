@@ -490,5 +490,222 @@ function showAddForm(){
 
 window.SAVE_22_JOB=function(){
   function val(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+ <script>
+// FINAL ALL IN ONE V6 - FIXED - Big Pages + Add Job 25 + 7 WORKING Tools - 3 Bugs Fixed
+(function(){
+var EMAIL="mahteeqahteeq@gmail.com";
+var WA="+923177033253";
+var WA_LINK="https://wa.me/923177033253";
+
+window.CLOSE_BIG=function(){
+  var m=document.getElementById("modal");
+  if(m){ m.style.display="none"; }
+  var d=document.getElementById("bigPageWrap");
+  if(d){ d.remove(); }
+  window.scrollTo(0,0);
+};
+
+function bigPage(title, bodyHtml, isTool){
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  var foot="<br><br><button onclick='window.CLOSE_BIG()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;font-size:15px;'>Back to Jobs</button>";
+  if(isTool){
+    foot+="<button onclick='window.openPage(\"tools\")' style='width:100%;padding:12px;background:white;color:#1e3a8a;border:1px solid #1e3a8a;border-radius:10px;margin-top:8px;font-weight:bold;'>Back to All Tools</button>";
+  }
+  if(m && mb){
+    mb.innerHTML="<h2 style='color:#1e3a8a;margin-top:0;font-size:22px;'>"+title+"</h2>"+bodyHtml+foot;
+    m.style.display="block";
+    window.scrollTo(0,0);
+    return;
+  }
+  var old=document.getElementById("bigPageWrap");
+  if(old){ old.remove(); }
+  var div=document.createElement("div");
+  div.id="bigPageWrap";
+  div.style.cssText="position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:99999;overflow:auto;padding:20px;";
+  div.innerHTML="<button onclick='window.CLOSE_BIG()' style='padding:10px 20px;background:#ef4444;color:white;border:none;border-radius:8px;'>X Close</button><h2 style='color:#1e3a8a'>"+title+"</h2>"+bodyHtml+foot;
+  document.body.appendChild(div);
+  window.scrollTo(0,0);
+}
+
+function inp(id,ph){ return "<input id='"+id+"' placeholder='"+ph+"' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>"; }
+function tbtn(txt,arg){ return "<button onclick='window.openPage(\""+arg+"\")' style='width:100%;padding:13px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;margin:6px 0;'>"+txt+"</button>"; }
+
+function showToolsList(){
+  var h="<h3>7 Tools - Sab Tools Chalenge</h3><p>Jaise LinkedIn me hota hai, waise hi har Tool alag se khulega. Kisi par bhi dabao.</p>";
+  h+=tbtn("1. CV Maker - Apna CV Banayen","tool-cv");
+  h+=tbtn("2. Cover Letter - Company Ko Khat Likhen","tool-cover");
+  h+=tbtn("3. Salary Calculator - Salary Ka Hisab","tool-salary");
+  h+=tbtn("4. Interview Tips + Sawal Jawab","tool-interview");
+  h+=tbtn("5. Visa Checklist - Visa Ke Kagaz","tool-visa");
+  h+=tbtn("6. Document Checklist - Har Job Ke Kagaz","tool-document");
+  h+=tbtn("7. Job Alerts - WhatsApp Par Alert","tool-alert");
+  bigPage("7 Tools - All Tools",h,true);
+}
+
+// FIX 2 - Copy ka alag function, nested quotes khatam
+window.COPY_COVER=function(){
+  var el=document.getElementById("clOut");
+  if(!el){ alert("Pehle Generate dabayen"); return; }
+  var txt=el.innerText||el.textContent||"";
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(txt).then(function(){ alert("Copy ho gaya!"); });
+  } else {
+    alert(txt);
+  }
+};
+// FIX 3 - Alerts ka alag function, nested quotes khatam
+window.SEND_ALERT=function(){
+  var e=document.getElementById("alertWa");
+  var n=e?e.value:"";
+  window.open("https://wa.me/923177033253?text="+encodeURIComponent("Hi! I want Job Alerts. My number: "+n),"_blank");
+};
+
+window.MAKE_CV=function(){
+  function v(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  var name=v("cvName")||"Your Name";
+  var job=v("cvJob")||"Warehouse Worker";
+  var phone=v("cvPhone")||WA;
+  var email=v("cvEmail")||EMAIL;
+  var exp=v("cvExp")||"1 Year Experience";
+  var skill=v("cvSkill")||"Hard Working, Honest, Punctual";
+  var edu=v("cvEdu")||"Matric";
+  var cv="<div style='border:2px solid #1e3a8a;padding:16px;border-radius:10px;background:white;'><h2 style='margin:0;color:#1e3a8a'>"+name+"</h2><p><b>"+job+"</b></p><p>Phone: "+phone+" | Email: "+email+"</p><hr><h3>Experience</h3><p>"+exp+"</p><h3>Skills</h3><p>"+skill+"</p><h3>Education</h3><p>"+edu+"</p><h3>Objective</h3><p>I want to work hard in Europe and grow with company. I am honest, punctual and ready to work.</p></div>";
+  cv+="<button onclick='window.print()' style='width:100%;padding:13px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;margin-top:10px;'>Print / Save CV As PDF</button>";
+  cv+="<p>Print dabane par Save as PDF select karein.</p>";
+  var out=document.getElementById("cvOut");
+  if(out){ out.innerHTML=cv; }
+};
+window.MAKE_COVER=function(){
+  function v(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  var name=v("clName")||"Your Name";
+  var comp=v("clComp")||"Company Name";
+  var job=v("clJob")||"Warehouse Worker";
+  var txt="Dear Sir / Madam,<br><br>My name is <b>"+name+"</b>. I am applying for <b>"+job+"</b> in <b>"+comp+"</b>.<br><br>I am hard working, honest and punctual. I have experience and I am ready to work in Europe. I will follow all company rules.<br><br>Please give me a chance for interview.<br><br>Thank you,<br><b>"+name+"</b><br>WhatsApp: "+WA+"<br>Email: "+EMAIL;
+  var out=document.getElementById("clOut");
+  if(out){ out.innerHTML="<div style='background:#f8fafc;padding:14px;border-radius:10px;border:1px solid #cbd5e1;'>"+txt+"</div><button onclick='window.COPY_COVER()' style='width:100%;padding:12px;background:#16a34a;color:white;border:none;border-radius:10px;margin-top:8px;font-weight:bold;'>Copy Cover Letter</button>"; }
+};
+window.CALC_SALARY=function(){
+  var s=parseFloat(document.getElementById("salAmt").value||"0");
+  var h=parseFloat(document.getElementById("salHours").value||"8");
+  var d=parseFloat(document.getElementById("salDays").value||"26");
+  var out=document.getElementById("salOut");
+  if(!out){ return; }
+  if(!s){ out.innerHTML="<p>Salary likhen.</p>"; return; }
+  var perHour=(s/d/h).toFixed(2);
+  var yearly=s*12;
+  var pkr=Math.round(s*300);
+  out.innerHTML="<div style='background:#ecfdf5;padding:14px;border-radius:10px;'><b>Result:</b><br>Monthly: <b>EUR "+s+"</b><br>Per Hour: <b>EUR "+perHour+"</b><br>Yearly: <b>EUR "+yearly+"</b><br>Pakistan Me Takreeban: <b>Rs "+pkr+" / Mahina</b> (1 EUR = 300 PKR andaza)</div>";
+};
+
+function showAddForm(){
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  if(!m||!mb){ alert("Modal not found, please refresh page."); return; }
+  var h="";
+  h+="<h2 style='color:#1e3a8a;margin-top:0'>Add New Job - Fill All 25 Questions</h2>";
+  h+="<p style='background:#fef3c7;padding:10px;border-radius:8px;'><b>Note:</b> Job will be added only after filling all 25 questions. Contact: "+EMAIL+" / "+WA+"</p>";
+  h+="<label><b>1. Job Title *</b></label>"+inp("q1","Example: Warehouse Worker");
+  h+="<label><b>2. Company Name *</b></label>"+inp("q2","Full company name");
+  h+="<label><b>3. Country *</b></label><select id='q3' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Germany</option><option>Poland</option><option>Netherlands</option><option>France</option><option>Spain</option><option>Italy</option><option>Austria</option><option>Czech Republic</option><option>Romania</option><option>Other Europe</option></select>";
+  h+="<label><b>4. City *</b></label>"+inp("q4","Example: Berlin");
+  h+="<label><b>5. Job Category *</b></label><select id='q5' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Warehouse</option><option>Cleaning</option><option>Cook / Kitchen</option><option>Hotel / Restaurant</option><option>Delivery</option><option>Driver</option><option>Factory</option><option>Farm</option><option>Care / Nurse</option><option>IT / Office</option><option>Other</option></select>";
+  h+="<label><b>6. Job Type</b></label><select id='q6' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>On-Site</option><option>Remote</option><option>Hybrid</option></select>";
+  h+="<label><b>7. Salary Amount?</b></label>"+inp("q7","1800");
+  h+="<label><b>8. Salary Currency?</b></label><select id='q8' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Euro - EUR</option><option>PLN - Poland Zloty</option><option>Other</option></select>";
+  h+="<label><b>9. Working Hours Per Day?</b></label>"+inp("q9","Example: 8 Hours");
+  h+="<label><b>10. Experience Required?</b></label><select id='q10' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>No Experience - Fresh Can Apply</option><option>1 Year</option><option>2 Years</option><option>More Than 3 Years</option></select>";
+  h+="<label><b>11. Education Required?</b></label><select id='q11' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Matric</option><option>FA / FSc</option><option>BA / BSc</option><option>No Education Required</option></select>";
+  h+="<label><b>12. Age Limit?</b></label>"+inp("q12","Example: 18-45");
+  h+="<label><b>13. Upload Documents - Passport + Driving License</b></label><div style='background:#f1f5f9;padding:12px;border-radius:8px;margin:5px 0;'><p><b>13A. Upload Passport Copy:</b></p><input id='q13a' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'><p><b>13B. Upload Driving License Copy:</b></p><input id='q13b' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'></div>";
+  h+="<label><b>14. Language Required?</b></label><select id='q14' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>English Is Enough</option><option>German Required</option><option>Local Language Required</option><option>No Language Required</option></select>";
+  h+="<label><b>15. Who Will Provide Visa?</b></label><select id='q15' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide Visa</option><option>Company Will Provide Work Permit</option><option>You Must Have Your Own Visa</option></select>";
+  h+="<label><b>16. Accommodation?</b></label><select id='q16' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>Company Will Provide - Money Will Be Deducted</option><option>You Have To Arrange Yourself</option></select>";
+  h+="<label><b>17. Food?</b></label><select id='q17' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>You Have To Arrange Yourself</option><option>Allowance Will Be Given</option></select>";
+  h+="<label><b>18. Transport?</b></label><select id='q18' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>Company Will Provide</option><option>You Have To Arrange Yourself</option></select>";
+  h+="<label><b>19. Contract Duration?</b></label><select id='q19' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'><option>1 Year</option><option>2 Years</option><option>6 Months</option><option>Permanent</option></select>";
+  h+="<label><b>20. Posted Date?</b></label><input id='q20' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>21. Last Date To Apply?</b></label><input id='q21' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>22. Apply Link / Email / WhatsApp *</b></label>"+inp("q22","https://company.com/jobs or email");
+  h+="<label><b>23. Your Name *</b></label>"+inp("q23","Your full name");
+  h+="<label><b>24. Your WhatsApp Number *</b></label>"+inp("q24","+92...");
+  h+="<label><b>25. Your Email *</b></label>"+inp("q25","your@email.com");
+  h+="<label><b>Job Full Description</b></label><textarea id='qDesc' rows='4' placeholder='What will be the work?' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'></textarea>";
+  h+="<p><input type='checkbox' id='qAgree'> I confirm that this job is <b>real</b>.</p>";
+  h+="<button onclick='window.SAVE_25_JOB()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;'>Submit - Add Job</button>";
+  h+="<button onclick='window.CLOSE_BIG()' style='width:100%;padding:12px;background:#64748b;color:white;border:none;border-radius:10px;margin-top:8px;'>Back to Jobs</button>";
+  mb.innerHTML=h;
+  m.style.display="block";
+  window.scrollTo(0,0);
+}
+
+window.SAVE_25_JOB=function(){
+  function val(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  function fileName(id){ var e=document.getElementById(id); if(!e||!e.files||e.files.length==0) return "Not Uploaded"; return e.files[0].name; }
+  var t=val("q1"), c=val("q2"), country=val("q3"), city=val("q4"), cat=val("q5"), ty=val("q6"), sal=val("q7"), apply=val("q22");
+  var agree=document.getElementById("qAgree");
+  if(!t){ alert("1. Job Title is required!"); return; }
+  if(!c){ alert("2. Company Name is required!"); return; }
+  if(!city){ alert("4. City is required!"); return; }
+  if(!apply){ alert("22. Apply Link is required!"); return; }
+  if(!val("q23")){ alert("23. Your Name is required!"); return; }
+  if(!val("q24")){ alert("24. Your WhatsApp is required!"); return; }
+  if(!val("q25")){ alert("25. Your Email is required!"); return; }
+  if(!agree||!agree.checked){ alert("Please tick the box that job is real!"); return; }
+  var posted=val("q20"), lastd=val("q21");
+  var jobHtml="<div class='job' style='border-left:5px solid #16a34a'><b>"+t+" (Your Added Job)</b><br>"+c+" - "+country+" - "+city+" - "+ty+"<br><b>Posted:</b> "+(posted||"Today")+" | <b>Last:</b> "+(lastd||"Check Official Page")+"<br><b>Salary:</b> "+(sal?("EUR "+sal):"Check Official Page")+"<br><b>Passport File:</b> "+fileName("q13a")+" | <b>License File:</b> "+fileName("q13b")+"<br><b>Added By:</b> "+val("q23")+" - "+val("q24")+"<br><b>Description:</b> "+val("qDesc")+"<br><a href='"+apply+"' target='_blank'><button style='padding:8px 14px;background:#1e3a8a;color:white;border:none;border-radius:6px;margin-top:6px;'>Apply / View Real Job</button></a></div>";
+  var job={t:t,c:c,co:country+" - "+city,cat:cat,ty:ty,u:apply,pd:posted||new Date(),last:lastd||"",sal:sal?("EUR "+sal):"Check Official Page",desc:val("qDesc")};
+  try{ var list=JSON.parse(localStorage.getItem("myAddedJobs")||"[]"); list.unshift(job); localStorage.setItem("myAddedJobs",JSON.stringify(list)); }catch(e){}
+  var listEl=document.getElementById("list");
+  if(listEl){ listEl.innerHTML=jobHtml+listEl.innerHTML; }
+  window.CLOSE_BIG();
+  alert("Congratulations! Your job has been added!");
+  window.scrollTo(0,0);
+};
+
+window.openPage=function(p){
+  var s=String(p||"").toLowerCase();
+  if(s.indexOf("add")>-1){ showAddForm(); return; }
+  if(s=="jobs"||s=="home"||s==""){ window.scrollTo(0,0); return; }
+  if(s.indexOf("whatsapp")>-1){ window.open(WA_LINK,"_blank"); return; }
+  if(s.indexOf("tool")>-1){
+    if(s.indexOf("cv")>-1){
+      var cvH="<h3>1. CV Maker - Apna CV Banayen</h3><p>Neeche apna naam likhen, phir <b>Generate CV</b> dabayen.</p>";
+      cvH+="<label><b>Your Name</b></label>"+inp("cvName","Your full name");
+      cvH+="<label><b>Job You Want</b></label>"+inp("cvJob","Warehouse Worker");
+      cvH+="<label><b>Phone / WhatsApp</b></label>"+inp("cvPhone","+92...");
+      cvH+="<label><b>Email</b></label>"+inp("cvEmail","your@email.com");
+      cvH+="<label><b>Experience</b></label>"+inp("cvExp","1 Year in Warehouse");
+      cvH+="<label><b>Skills</b></label>"+inp("cvSkill","Hard Working, Honest");
+      cvH+="<label><b>Education</b></label>"+inp("cvEdu","Matric");
+      cvH+="<button onclick='window.MAKE_CV()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Generate CV - CV Banayen</button><div id='cvOut' style='margin-top:12px;'></div>";
+      bigPage("CV Maker - Tool 1",cvH,true); return;
+    }
+    if(s.indexOf("cover")>-1){
+      var clH="<h3>2. Cover Letter Maker</h3><p>Naam aur Company likhen, Cover Letter ban jayega.</p>";
+      clH+="<label><b>Your Name</b></label>"+inp("clName","Your name");
+      clH+="<label><b>Company Name</b></label>"+inp("clComp","Company name");
+      clH+="<label><b>Job Title</b></label>"+inp("clJob","Warehouse Worker");
+      clH+="<button onclick='window.MAKE_COVER()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Generate Cover Letter</button><div id='clOut' style='margin-top:12px;'></div>";
+      bigPage("Cover Letter - Tool 2",clH,true); return;
+    }
+    if(s.indexOf("salary")>-1){
+      var salH="<h3>3. Salary Calculator</h3><p>Salary likhen, hisab khud ho jayega.</p>";
+      salH+="<label><b>Monthly Salary in EUR</b></label>"+inp("salAmt","1800");
+      salH+="<label><b>Working Hours Per Day</b></label>"+inp("salHours","8");
+      salH+="<label><b>Working Days Per Month</b></label>"+inp("salDays","26");
+      salH+="<button onclick='window.CALC_SALARY()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Calculate Salary</button><div id='salOut' style='margin-top:12px;'></div>";
+      bigPage("Salary Calculator - Tool 3",salH,true); return;
+    }
+    if(s.indexOf("interview")>-1){
+      bigPage("Interview Tips - Tool 4","<h3>4. Interview Tips - 10 Sawal</h3><p><b>1. Tell me about yourself?</b><br>Jawab: My name is... I have experience in... I am hard working.</p><p><b>2. Why do you want this job?</b><br>Jawab: I want to work in Europe and grow with company.</p><p><b>3. What is your experience?</b><br>Jawab: I worked in... for... years.</p><p><b>4. Can you work 8-10 hours?</b><br>Jawab: Yes, I can.</p><p><b>5. Do you have passport?</b><br>Jawab: Yes / No - sach batayen.</p><p><b>6. Can you work in night shift?</b><br>Jawab: Yes, if company needs.</p><p><b>7. What is your salary expectation?</b><br>Jawab: As per company rules.</p><p><b>8. When can you join?</b><br>Jawab: As soon as visa is ready.</p><p><b>9. Do you know English?</b><br>Jawab: Yes, basic English.</p><p><b>10. Any question?</b><br>Jawab: Yes, when will I get offer letter?</p><h3>3 Golden Tips</h3><p>1. Jhoot mat bolen.<br>2. Saaf kapde pehnen.<br>3. Time par pahunchen.</p>",true);
+      return;
+    }
+    if(s.indexOf("visa")>-1){
+      bigPage("Visa Checklist - Tool 5","<h3>5. Visa Checklist - Tick Karen</h3><p><label><input type='checkbox'> Passport (6 Mahine se zyada valid)</label><br><label><input type='checkbox'> Offer Letter / Job Contract</label><br><label><input type='checkbox'> Passport Size Photos - 6</label><br><label><input type='checkbox'> CNIC Copy</label><br><label><input type='checkbox'> Police Clearance Certificate</label><br><label><input type='checkbox'> Medical Report</label><br><label><input type='checkbox'> CV</label><br><label><input type='checkbox'> Education Certificates</label><br><label><input type='checkbox'> Experience Letters</label><br><label><input type='checkbox'> Bank Statement (Agar company mange)</label></p>",true);
+      return;
+    }
+    if(s.indexOf("document")>-1){
+      bigPage("Document Checklist - Tool 6","<h3>6. Document Checklist</h3><p><label><input type='checkbox'> Passport Copy</label><br><label><input type='checkbox'> CNIC Copy</label><br><label><input type='checkbox'> CV</label><br><label><input type='checkbox'> Cover Letter</label><br><label><input type='checkbox'> Photos - Passport Size</label><br><label><input type='checkbox'> Education Documents</label><br><label><input type='checkbox'> Experience Certificates</label><br><label><input type='checkbox'> Driving License (
 </body>
 </html>
