@@ -1,33 +1,20 @@
 {
-  "name": "Europe Jobs - Free Europe Jobs Information",
+  "name": "Europe Jobs",
   "short_name": "Europe Jobs",
-  "description": "Free information about real Europe Jobs. Find Warehouse, Cleaning, Hotel, Factory, Driver and other jobs in Germany, Poland, Netherlands and more. With CV Maker, Cover Letter and 7 Free Tools.",
-  "start_url": "/europe-jobs/?utm_source=pwa",
-  "scope": "/europe-jobs/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#1e3a8a",
-  "theme_color": "#1e3a8a",
-  "lang": "en",
-  "categories": ["business", "jobs", "productivity"],
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
-  ]
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#1e3a8a"
 }
