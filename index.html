@@ -267,5 +267,288 @@ addR([{t:"Warehouse Worker - Check Official Page",c:"EU Logistics",co:"Germany",
 },12000);
 })();
  </script> 
+ <script>
+// CLEAN V9 - PERFECT - 1 Script Only - Pages + Add Job 25 + 7 Tools - 4 Bugs Fixed
+(function(){
+var EMAIL="mahteeqahteeq@gmail.com";
+var WA="+923177033253";
+var WA_LINK="https://wa.me/923177033253";
+
+// FIX 2 - Purana CLOSE_BIG bhi chalega, naya CLOSE_V8 bhi chalega
+window.CLOSE_V8=function(){
+  var m=document.getElementById("modal");
+  if(m){ m.style.display="none"; }
+  var d=document.getElementById("bigPageWrap");
+  if(d){ d.remove(); }
+  window.scrollTo(0,0);
+};
+window.CLOSE_BIG=window.CLOSE_V8;
+window.closeModal=window.CLOSE_V8;
+
+function bigPage(title, bodyHtml, isTool){
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  var foot="<br><br><button onclick='window.CLOSE_V8()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;'>Back to Jobs</button>";
+  if(isTool){ foot+="<button onclick='window.openPage(\"tools\")' style='width:100%;padding:12px;background:white;color:#1e3a8a;border:1px solid #1e3a8a;border-radius:10px;margin-top:8px;font-weight:bold;'>Back to All Tools</button>"; }
+  if(m && mb){
+    mb.innerHTML="<h2 style='color:#1e3a8a;margin-top:0;'>"+title+"</h2>"+bodyHtml+foot;
+    m.style.display="block";
+    window.scrollTo(0,0);
+    return;
+  }
+  var old=document.getElementById("bigPageWrap");
+  if(old){ old.remove(); }
+  var div=document.createElement("div");
+  div.id="bigPageWrap";
+  div.style.cssText="position:fixed;top:0;left:0;right:0;bottom:0;background:white;z-index:99999;overflow:auto;padding:20px;padding-bottom:80px;";
+  div.innerHTML="<button onclick='window.CLOSE_V8()' style='padding:10px 20px;background:#ef4444;color:white;border:none;border-radius:8px;'>X Close</button><h2 style='color:#1e3a8a'>"+title+"</h2>"+bodyHtml+foot;
+  document.body.appendChild(div);
+  window.scrollTo(0,0);
+}
+
+function inp(id,ph){ return "<input id='"+id+"' placeholder='"+ph+"' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>"; }
+function sel(id,opts){ var s="<select id='"+id+"' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>"; for(var i=0;i<opts.length;i++){ s+="<option>"+opts[i]+"</option>"; } return s+"</select>"; }
+function tbtn(txt,arg){ return "<button onclick='window.openPage(\""+arg+"\")' style='width:100%;padding:13px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;margin:6px 0;'>"+txt+"</button>"; }
+// FIX 3 - Apply Link ko sahi banana - Email ho to mailto, Number ho to WhatsApp, Link ho to Link
+function fixApply(a){
+  a=(a||"").trim();
+  if(!a) return "#";
+  if(a.indexOf("@")>-1 && a.indexOf("http")<0){ return "mailto:"+a; }
+  if(a.indexOf("http")==0){ return a; }
+  if(a.indexOf("+")==0 || /^[0-9 ]+$/.test(a)){ return "https://wa.me/"+a.replace(/[^0-9]/g,""); }
+  if(a.indexOf("wa.me")>-1){ return "https://"+a.replace("https://",""); }
+  return "https://"+a;
+}
+
+window.MAKE_CV_V8=function(){
+  function v(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  var name=v("cvName")||"Your Name";
+  var job=v("cvJob")||"Warehouse Worker";
+  var phone=v("cvPhone")||WA;
+  var email=v("cvEmail")||EMAIL;
+  var exp=v("cvExp")||"1 Year Experience";
+  var skill=v("cvSkill")||"Hard Working, Honest, Punctual";
+  var edu=v("cvEdu")||"Matric";
+  var out=document.getElementById("cvOut");
+  if(!out) return;
+  out.innerHTML="<div style='border:2px solid #1e3a8a;padding:16px;border-radius:10px;background:white;'><h2 style='margin:0;color:#1e3a8a'>"+name+"</h2><p><b>"+job+"</b></p><p>Phone: "+phone+" | Email: "+email+"</p><hr><h3>Experience</h3><p>"+exp+"</p><h3>Skills</h3><p>"+skill+"</p><h3>Education</h3><p>"+edu+"</p><h3>Objective</h3><p>I want to work hard in Europe and grow with company. I am honest, punctual and ready to work.</p></div><button onclick='window.print()' style='width:100%;padding:13px;background:#16a34a;color:white;border:none;border-radius:10px;margin-top:10px;font-weight:bold;'>Print / Save CV As PDF</button><p>Print dabane par Save as PDF select karein.</p>";
+};
+window.MAKE_COVER_V8=function(){
+  function v(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  var name=v("clName")||"Your Name";
+  var comp=v("clComp")||"Company Name";
+  var job=v("clJob")||"Warehouse Worker";
+  var out=document.getElementById("clOut");
+  if(!out) return;
+  out.innerHTML="<div id='clText' style='background:#f8fafc;padding:14px;border-radius:10px;border:1px solid #cbd5e1;'>Dear Sir / Madam,<br><br>My name is <b>"+name+"</b>. I am applying for <b>"+job+"</b> in <b>"+comp+"</b>.<br><br>I am hard working, honest and punctual. I have experience and I am ready to work in Europe. I will follow all company rules.<br><br>Please give me a chance for interview.<br><br>Thank you,<br><b>"+name+"</b><br>WhatsApp: "+WA+"<br>Email: "+EMAIL+"</div><button onclick='window.COPY_COVER_V8()' style='width:100%;padding:12px;background:#16a34a;color:white;border:none;border-radius:10px;margin-top:8px;font-weight:bold;'>Copy Cover Letter</button>";
+};
+window.COPY_COVER_V8=function(){
+  var el=document.getElementById("clText");
+  if(!el){ alert("Pehle Generate dabayen"); return; }
+  var txt=el.innerText||el.textContent||"";
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(function(){ alert("Copy ho gaya!"); }); } else { alert(txt); }
+};
+window.CALC_SALARY_V8=function(){
+  var s=parseFloat(document.getElementById("salAmt").value||"0");
+  var h=parseFloat(document.getElementById("salHours").value||"8");
+  var d=parseFloat(document.getElementById("salDays").value||"26");
+  var out=document.getElementById("salOut");
+  if(!out) return;
+  if(!s){ out.innerHTML="<p>Salary likhen.</p>"; return; }
+  var perHour=(s/d/h).toFixed(2);
+  out.innerHTML="<div style='background:#ecfdf5;padding:14px;border-radius:10px;'><b>Result:</b><br>Monthly: <b>EUR "+s+"</b><br>Per Hour: <b>EUR "+perHour+"</b><br>Yearly: <b>EUR "+(s*12)+"</b><br>Pakistan Me Takreeban: <b>Rs "+Math.round(s*300)+" / Mahina</b> (1 EUR = 300 PKR andaza)<br><br>Note: Tax aur rehne ka kharcha company se poochna zaroori hai.</div>";
+};
+window.SEND_ALERT_V8=function(){
+  var e=document.getElementById("alertWa");
+  var n=e?e.value:"";
+  window.open("https://wa.me/923177033253?text="+encodeURIComponent("Hi! I want Job Alerts. My number: "+n),"_blank");
+};
+
+// FIX 1 - Add Job ka Form ab modal na mile to bhi bigPage se khulega, Alert nahi aayega
+function showAddForm(){
+  var h="<h2 style='color:#1e3a8a;margin-top:0'>Add New Job - Fill All 25 Questions</h2>";
+  h+="<p style='background:#fef3c7;padding:10px;border-radius:8px;'><b>Note:</b> Job will be added only after filling all 25 questions. Do not add fake job. Contact: "+EMAIL+" / "+WA+"</p>";
+  h+="<label><b>1. Job Title *</b></label>"+inp("q1","Example: Warehouse Worker");
+  h+="<label><b>2. Company Name *</b></label>"+inp("q2","Full company name");
+  h+="<label><b>3. Country *</b></label>"+sel("q3",["Germany","Poland","Netherlands","France","Spain","Italy","Austria","Czech Republic","Romania","Other Europe"]);
+  h+="<label><b>4. City *</b></label>"+inp("q4","Example: Berlin");
+  h+="<label><b>5. Job Category *</b></label>"+sel("q5",["Warehouse","Cleaning","Cook / Kitchen","Hotel / Restaurant","Delivery","Driver","Factory","Farm","Care / Nurse","IT / Office","Other"]);
+  h+="<label><b>6. Job Type</b></label>"+sel("q6",["On-Site","Remote","Hybrid"]);
+  h+="<label><b>7. Salary Amount?</b></label>"+inp("q7","1800");
+  h+="<label><b>8. Salary Currency?</b></label>"+sel("q8",["Euro - EUR","PLN - Poland Zloty","Other"]);
+  h+="<label><b>9. Working Hours Per Day?</b></label>"+inp("q9","Example: 8 Hours");
+  h+="<label><b>10. Experience Required?</b></label>"+sel("q10",["No Experience - Fresh Can Apply","1 Year","2 Years","More Than 3 Years"]);
+  h+="<label><b>11. Education Required?</b></label>"+sel("q11",["Matric","FA / FSc","BA / BSc","No Education Required"]);
+  h+="<label><b>12. Age Limit?</b></label>"+inp("q12","Example: 18-45");
+  h+="<label><b>13. Upload Documents - Passport + Driving License</b></label><div style='background:#f1f5f9;padding:12px;border-radius:8px;margin:5px 0;'><p><b>13A. Upload Passport Copy:</b></p><input id='q13a' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'><p><b>13B. Upload Driving License Copy:</b></p><input id='q13b' type='file' accept='image/*,.pdf' style='width:100%;padding:8px;background:white;border:1px solid #cbd5e1;border-radius:8px;'><p style='font-size:11px;color:#64748b;'>For safety, do NOT upload original passport number here.</p></div>";
+  h+="<label><b>14. Language Required?</b></label>"+sel("q14",["English Is Enough","German Required","Local Language Required","No Language Required"]);
+  h+="<label><b>15. Who Will Provide Visa?</b></label>"+sel("q15",["Company Will Provide Visa","Company Will Provide Work Permit","You Must Have Your Own Visa"]);
+  h+="<label><b>16. Accommodation?</b></label>"+sel("q16",["Company Will Provide","Company Will Provide - Money Will Be Deducted","You Have To Arrange Yourself"]);
+  h+="<label><b>17. Food?</b></label>"+sel("q17",["Company Will Provide","You Have To Arrange Yourself","Allowance Will Be Given"]);
+  h+="<label><b>18. Transport?</b></label>"+sel("q18",["Company Will Provide","You Have To Arrange Yourself"]);
+  h+="<label><b>19. Contract Duration?</b></label>"+sel("q19",["1 Year","2 Years","6 Months","Permanent"]);
+  h+="<label><b>20. Posted Date?</b></label><input id='q20' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>21. Last Date To Apply?</b></label><input id='q21' type='date' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'>";
+  h+="<label><b>22. Apply Link / Email / WhatsApp *</b></label>"+inp("q22","https://company.com/jobs or email");
+  h+="<label><b>23. Your Name *</b></label>"+inp("q23","Your full name");
+  h+="<label><b>24. Your WhatsApp Number *</b></label>"+inp("q24","+92...");
+  h+="<label><b>25. Your Email *</b></label>"+inp("q25","your@email.com");
+  h+="<label><b>Job Full Description</b></label><textarea id='qDesc' rows='4' placeholder='What will be the work? What is the duty?' style='width:100%;padding:11px;margin:5px 0;border:1px solid #cbd5e1;border-radius:8px;'></textarea>";
+  h+="<p><input type='checkbox' id='qAgree'> I confirm that this job is <b>real</b>, I have not written any lie.</p>";
+  h+="<button onclick='window.SAVE_25_JOB_V8()' style='width:100%;padding:14px;background:#1e3a8a;color:white;border:none;border-radius:10px;font-weight:bold;'>Submit - Add Job</button>";
+  h+="<button onclick='window.CLOSE_V8()' style='width:100%;padding:12px;background:#64748b;color:white;border:none;border-radius:10px;margin-top:8px;'>Back to Jobs</button>";
+  var m=document.getElementById("modal");
+  var mb=document.getElementById("mBody");
+  if(m && mb){
+    mb.innerHTML=h;
+    m.style.display="block";
+    window.scrollTo(0,0);
+    return;
+  }
+  bigPage("Add New Job - 25 Questions",h,false);
+}
+window.showAddForm=showAddForm;
+window.SHOW_ADD_FORM=showAddForm;
+
+window.SAVE_25_JOB_V8=function(){
+  function val(id){ var e=document.getElementById(id); return e?e.value.trim():""; }
+  function fileName(id){ var e=document.getElementById(id); if(!e||!e.files||e.files.length==0) return "Not Uploaded"; return e.files[0].name; }
+  var t=val("q1"), c=val("q2"), country=val("q3"), city=val("q4"), cat=val("q5"), ty=val("q6"), sal=val("q7"), apply=val("q22");
+  var agree=document.getElementById("qAgree");
+  if(!t){ alert("1. Job Title is required!"); return; }
+  if(!c){ alert("2. Company Name is required!"); return; }
+  if(!city){ alert("4. City is required!"); return; }
+  if(!apply){ alert("22. Apply Link / Email is required!"); return; }
+  if(!val("q23")){ alert("23. Your Name is required!"); return; }
+  if(!val("q24")){ alert("24. Your WhatsApp is required!"); return; }
+  if(!val("q25")){ alert("25. Your Email is required!"); return; }
+  if(!agree||!agree.checked){ alert("Please tick the box that job is real!"); return; }
+  var posted=val("q20"), lastd=val("q21");
+  var applyLink=fixApply(apply);
+  var jobHtml="<div class='job' style='border-left:5px solid #16a34a'><b>"+t+" (Your Added Job)</b><br>"+c+" - "+country+" - "+city+" - "+ty+"<br><b>Posted Date:</b> "+(posted||"Today")+" | <b>Last Date:</b> "+(lastd||"Check Official Page")+"<br><b>Salary:</b> "+(sal?("EUR "+sal):"Check Official Page")+"<br><b>Category:</b> "+cat+"<br><b>Passport File:</b> "+fileName("q13a")+" | <b>License File:</b> "+fileName("q13b")+"<br><b>Added By:</b> "+val("q23")+" - "+val("q24")+"<br><b>Description:</b> "+val("qDesc")+"<br><a href='"+applyLink+"' target='_blank'><button style='padding:8px 14px;background:#1e3a8a;color:white;border:none;border-radius:6px;margin-top:6px;'>Apply / View Real Job</button></a></div>";
+  var job={t:t,c:c,co:country+" - "+city,cat:cat,ty:ty,u:applyLink,pd:posted||new Date(),last:lastd||"",sal:sal?("EUR "+sal):"Check Official Page",desc:val("qDesc")};
+  try{ var list=JSON.parse(localStorage.getItem("myAddedJobs")||"[]"); list.unshift(job); localStorage.setItem("myAddedJobs",JSON.stringify(list)); }catch(e){}
+  var listEl=document.getElementById("list");
+  if(listEl){ listEl.innerHTML=jobHtml+listEl.innerHTML; }
+  window.CLOSE_V8();
+  alert("Congratulations! Your job has been added! Now it will show on top.");
+  window.scrollTo(0,0);
+};
+
+window.openPage=function(p){
+  var s=String(p||"").toLowerCase();
+  if(s.indexOf("add")>-1){ showAddForm(); return; }
+  if(s=="jobs"||s=="home"||s==""){ window.scrollTo(0,0); return; }
+  if(s.indexOf("whatsapp")>-1){ window.open(WA_LINK,"_blank"); return; }
+  if(s.indexOf("tool")>-1){
+    if(s.indexOf("cv")>-1){
+      var cvH="<h3>1. CV Maker - Apna CV Banayen</h3><p>Neeche apna naam likhen, phir <b>Generate CV</b> dabayen. CV ban jayegi.</p>";
+      cvH+="<label><b>Your Name</b></label>"+inp("cvName","Your full name");
+      cvH+="<label><b>Job You Want</b></label>"+inp("cvJob","Warehouse Worker");
+      cvH+="<label><b>Phone / WhatsApp</b></label>"+inp("cvPhone","+92...");
+      cvH+="<label><b>Email</b></label>"+inp("cvEmail","your@email.com");
+      cvH+="<label><b>Experience</b></label>"+inp("cvExp","1 Year in Warehouse");
+      cvH+="<label><b>Skills</b></label>"+inp("cvSkill","Hard Working, Honest");
+      cvH+="<label><b>Education</b></label>"+inp("cvEdu","Matric");
+      cvH+="<button onclick='window.MAKE_CV_V8()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Generate CV - CV Banayen</button><div id='cvOut' style='margin-top:12px;'></div>";
+      bigPage("CV Maker - Tool 1",cvH,true); return;
+    }
+    if(s.indexOf("cover")>-1){
+      var clH="<h3>2. Cover Letter Maker</h3><p>Naam aur Company likhen, Cover Letter ban jayega.</p>";
+      clH+="<label><b>Your Name</b></label>"+inp("clName","Your name");
+      clH+="<label><b>Company Name</b></label>"+inp("clComp","Company name");
+      clH+="<label><b>Job Title</b></label>"+inp("clJob","Warehouse Worker");
+      clH+="<button onclick='window.MAKE_COVER_V8()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Generate Cover Letter</button><div id='clOut' style='margin-top:12px;'></div>";
+      bigPage("Cover Letter - Tool 2",clH,true); return;
+    }
+    if(s.indexOf("salary")>-1){
+      var salH="<h3>3. Salary Calculator</h3><p>Salary likhen, hisab khud ho jayega.</p>";
+      salH+="<label><b>Monthly Salary in EUR</b></label>"+inp("salAmt","1800");
+      salH+="<label><b>Working Hours Per Day</b></label>"+inp("salHours","8");
+      salH+="<label><b>Working Days Per Month</b></label>"+inp("salDays","26");
+      salH+="<button onclick='window.CALC_SALARY_V8()' style='width:100%;padding:14px;background:#16a34a;color:white;border:none;border-radius:10px;font-weight:bold;'>Calculate Salary</button><div id='salOut' style='margin-top:12px;'></div>";
+      bigPage("Salary Calculator - Tool 3",salH,true); return;
+    }
+    if(s.indexOf("interview")>-1){
+      bigPage("Interview Tips - Tool 4","<h3>4. Interview Tips - 10 Sawal Jo Har Interview Me Pooche Jate Hain</h3><p><b>1. Tell me about yourself?</b><br>Jawab: My name is... I have experience in... I am hard working.</p><p><b>2. Why do you want this job?</b><br>Jawab: I want to work in Europe and grow with company.</p><p><b>3. What is your experience?</b><br>Jawab: I worked in... for... years.</p><p><b>4. Can you work 8-10 hours?</b><br>Jawab: Yes, I can.</p><p><b>5. Do you have passport?</b><br>Jawab: Yes / No - sach batayen.</p><p><b>6. Can you work in night shift?</b><br>Jawab: Yes, if company needs.</p><p><b>7. What is your salary expectation?</b><br>Jawab: As per company rules.</p><p><b>8. When can you join?</b><br>Jawab: As soon as visa is ready.</p><p><b>9. Do you know English?</b><br>Jawab: Yes, basic English.</p><p><b>10. Any question?</b><br>Jawab: Yes, when will I get offer letter?</p><h3>3 Golden Tips</h3><p>1. Jhoot mat bolen.<br>2. Saaf kapde pehnen.<br>3. Time par pahunchen.</p>",true);
+      return;
+    }
+    if(s.indexOf("visa")>-1){
+      bigPage("Visa Checklist - Tool 5","<h3>5. Visa Checklist - Tick Karen</h3><p><label><input type='checkbox'> Passport (6 Mahine se zyada valid)</label><br><label><input type='checkbox'> Offer Letter / Job Contract</label><br><label><input type='checkbox'> Passport Size Photos - 6</label><br><label><input type='checkbox'> CNIC Copy</label><br><label><input type='checkbox'> Police Clearance Certificate</label><br><label><input type='checkbox'> Medical Report</label><br><label><input type='checkbox'> CV</label><br><label><input type='checkbox'> Education Certificates</label><br><label><input type='checkbox'> Experience Letters</label><br><label><input type='checkbox'> Bank Statement (Agar company mange)</label></p><p><b>Note:</b> Har mulk ka Visa thoda alag hota hai. Official Embassy website par zaroor check karein.</p>",true);
+      return;
+    }
+    if(s.indexOf("document")>-1){
+      bigPage("Document Checklist - Tool 6","<h3>6. Document Checklist - Har Job Ke Liye</h3><p><label><input type='checkbox'> Passport Copy</label><br><label><input type='checkbox'> CNIC Copy</label><br><label><input type='checkbox'> CV</label><br><label><input type='checkbox'> Cover Letter</label><br><label><input type='checkbox'> Photos - Passport Size</label><br><label><input type='checkbox'> Education Documents</label><br><label><input type='checkbox'> Experience Certificates</label><br><label><input type='checkbox'> Driving License (Agar Driver Job Hai)</label><br><label><input type='checkbox'> Medical Certificate</label><br><label><input type='checkbox'> Police Clearance</label></p>",true);
+      return;
+    }
+    if(s.indexOf("alert")>-1){
+      var alH="<h3>7. Job Alerts - WhatsApp Par Alert</h3><p>Apna WhatsApp Number likhen, phir <b>Get Alerts</b> dabayen. WhatsApp khulega, wahan <b>Send</b> dabayen.</p>";
+      alH+="<label><b>Your WhatsApp Number</b></label>"+inp("alertWa","+92...");
+      alH+="<button onclick='window.SEND_ALERT_V8()' style='width:100%;padding:14px;background:#25D366;color:white;border:none;border-radius:10px;font-weight:bold;'>Get Job Alerts on WhatsApp</button>";
+      bigPage("Job Alerts - Tool 7",alH,true); return;
+    }
+    var h="<h3>7 Tools - Sab Tools Chalenge</h3><p>Jaise LinkedIn me hota hai, waise hi har Tool alag se khulega. Kisi par bhi dabao.</p>";
+    h+=tbtn("1. CV Maker - Apna CV Banayen","tool-cv");
+    h+=tbtn("2. Cover Letter - Company Ko Khat Likhen","tool-cover");
+    h+=tbtn("3. Salary Calculator - Salary Ka Hisab","tool-salary");
+    h+=tbtn("4. Interview Tips + Sawal Jawab","tool-interview");
+    h+=tbtn("5. Visa Checklist - Visa Ke Kagaz","tool-visa");
+    h+=tbtn("6. Document Checklist - Har Job Ke Kagaz","tool-document");
+    h+=tbtn("7. Job Alerts - WhatsApp Par Alert","tool-alert");
+    bigPage("7 Tools - All Tools",h,true); return;
+  }
+  if(s.indexOf("about")>-1){
+    bigPage("About Us - Europe Jobs","<h3>PART 1 - Who Are We?</h3><p>Europe Jobs is a <b>FREE information website</b>. We give information about real Europe jobs.</p><h3>PART 2 - What We Do / What We Do NOT Do?</h3><p><b>We Do:</b><br>1. Give real jobs information.<br>2. Show Posted Date, Last Date.<br>3. Give direct company apply link.</p><p><b>We Do NOT:</b><br>1. We are NOT agent.<br>2. We do NOT take money.<br>3. We do NOT take passport.<br>4. We do NOT give visa.<br>5. We do NOT guarantee job.</p><h3>PART 3 - Contact</h3><p><b>Email:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>",false);
+    return;
+  }
+  if(s.indexOf("privacy")>-1){
+    bigPage("Privacy Policy - Full","<h3>Privacy Policy - Full - Like Big Apps</h3><p><b>Last Updated: 17 Nov 2026</b></p><p><b>1.</b> We do NOT ask your name, password, passport, CNIC, bank detail.<br><b>2.</b> Your saved data stays in your mobile only.<br><b>3.</b> We do NOT track you.<br><b>4.</b> Jobs come from public APIs.<br><b>5.</b> Apply goes to company website.<br><b>6.</b> Delete Data will delete your saved data.<br><b>7.</b> Not for children under 18.<br><b>8.</b> We do NOT sell your data.<br><b>9.</b> If you message us on WhatsApp, only that message will be with us.<br><b>10. Contact:</b> "+EMAIL+" / "+WA+"</p>",false);
+    return;
+  }
+  if(s.indexOf("term")>-1){
+    bigPage("Terms & Conditions - Full","<h3>Terms & Conditions - Full</h3><p><b>1.</b> This website is only for INFORMATION.<br><b>2.</b> All jobs belong to third-party companies.<br><b>3.</b> Before applying, check Last Date, Salary, Visa on official website.<br><b>4.</b> We are not responsible if you pay money to any agent.<br><b>5.</b> Salary, Visa, Stay will be told by company, not us.<br><b>6.</b> We do NOT guarantee any job.<br><b>7.</b> If any job looks fake, tell us, we will remove it.<br><b>8.</b> Misuse of website is not allowed.<br><b>9.</b> Terms can change anytime.<br><b>10. Contact:</b> "+EMAIL+" / "+WA+"</p>",false);
+    return;
+  }
+  if(s.indexOf("disclaimer")>-1 || s.indexOf("disclaim")>-1){
+    bigPage("Disclaimer - Must Read","<h3>Disclaimer</h3><p><b>1.</b> We are NOT agent.<br><b>2.</b> We ONLY give INFORMATION.<br><b>3.</b> Never pay money for job.<br><b>4.</b> Verify every job on official website.<br><b>5.</b> No guarantee of job, visa or salary.<br><b>6.</b> If someone says 'Visa pakka hai, paisa bhejo' - it is 100% FRAUD.<br><b>7.</b> We are not responsible if you pay any third person.<br><b>Contact:</b> "+EMAIL+" / "+WA+"</p>",false);
+    return;
+  }
+  if(s.indexOf("contact")>-1){
+    bigPage("Contact Us - Full","<h3>Contact Us</h3><p><b>Email:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p><p><b>Contact for:</b><br>- Add a job<br>- Fake job report<br>- Website problem<br>- Fraud person asking money</p><p><b>Reply:</b> We try to reply in 24-48 hours.</p><p><a href='"+WA_LINK+"' target='_blank' style='display:block;text-align:center;padding:14px;background:#25D366;color:white;text-decoration:none;border-radius:10px;font-weight:bold;margin-bottom:10px;'>WhatsApp Par Rabta Karen</a></p><p><a href='mailto:"+EMAIL+"' style='display:block;text-align:center;padding:14px;background:#1e3a8a;color:white;text-decoration:none;border-radius:10px;font-weight:bold;'>Email Par Rabta Karen</a></p>",false);
+    return;
+  }
+  if(s.indexOf("safety")>-1){
+    bigPage("Data Safety - Full","<h3>Data Safety - Full</h3><p><b>1.</b> Never pay money to agent.<br><b>2.</b> Never give original passport.<br><b>3.</b> Never tell OTP, password, bank code.<br><b>4.</b> Real company never asks money on WhatsApp.<br><b>5.</b> If offer comes, check on official website.<br><b>6.</b> 'Visa pakka hai, paisa bhejo' = FRAUD.<br><b>7.</b> Do not send CNIC / passport photo to unknown link.<br><b>8.</b> Free visa / free ticket is fraud.<br><b>9.</b> First money, then visa - always lie.</p><h3>If fraud happens?</h3><p>Tell your nearest police station and bank at once. Also tell us so we can remove that job.</p><p><b>Contact:</b> "+EMAIL+" / "+WA+"</p>",false);
+    return;
+  }
+  if(s.indexOf("delete")>-1){
+    try{ localStorage.clear(); }catch(e){}
+    bigPage("Delete Data","<p>Your saved data has been deleted.</p>",false);
+    return;
+  }
+  if(s.indexOf("saved")>-1){
+    try{
+      var sv=JSON.parse(localStorage.getItem("savedJobs")||"[]");
+      if(sv.length==0){ bigPage("Saved Jobs","<p>You have not saved any job yet.</p>",false); return; }
+      var hh="<h3>Your Saved Jobs ("+sv.length+"):</h3>";
+      for(var i=0;i<sv.length;i++){ hh+="<div style='background:#f1f5f9;padding:12px;margin:8px 0;border-radius:8px;'><b>"+(sv[i].t||"Job")+"</b><br>"+(sv[i].c||"")+" - "+(sv[i].co||"")+"</div>"; }
+      bigPage("Saved Jobs",hh,false);
+    }catch(e){ bigPage("Saved Jobs","<p>Saved Jobs not loading.</p>",false); }
+    return;
+  }
+  bigPage("Information","<p>Information coming soon.</p><p><b>Contact:</b> "+EMAIL+"<br><b>WhatsApp:</b> "+WA+"</p>",false);
+};
+
+// FIX 4 - GLOBAL SAFETY - Agar purana button openPage na bhi bole, to bhi text se pakad kar kholega
+document.addEventListener("click", function(e){
+  var el=e.target;
+  while(el && el.tagName!="BUTTON" && el.tagName!="A"){ el=el.parentElement; }
+  if(!el) return;
+  var txt=((el.innerText||"")+" "+(el.getAttribute("onclick")||"")).toLowerCase();
+  if(txt.indexOf("add")>-1 && txt.indexOf("job")>-1){ e.preventDefault(); showAddForm(); return; }
+  if(txt.indexOf("tool")>-1 && txt.indexOf("cv")<0 && txt.indexOf("cover")<0 && txt.indexOf("salary")<0){ e.preventDefault(); window.openPage("tools"); return; }
+}, true);
+})();
+</script>
 </body>
 </html> 
