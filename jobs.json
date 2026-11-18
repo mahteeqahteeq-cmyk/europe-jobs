@@ -1,365 +1,365 @@
 {
-  "lastUpdated": "2026-11-17T01:58:10.788914Z",
+  "lastUpdated": "2026-11-18T02:04:05.016943Z",
   "jobs": [
     {
-      "title": "CLX Property Advocate, UK",
-      "company": "Lemonade",
-      "location": "UK",
-      "category": "Customer Support & Success",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162720-clx-property-advocate-uk",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Junior Performance Marketer (Remote - Bulgaria)",
-      "company": "EverAI",
-      "location": "Bulgaria",
-      "category": "Marketing & Sales",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162719-junior-performance-marketer-remote-bulgaria",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Actuarial Associate, UK",
-      "company": "Lemonade",
-      "location": "UK",
-      "category": "Finance & Accounting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162718-actuarial-associate-uk",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Commercial Manager - Europe",
-      "company": "Lyra Health",
-      "location": "Ireland,  UK",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162716-commercial-manager-europe",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "VP, Sales EMEA",
-      "company": "StackAdapt",
-      "location": "Europe",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162715-vp-sales-emea",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Manager, Partnerships EMEA",
-      "company": "Temporal Technologies",
-      "location": "France,  Germany,  UK",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162711-senior-manager-partnerships-emea",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Manager, Developer Advocacy (EMEA)",
-      "company": "Temporal Technologies",
-      "location": "UK",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162709-manager-developer-advocacy-emea",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Software Engineer, Agentic Customer Platform (Poland, Remote, B2B)",
-      "company": "Samsara",
-      "location": "Poland",
+      "title": "Staff Machine Learning Engineer, Ads Foundational Representations",
+      "company": "Reddit",
+      "location": "Netherlands,  UK",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162707-senior-software-engineer-agentic-customer-platform-poland-remote-b2b-2",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162990-staff-machine-learning-engineer-ads-foundational-representations-2",
+      "date": "2026-11-17"
     },
     {
-      "title": "Sales Director, Commercial",
-      "company": "Temporal Technologies",
-      "location": "UK",
-      "category": "Sales",
+      "title": "Senior Fullstack Engineer",
+      "company": "Nebius",
+      "location": "Europe,  Israel",
+      "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162706-sales-director-commercial",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162989-senior-fullstack-engineer-5",
+      "date": "2026-11-17"
     },
     {
-      "title": "Senior Security Operations Engineer",
-      "company": "Samsara",
-      "location": "Netherlands",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162704-senior-security-operations-engineer-6",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Enterprise Account Executive, New Logo",
-      "company": "Temporal Technologies",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162703-enterprise-account-executive-new-logo",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Sales Engineer, France",
-      "company": "Samsara",
-      "location": "France",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162701-senior-sales-engineer-france-2",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Account Executive, Growth France",
-      "company": "Temporal Technologies",
-      "location": "France",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162700-senior-account-executive-growth-france",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Sales Engineer, DACH",
-      "company": "Samsara",
-      "location": "Germany",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162698-senior-sales-engineer-dach-3",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Paid Search Specialist",
-      "company": "Docplanner",
-      "location": "Italy,  Poland,  Spain",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162697-senior-paid-search-specialist",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Senior Account Executive, Growth",
-      "company": "Temporal Technologies",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162696-senior-account-executive-growth",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Mid-Market Account Executive - France",
-      "company": "Samsara",
-      "location": "France",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162694-mid-market-account-executive-france-2",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Global Procurement Manager | Interim 6 Month Contract | 100% Remote",
-      "company": "Docplanner",
-      "location": "Europe",
+      "title": "Corporate & Integration Operations Associate",
+      "company": "3Y Health",
+      "location": "Greece",
       "category": "Product & Operations",
       "type": [
         "Contract"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162693-global-procurement-manager-interim-6-month-contract-100-remote",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162988-corporate-integration-operations-associate",
+      "date": "2026-11-17"
     },
     {
-      "title": "Account Manager - Nordics",
-      "company": "Elevenlabs",
-      "location": "Sweden",
+      "title": "Senior Growth Manager (Contract)",
+      "company": "Reddit",
+      "location": "UK,  USA",
+      "category": "Product & Operations",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162987-senior-growth-manager-contract-2",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Lead Solutions Engineer",
+      "company": "Veriff",
+      "location": "Estonia,  Spain",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162692-account-manager-nordics",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162986-lead-solutions-engineer-3",
+      "date": "2026-11-17"
     },
     {
-      "title": "Senior Account Executive, Growth DACH",
-      "company": "Temporal Technologies",
-      "location": "Germany",
-      "category": "Sales",
+      "title": "Senior Central Monitor",
+      "company": "Precision Medicine Group",
+      "location": "Serbia",
+      "category": "Healthcare & Medical",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162691-senior-account-executive-growth-dach",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162985-senior-central-monitor",
+      "date": "2026-11-17"
     },
     {
-      "title": "Site Reliability Engineer",
-      "company": "GoDaddy",
-      "location": "Romania",
+      "title": "Senior AI Engineer",
+      "company": "Inato",
+      "location": "France",
+      "category": "Data Science & Analytics",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162984-senior-ai-engineer-10",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Product Engineer",
+      "company": "Inato",
+      "location": "France",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162983-product-engineer-2",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Senior Cloud Infrastructure Engineer",
+      "company": "Inato",
+      "location": "France",
       "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162689-site-reliability-engineer-7",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162982-senior-cloud-infrastructure-engineer-2",
+      "date": "2026-11-17"
     },
     {
-      "title": "Account Development Representative - DACH",
-      "company": "Samsara",
-      "location": "Germany",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162688-account-development-representative-dach-3",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "FP&A Manager | Tech & Product | Remote in Spain or Poland",
-      "company": "Docplanner",
-      "location": "Poland,  Spain",
-      "category": "Finance & Accounting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162687-fpa-manager-tech-product-remote-in-spain-or-poland",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Site Reliability Engineer (Remote)(Located in the United Kingdom)",
-      "company": "KnowBe4, Inc.",
-      "location": "UK",
-      "category": "DevOps & Infrastructure",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162686-site-reliability-engineer-remotelocated-in-the-united-kingdom",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Business Development Representative, Financial Services - UKI",
-      "company": "GitLab",
-      "location": "Ireland,  UK",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/162685-business-development-representative-financial-services-uki",
-      "date": "2026-11-16"
-    },
-    {
-      "title": "Account Manager - Poland",
-      "company": "Elevenlabs",
-      "location": "Poland",
+      "title": "Mid-Market Customer Success Manager - EMEA (German speaking)",
+      "company": "Ashby",
+      "location": "Europe",
       "category": "Customer Support & Success",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162684-account-manager-poland",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162981-mid-market-customer-success-manager-emea-german-speaking",
+      "date": "2026-11-17"
     },
     {
-      "title": "IP Lawyer (Trademarks and Copyright)",
-      "company": "Ruby Labs",
-      "location": "Europe",
-      "category": "Legal & Compliance",
+      "title": "Platform Engineer - Compute",
+      "company": "Supabase",
+      "location": "Anywhere",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162979-platform-engineer-compute",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Italy)",
+      "company": "EverAI",
+      "location": "Italy",
+      "category": "Creative & Design",
       "type": [
         "Contract"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162683-ip-lawyer-trademarks-and-copyright",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162833-mid-senior-ai-cinematic-video-editor-freelance-remote-italy",
+      "date": "2026-11-17"
     },
     {
-      "title": "Director, EMEA Sales Operations",
-      "company": "Temporal Technologies",
-      "location": "UK",
-      "category": "Product & Operations",
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Netherlands)",
+      "company": "EverAI",
+      "location": "Netherlands",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162831-mid-senior-ai-cinematic-video-editor-freelance-remote-netherlands",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Senior Technical Program Manager I",
+      "company": "Axon",
+      "location": "Germany,  Netherlands",
+      "category": "Project & Program Management",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162682-director-emea-sales-operations",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162830-senior-technical-program-manager-i",
+      "date": "2026-11-17"
     },
     {
-      "title": "Major Account Manager (UK)",
-      "company": "Datadog",
-      "location": "UK",
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Croatia)",
+      "company": "EverAI",
+      "location": "Croatia",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162829-mid-senior-ai-cinematic-video-editor-freelance-remote-croatia",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Germany)",
+      "company": "EverAI",
+      "location": "Germany",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162827-mid-senior-ai-cinematic-video-editor-freelance-remote-germany",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Spain)",
+      "company": "EverAI",
+      "location": "Spain",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162825-mid-senior-ai-cinematic-video-editor-freelance-remote-spain",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Hungary)",
+      "company": "EverAI",
+      "location": "Hungary",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162823-mid-senior-ai-cinematic-video-editor-freelance-remote-hungary",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Sweden)",
+      "company": "EverAI",
+      "location": "Sweden",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162821-mid-senior-ai-cinematic-video-editor-freelance-remote-sweden",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Senior Sales Engineer",
+      "company": "Axon",
+      "location": "Germany",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162681-major-account-manager-uk",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162820-senior-sales-engineer-11",
+      "date": "2026-11-17"
     },
     {
-      "title": "Account Manager, UK & Ireland",
-      "company": "Customer.io",
-      "location": "Ireland,  UK",
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Ireland)",
+      "company": "EverAI",
+      "location": "Ireland",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162819-mid-senior-ai-cinematic-video-editor-freelance-remote-ireland",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Czech Republic)",
+      "company": "EverAI",
+      "location": "Czechia",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162817-mid-senior-ai-cinematic-video-editor-freelance-remote-czech-republic",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Serbia)",
+      "company": "EverAI",
+      "location": "Serbia",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162815-mid-senior-ai-cinematic-video-editor-freelance-remote-serbia",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Ukraine)",
+      "company": "EverAI",
+      "location": "Ukraine",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162813-mid-senior-ai-cinematic-video-editor-freelance-remote-ukraine",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Belgium)",
+      "company": "EverAI",
+      "location": "Belgium",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162809-mid-senior-ai-cinematic-video-editor-freelance-remote-belgium",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Sales Engineer",
+      "company": "Axon",
+      "location": "Germany",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/162680-account-manager-uk-ireland",
-      "date": "2026-11-16"
+      "url": "https://jobicy.com/jobs/162808-sales-engineer-10",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Romania)",
+      "company": "EverAI",
+      "location": "Romania",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162807-mid-senior-ai-cinematic-video-editor-freelance-remote-romania",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior AI Cinematic Video Editor (Freelance - Remote - Greece)",
+      "company": "EverAI",
+      "location": "Greece",
+      "category": "Creative & Design",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162805-mid-senior-ai-cinematic-video-editor-freelance-remote-greece",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Regional Support Manager, Northern Europe",
+      "company": "Axon",
+      "location": "Netherlands",
+      "category": "Technical Support",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162804-regional-support-manager-northern-europe",
+      "date": "2026-11-17"
+    },
+    {
+      "title": "Mid/Senior Talent Acquisition Specialist (Remote - Croatia)",
+      "company": "EverAI",
+      "location": "Croatia",
+      "category": "HR & Recruiting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/162803-mid-senior-talent-acquisition-specialist-remote-croatia",
+      "date": "2026-11-17"
     }
   ]
 }
