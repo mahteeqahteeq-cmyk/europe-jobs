@@ -1,365 +1,365 @@
 {
-  "lastUpdated": "2026-11-19T02:02:20.193777Z",
+  "lastUpdated": "2026-11-20T01:56:18.558479Z",
   "jobs": [
     {
-      "title": "Engineering Manager - Platform",
-      "company": "Vonage",
-      "location": "Poland",
+      "title": "Manager, Training and Enablement",
+      "company": "Cloudbeds",
+      "location": "LATAM,  Canada,  Europe,  USA",
+      "category": "Education & E-learning",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163364-manager-training-and-enablement",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Benefits Manager",
+      "company": "Veeam Software",
+      "location": "UK",
+      "category": "HR & Recruiting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163341-benefits-manager",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Senior/Staff Site Reliability Engineer (Server Infrastructure)",
+      "company": "Nebius",
+      "location": "Czechia,  Finland,  Germany,  Netherlands,  UK",
       "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163200-engineering-manager-platform",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163266-senior-staff-site-reliability-engineer-server-infrastructure",
+      "date": "2026-11-19"
     },
     {
-      "title": "Applied AI Engineer - AI Finance Agent",
+      "title": "Support Manager - EMEA",
+      "company": "Ashby",
+      "location": "Europe",
+      "category": "Technical Support",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163265-support-manager-emea",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "iOS Developer - AI Finance Agent",
       "company": "BJAK",
-      "location": "Netherlands",
+      "location": "Austria",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163127-applied-ai-engineer-ai-finance-agent",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163264-ios-developer-ai-finance-agent",
+      "date": "2026-11-19"
     },
     {
-      "title": "Lead Machine Learning Scientist, Business Banking",
-      "company": "Monzo",
+      "title": "Senior Site Reliability Engineer (Data Platform)",
+      "company": "Nebius",
+      "location": "Czechia,  Germany,  Israel,  Netherlands,  UK",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163263-senior-site-reliability-engineer-data-platform",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Legal Counsel",
+      "company": "Masabi",
       "location": "UK",
-      "category": "Data Science & Analytics",
-      "type": [
-        "Part-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163126-lead-machine-learning-scientist-business-banking-2",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Senior Product Manager \u2013 Universal KYC (MetaMask Passport)",
-      "company": "Consensys",
-      "location": "EMEA,  USA",
-      "category": "Product & Operations",
+      "category": "Legal & Compliance",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163125-senior-product-manager-universal-kyc-metamask-passport",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163262-legal-counsel-4",
+      "date": "2026-11-19"
     },
     {
-      "title": "Mobile Engineer",
-      "company": "BJAK",
-      "location": "Ireland",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163124-mobile-engineer",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Senior People Operations Associate",
-      "company": "Consensys",
-      "location": "EMEA",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163122-senior-people-operations-associate",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "BJAK",
-      "location": "Poland",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163121-backend-developer",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Senior Sales Engineer, Enterprise, German Speaking",
-      "company": "Fivetran",
-      "location": "Ireland",
+      "title": "Enterprise Account Executive | New Logo | NORD",
+      "company": "Jamf",
+      "location": "Sweden",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163120-senior-sales-engineer-enterprise-german-speaking-3",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163261-enterprise-account-executive-new-logo-nord",
+      "date": "2026-11-19"
     },
     {
-      "title": "Financial Operations Analyst, 12 Month Fixed Term Contract",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Finance & Accounting",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163119-financial-operations-analyst-12-month-fixed-term-contract",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Senior Manager, Application Security",
-      "company": "Consensys",
-      "location": "EMEA",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163118-senior-manager-application-security",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Community Field Strategist- UK",
-      "company": "Huntress",
-      "location": "UK",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163117-community-field-strategist-uk",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Full Stack Engineer",
-      "company": "BJAK",
-      "location": "Spain",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163116-full-stack-engineer-10",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Business Recruiter - International Sales (UK/EMEA)",
-      "company": "TRM Labs",
-      "location": "EMEA",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163115-business-recruiter-international-sales-uk-emea",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Principal Software Engineer, Data Lakes",
-      "company": "Fivetran",
-      "location": "Germany",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163114-principal-software-engineer-data-lakes-2",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Full-Stack Engineer - ElevenMusic",
-      "company": "Elevenlabs",
-      "location": "Denmark,  France,  Netherlands,  Poland,  UK,  USA",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163113-full-stack-engineer-elevenmusic",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Employee Relations Advisor",
-      "company": "Monzo",
+      "title": "HR Business Partner, EMEA",
+      "company": "Ashby",
       "location": "UK",
       "category": "HR & Recruiting",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163112-employee-relations-advisor",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163260-hr-business-partner-emea",
+      "date": "2026-11-19"
     },
     {
-      "title": "Senior Design Engineer",
-      "company": "Consensys",
-      "location": "EMEA,  USA",
-      "category": "Web, UI & UX Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163111-senior-design-engineer-2",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Manager, Solutions Engineering | NorBen | Remote",
-      "company": "Grafana Labs",
-      "location": "Netherlands",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163110-manager-solutions-engineering-norben-remote-2",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Community Field Strategist - Ireland",
-      "company": "Huntress",
-      "location": "Ireland",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163109-community-field-strategist-ireland",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Product Lead - AI Investing",
+      "title": "Backend Software Engineer - AI Finance Agent",
       "company": "BJAK",
-      "location": "Portugal",
-      "category": "Product & Operations",
+      "location": "Austria",
+      "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163108-product-lead-ai-investing",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163259-backend-software-engineer-ai-finance-agent",
+      "date": "2026-11-19"
     },
     {
-      "title": "Senior QA Engineer",
-      "company": "Cross River",
-      "location": "Spain",
-      "category": "QA & Testing",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163106-senior-qa-engineer-5",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Fivetran Reseller Partner Development Manager, EMEA",
-      "company": "Fivetran",
-      "location": "EMEA",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163105-fivetran-reseller-partner-development-manager-emea",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Account Executive, Mid-Market - DACH",
-      "company": "Samsara",
-      "location": "Germany,  UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163104-account-executive-mid-market-dach",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Global Senior Sales Operations Growth Specialist",
-      "company": "Docplanner",
-      "location": "Spain",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163103-global-senior-sales-operations-growth-specialist",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Marketplace Operations",
-      "company": "Elevenlabs",
-      "location": "Australia,  Ireland,  Italy,  Japan,  Netherlands,  Poland,  UK,  USA",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163102-marketplace-operations",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Creative Studio Resource Manager - Creative Ops",
-      "company": "Monzo",
+      "title": "Professional Services Engagement Manager",
+      "company": "Ping Identity",
       "location": "UK",
       "category": "Project & Program Management",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163101-creative-studio-resource-manager-creative-ops",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163257-professional-services-engagement-manager-2",
+      "date": "2026-11-19"
     },
     {
-      "title": "Experiential Marketing Manager",
-      "company": "Consensys",
-      "location": "EMEA,  USA",
-      "category": "Marketing & Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163100-experiential-marketing-manager",
-      "date": "2026-11-18"
-    },
-    {
-      "title": "Staff Performance Engineer, JavaScript Engine (SpiderMonkey)",
-      "company": "Mozilla",
-      "location": "France",
+      "title": "Mobile Application Developer - AI Finance Agent",
+      "company": "BJAK",
+      "location": "Sweden",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163099-staff-performance-engineer-javascript-engine-spidermonkey",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163239-mobile-application-developer-ai-finance-agent",
+      "date": "2026-11-19"
     },
     {
-      "title": "SMB Sales Executive",
-      "company": "Wellhub",
-      "location": "Italy",
-      "category": "Sales",
+      "title": "Android Developer - AI Finance Agent",
+      "company": "BJAK",
+      "location": "Austria",
+      "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163098-smb-sales-executive",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/163238-android-developer-ai-finance-agent",
+      "date": "2026-11-19"
     },
     {
-      "title": "Commercial Account Executive, Growth | Remote | Germany",
-      "company": "Grafana Labs",
+      "title": "UI Designer - AI Neobank App",
+      "company": "BJAK",
       "location": "Germany",
+      "category": "Web, UI & UX Design",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163237-ui-designer-ai-neobank-app",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Applied AI Engineer",
+      "company": "BJAK",
+      "location": "Austria",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163236-applied-ai-engineer-4",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Savvy Commercial and Operations Senior Manager - UK/Poland",
+      "company": "Laminar Projects",
+      "location": "Poland,  UK",
+      "category": "Product & Operations",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163235-savvy-commercial-and-operations-senior-manager-uk-poland",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Android Software Engineer - AI Finance Agent",
+      "company": "BJAK",
+      "location": "Sweden",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163234-android-software-engineer-ai-finance-agent",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "SIP Expert",
+      "company": "Elevenlabs",
+      "location": "Europe",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163233-sip-expert",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Paid Media & Performance Marketing Manager (B2B) - 4 Day Week + Remote",
+      "company": "Laminar Projects",
+      "location": "Portugal,  UK",
+      "category": "Marketing & Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163232-paid-media-performance-marketing-manager-b2b-4-day-week-remote",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Clinical Trial Manager",
+      "company": "Precision Medicine Group",
+      "location": "Hungary,  Poland,  Romania,  Serbia,  Slovakia,  Spain,  UK",
+      "category": "Healthcare & Medical",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163231-clinical-trial-manager-4",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Full Stack Software Engineer - AI Finance Agent",
+      "company": "BJAK",
+      "location": "Netherlands",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163230-full-stack-software-engineer-ai-finance-agent",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Senior Software Development Engineer in Test (SDET)",
+      "company": "Flex",
+      "location": "Anywhere",
+      "category": "QA & Testing",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155928-senior-software-development-engineer-in-test-sdet-2",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Full-Stack Engineer (Backend Leaning) - Creative Agents",
+      "company": "Elevenlabs",
+      "location": "Anywhere",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155939-full-stack-engineer-backend-leaning-creative-agents",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Account Management Lead - Western Europe",
+      "company": "Elevenlabs",
+      "location": "Europe",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155935-account-management-lead-western-europe",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Developer Experience Engineer",
+      "company": "Elevenlabs",
+      "location": "Europe,  USA",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155936-developer-experience-engineer",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Account Management Lead - UK/I",
+      "company": "Elevenlabs",
+      "location": "Ireland,  UK",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155934-account-management-lead-uk-i",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Digital Sales Representative",
+      "company": "Twilio",
+      "location": "UK",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163097-commercial-account-executive-growth-remote-germany",
-      "date": "2026-11-18"
+      "url": "https://jobicy.com/jobs/155892-digital-sales-representative-2",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Inside Sales - Representative (Active) 2",
+      "company": "Twilio",
+      "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155895-inside-sales-representative-active-2",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "Instructional Designer, TRM Academy (Compliance)",
+      "company": "TRM Labs",
+      "location": "EMEA,  LATAM,  Canada,  USA",
+      "category": "Education & E-learning",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155918-instructional-designer-trm-academy-compliance",
+      "date": "2026-11-19"
+    },
+    {
+      "title": "New Business Account Executive (German speaker)",
+      "company": "Twilio",
+      "location": "Ireland,  Spain,  UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/155899-new-business-account-executive-german-speaker",
+      "date": "2026-11-19"
     }
   ]
 }
