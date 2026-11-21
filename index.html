@@ -113,7 +113,7 @@ async function loadRealJobs(){
   try{
     var r=await fetch("https://www.arbeitnow.com/api/job-board-api");
     var d=await r.json();
-    jobs=d.data.map(j=>({t:j.title,c:j.company_name,l:j.location||"Germany",cat:"Germany",ty:(j.job_types&&j.job_types.join(" ").toLowerCase().indexOf("remote")>-1?"Remote":"On-Site"),s:"Check Official Page",st:fmtDate(j.created_at),en:fmtLast(j.created_at),u:j.url,posted:j.created_at}));
+    jobs=d.data.map(j=>({t:j.title,c:j.company_name,l:j.location||"Germany",cat:"Germany",ty:(j.job_types&&j.job_types.join(" ").toLowerCase().indexOf("remote")>-1?"Remote":"On-Site"),s:fmtDate(j.created_at),salary:"Check Official Page",sal:"Check Official Page",st:fmtDate(j.created_at),en:fmtLast(j.created_at),start:fmtDate(j.created_at),end:fmtLast(j.created_at),u:j.url,posted:j.created_at}));
     render(jobs);
   }catch(e){
     document.getElementById("list").innerHTML="<div class='card'>Internet slow hai. EURES wala button dabayen, wahan real jobs milengi.</div>";
