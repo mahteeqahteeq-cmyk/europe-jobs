@@ -140,7 +140,12 @@ return d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
 }catch(e){ return "Check Official Page"; }
 }
 function getPD(x){
-return x.created_at||x.publication_date||x.jobPostedDate||x.pubDate||x.date||x.posted||x.createdAt||new Date();
+142 function getPD(x){
+143 var d=x.created_at||x.publication_date||x.jobPostedDate||x.pubDate||x.posted||x.createdAt;
+144 if(typeof d==="number"&&d<10000000000) d=d*1000;
+145 if(d&&new Date(d).getFullYear()<=1970) return "Today";
+146 return d;
+147 }
 }
 function showR(list){
 var el=document.getElementById("list");
