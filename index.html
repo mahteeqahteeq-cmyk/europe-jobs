@@ -91,7 +91,9 @@
 <div class="footer">2026 Europe Jobs - We are NOT agent<br>Contact: mahteeqahteeq@gmail.com | WhatsApp: 923177033253</div>
 <a class="wa" href="https://wa.me/923177033253" target="_blank">💬</a>
 <div id="modal" class="modal"><div class="modal-box"><span class="x" onclick="closeModal()">&times;</span><div id="mBody"></div></div></div>
- var jobs=[];
+
+<script>
+  var jobs=[];
 function fmtDate(ts){
   var ms=ts;
   if(typeof ms==="number"&&ms<10000000000) ms=ms*1000;
@@ -118,7 +120,6 @@ async function loadRealJobs(){
   }
 }
 loadRealJobs();
-<script>
 var activeCat='All';
 var savedJobs=[];
 try{ savedJobs=JSON.parse(localStorage.getItem('savedJobs')||'[]'); }catch(e){ savedJobs=[]; }
