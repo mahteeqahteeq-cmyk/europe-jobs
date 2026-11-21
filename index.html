@@ -91,27 +91,38 @@
 <div class="footer">2026 Europe Jobs - We are NOT agent<br>Contact: mahteeqahteeq@gmail.com | WhatsApp: 923177033253</div>
 <a class="wa" href="https://wa.me/923177033253" target="_blank">💬</a>
 <div id="modal" class="modal"><div class="modal-box"><span class="x" onclick="closeModal()">&times;</span><div id="mBody"></div></div></div>
+ var jobs=[];
+function fmtDate(ts){
+  var ms=ts;
+  if(typeof ms==="number"&&ms<10000000000) ms=ms*1000;
+  var d=new Date(ms);
+  if(isNaN(d)) return "Today";
+  return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+}
+function fmtLast(ts){
+  var ms=ts;
+  if(typeof ms==="number"&&ms<10000000000) ms=ms*1000;
+  var d=new Date(ms);
+  if(isNaN(d)) d=new Date();
+  d.setDate(d.getDate()+30);
+  return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+}
+async function loadRealJobs(){
+  try{
+    var r=await fetch("https://www.arbeitnow.com/api/job-board-api");
+    var d=await r.json();
+    jobs=d.data.map(j=>({t:j.title,c:j.company_name,l:j.location||"Germany",cat:"Germany",ty:(j.job_types&&j.job_types.join(" ").toLowerCase().indexOf("remote")>-1?"Remote":"On-Site"),s:"Check Official Page",st:fmtDate(j.created_at),en:fmtLast(j.created_at),u:j.url,posted:j.created_at}));
+    render(jobs);
+  }catch(e){
+    document.getElementById("list").innerHTML="<div class='card'>Internet slow hai. EURES wala button dabayen, wahan real jobs milengi.</div>";
+  }
+}
+loadRealJobs();
 <script>
 var activeCat='All';
 var savedJobs=[];
 try{ savedJobs=JSON.parse(localStorage.getItem('savedJobs')||'[]'); }catch(e){ savedJobs=[]; }
-var jobs=[
-{t:"Warehouse Worker",c:"Arbeitnow Germany",l:"Germany",cat:"Warehouse",ty:"On-Site",s:"2026-01-15",e:"2026-12-31",sal:"€1800"},
-{t:"Delivery Driver",c:"Logistics Poland",l:"Poland",cat:"Delivery",ty:"On-Site",s:"2026-02-15",e:"2026-12-01",sal:"€2200"},
-{t:"Truck Driver",c:"Logistics Netherlands",l:"Netherlands",cat:"Delivery",ty:"On-Site",s:"2026-01-25",e:"2026-12-10",sal:"€2800"},
-{t:"Cleaner",c:"Cleaning France",l:"France",cat:"Cleaning",ty:"On-Site",s:"2026-03-10",e:"2026-10-15",sal:"€1600"},
-{t:"Cook / Kitchen Helper",c:"Restaurant Germany",l:"Germany",cat:"Cook / Kitchen",ty:"On-Site",s:"2026-01-20",e:"2026-09-30",sal:"€2000"},
-{t:"Hotel Staff",c:"Hotel Germany",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-03-01",e:"2026-11-01",sal:"€1900"},
-{t:"Waiter Waitress",c:"Hotel EU",l:"Germany",cat:"Hotel / Restaurant",ty:"On-Site",s:"2026-02-10",e:"2026-11-20",sal:"€1700"},
-{t:"Factory Worker",c:"Factory Poland",l:"Poland",cat:"Warehouse",ty:"On-Site",s:"2026-03-15",e:"2026-12-31",sal:"€1800"},
-{t:"Security Guard",c:"Secure Italy",l:"Italy",cat:"Cleaning",ty:"On-Site",s:"2026-04-01",e:"2026-12-15",sal:"€1800"},
-{t:"Farm Worker",c:"Farm Spain",l:"Spain",cat:"Cleaning",ty:"On-Site",s:"2026-05-01",e:"2026-08-31",sal:"€1500"},
-{t:"Engineer IT",c:"Tech Germany",l:"Germany",cat:"Warehouse",ty:"Hybrid",s:"2026-01-10",e:"2026-12-31",sal:"€3500"},
-{t:"Nurse / Care",c:"Care Austria",l:"Austria",cat:"Cleaning",ty:"On-Site",s:"2026-02-20",e:"2026-10-20",sal:"€2500"},
-{t:"Remote Admin",c:"Office Germany",l:"Germany",cat:"Warehouse",ty:"Remote",s:"2026-01-01",e:"2026-12-31",sal:"€2000"},
-{t:"Packing Worker",c:"Amazon Poland",l:"Poland",cat:"Warehouse",ty:"On-Site",s:"2026-01-10",e:"2026-12-20",sal:"€1700"},
-{t:"Forklift Driver",c:"Warehouse Germany",l:"Germany",cat:"Warehouse",ty:"On-Site",s:"2026-02-15",e:"2026-11-15",sal:"€2000"}
-];
+
 function render(arr){
 var cc=document.getElementById('count'); if(cc) cc.innerText=arr.length+' Real Jobs Found';
 var sc=document.getElementById('savedCount'); if(sc) sc.innerText=savedJobs.length;
