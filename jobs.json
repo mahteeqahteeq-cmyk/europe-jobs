@@ -1,128 +1,284 @@
 {
-  "lastUpdated": "2026-11-21T01:57:48.683439Z",
+  "lastUpdated": "2026-11-22T01:55:33.354648Z",
   "jobs": [
     {
-      "title": "Alpheratz Project - Valencia (Spain) Translation Quality Rater",
-      "company": "Welo Global",
-      "location": "Spain",
-      "category": "QA & Testing",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163593-alpheratz-project-valencia-spain-translation-quality-rater",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Alpheratz Project - Swedish (Sweden) Translation Quality Rater",
-      "company": "Welo Global",
-      "location": "Sweden",
-      "category": "Content & Editorial",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163592-alpheratz-project-swedish-sweden-translation-quality-rater",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Alpheratz Project - Polish (Poland) Translation Quality Rater",
-      "company": "Welo Global",
-      "location": "Poland",
-      "category": "QA & Testing",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163591-alpheratz-project-polish-poland-translation-quality-rater",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Alpheratz Project - Galician (Spain) Translation Quality Rater",
-      "company": "Welo Global",
-      "location": "Spain",
-      "category": "Content & Editorial",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163590-alpheratz-project-galician-spain-translation-quality-rater",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Alpheratz Project - Catalan (Spain) Translation Quality Rater",
-      "company": "Welo Global",
-      "location": "Spain",
-      "category": "Content & Editorial",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163589-alpheratz-project-catalan-spain-translation-quality-rater",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Ads Quality Rater - Lithuanian (Lithuania)",
-      "company": "Welo Global",
-      "location": "Lithuania",
-      "category": "QA & Testing",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163588-ads-quality-rater-lithuanian-lithuania-2",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Director of Agency Development",
-      "company": "StackAdapt",
+      "title": "CLX Property Advocate, UK",
+      "company": "Lemonade",
       "location": "UK",
-      "category": "Business Development",
+      "category": "Customer Support & Success",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163587-director-of-agency-development",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163717-clx-property-advocate-uk-2",
+      "date": "2026-11-21"
     },
     {
-      "title": "Software Engineer (Go)",
-      "company": "Paddle",
-      "location": "Ireland,  Portugal,  UK",
+      "title": "Senior Full Stack Product Software Engineer, Application Platform",
+      "company": "Dropbox",
+      "location": "Poland",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163586-software-engineer-go-2",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163716-senior-full-stack-product-software-engineer-application-platform",
+      "date": "2026-11-21"
     },
     {
-      "title": "Channel Account Manager",
-      "company": "Cobalt",
+      "title": "Enterprise Sales Engineer - France",
+      "company": "Chainguard",
+      "location": "France,  UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163715-enterprise-sales-engineer-france-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Onboarding Manager, France",
+      "company": "Apaleo",
+      "location": "France,  Germany",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163714-onboarding-manager-france",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Site Contracts Manager",
+      "company": "Precision Medicine Group",
+      "location": "Hungary,  Poland,  Romania,  Serbia,  Slovakia,  Spain",
+      "category": "Legal & Compliance",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163713-site-contracts-manager-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior Product Design Manager",
+      "company": "LastPass",
+      "location": "Hungary",
+      "category": "Web, UI & UX Design",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163712-senior-product-design-manager",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Account Executive",
+      "company": "Zone &#038; Co",
       "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163711-account-executive-40",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Actuarial Associate, UK",
+      "company": "Lemonade",
+      "location": "UK",
+      "category": "Finance & Accounting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163710-actuarial-associate-uk-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Infrastructure Software Engineer, Orchestration",
+      "company": "Dropbox",
+      "location": "Poland",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163709-infrastructure-software-engineer-orchestration",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Business Development Representative, Nordics",
+      "company": "Chainguard",
+      "location": "Denmark,  Sweden",
       "category": "Business Development",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163585-channel-account-manager-5",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163708-business-development-representative-nordics-2",
+      "date": "2026-11-21"
     },
     {
-      "title": "Business Development Rep, Enterprise, DACH",
-      "company": "Fivetran",
-      "location": "Germany",
-      "category": "Business Development",
+      "title": "Engineering Manager - Grafana Infrastructure (Remote, Ireland)",
+      "company": "Grafana Labs",
+      "location": "Ireland,  Spain,  UK",
+      "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163584-business-development-rep-enterprise-dach",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163682-engineering-manager-grafana-infrastructure-remote-ireland",
+      "date": "2026-11-21"
     },
     {
-      "title": "3PL Operations Manager",
+      "title": "Sales Manager, Mid-Market - EMEA",
+      "company": "Ashby",
+      "location": "Europe",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163681-sales-manager-mid-market-emea-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Influencer Executive",
+      "company": "TrustedHousesitters",
+      "location": "UK",
+      "category": "Marketing & Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163680-influencer-executive",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Director, Sales Talent Acquisition | United Kingdom | Remote",
+      "company": "Grafana Labs",
+      "location": "UK",
+      "category": "HR & Recruiting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163679-director-sales-talent-acquisition-united-kingdom-remote",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Identity and Numbering Analyst -\u00a0Network API Registration",
+      "company": "Vonage",
+      "location": "Spain",
+      "category": "Product & Operations",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163678-identity-and-numbering-analyst-network-api-registration",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior Security Engineer - Corporate Security",
+      "company": "Ashby",
+      "location": "Europe",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163677-senior-security-engineer-corporate-security",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior Technical Project Manager - VPC",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "Project & Program Management",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163676-senior-technical-project-manager-vpc-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Consultant Neurologist PAYE",
+      "company": "Montu UK",
+      "location": "UK",
+      "category": "Healthcare & Medical",
+      "type": [
+        "Part-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163675-consultant-neurologist-paye-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior Technical Project Manager - Token Factory",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "Project & Program Management",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163674-senior-technical-project-manager-token-factory-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Customer Success Manager",
+      "company": "Semperis",
+      "location": "France",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163672-customer-success-manager-64",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "The Flex Algeria: Founder's Associate",
+      "company": "The Flex",
+      "location": "France",
+      "category": "Product & Operations",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163643-the-flex-algeria-founders-associate",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior Technical Project Manager (Base Infra)",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "Project & Program Management",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163640-senior-technical-project-manager-base-infra",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Senior System Engineer (Virtual Private Cloud Team)",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163639-senior-system-engineer-virtual-private-cloud-team-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Principal Manager, ML Solutions Architecture - Token Factory",
       "company": "Nebius",
       "location": "Europe",
       "category": "Product & Operations",
@@ -130,236 +286,80 @@
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163561-3pl-operations-manager-2",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163638-principal-manager-ml-solutions-architecture-token-factory",
+      "date": "2026-11-21"
     },
     {
-      "title": "Senior Concept Artist",
-      "company": "HyperHug",
-      "location": "Cyprus",
-      "category": "Creative & Design",
+      "title": "ML Infrastructure Engineer",
+      "company": "Nebius",
+      "location": "Europe,  USA",
+      "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163550-senior-concept-artist",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163637-ml-infrastructure-engineer-2",
+      "date": "2026-11-21"
     },
     {
-      "title": "Community Manager \u2013 French Speaking (12-Month Contract)",
-      "company": "Reddit",
-      "location": "Ireland,  UK",
-      "category": "Marketing & Sales",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163547-community-manager-french-speaking-12-month-contract",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Senior QA Engineer",
-      "company": "HyperHug",
-      "location": "Cyprus",
-      "category": "QA & Testing",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163545-senior-qa-engineer-6",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Recruiter, R&D",
-      "company": "GitLab",
-      "location": "Poland,  UK",
-      "category": "HR & Recruiting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163529-recruiter-rd",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Lead Machine Learning Scientist, Search",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Data Science & Analytics",
+      "title": "VP, Mozilla Studio",
+      "company": "Mozilla",
+      "location": "Canada,  Germany,  UK,  USA",
+      "category": "Product & Operations",
       "type": [
         "Part-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163527-lead-machine-learning-scientist-search-2",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163636-vp-mozilla-studio-2",
+      "date": "2026-11-21"
     },
     {
-      "title": "New Business Account Executive - Nordics",
-      "company": "GitLab",
-      "location": "Netherlands,  Sweden,  UK",
+      "title": "Microsoft 365 Engineer",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/163635-microsoft-365-engineer-2",
+      "date": "2026-11-21"
+    },
+    {
+      "title": "Account Executive Enterprise UKI",
+      "company": "1Password",
+      "location": "Ireland,  UK",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163526-new-business-account-executive-nordics",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163634-account-executive-enterprise-uki",
+      "date": "2026-11-21"
     },
     {
-      "title": "Lead Machine Learning Scientist, FinCrime",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Data Science & Analytics",
-      "type": [
-        "Part-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163524-lead-machine-learning-scientist-fincrime-2",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Candidate Experience Specialist, Contractor (EMEA)",
-      "company": "GitLab",
-      "location": "Ireland,  Poland,  UK",
-      "category": "HR & Recruiting",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163523-candidate-experience-specialist-contractor-emea",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Senior Accountant",
-      "company": "saas.group",
-      "location": "Europe",
-      "category": "Finance & Accounting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163521-senior-accountant-13",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Lead Machine Learning Scientist, Customer Operations",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Data Science & Analytics",
-      "type": [
-        "Part-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163520-lead-machine-learning-scientist-customer-operations-2",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Backend Engineer (Ruby), AI Engineering: AI Catalog",
-      "company": "GitLab",
-      "location": "UK",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163519-backend-engineer-ruby-ai-engineering-ai-catalog",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Accounting Manager",
-      "company": "saas.group",
-      "location": "Europe",
-      "category": "Finance & Accounting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163517-accounting-manager-3",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Complaints Policy Manager",
-      "company": "Monzo",
-      "location": "UK",
-      "category": "Legal & Compliance",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163515-complaints-policy-manager-2",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Crux - Video and Audio QA - German (Germany)",
-      "company": "Welo Global",
+      "title": "Senior Contract Web Developer - Firefox (Browser Engine)",
+      "company": "Mozilla",
       "location": "Germany",
       "category": "QA & Testing",
       "type": [
         "Contract"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163459-crux-video-and-audio-qa-german-germany",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163633-senior-contract-web-developer-firefox-browser-engine",
+      "date": "2026-11-21"
     },
     {
-      "title": "Android Software Engineer",
-      "company": "BJAK",
-      "location": "Germany",
+      "title": "Application Integration Developer",
+      "company": "Nebius",
+      "location": "Europe",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163458-android-software-engineer",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Commercial Counsel - Germany",
-      "company": "Elevenlabs",
-      "location": "Germany",
-      "category": "Legal & Compliance",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163457-commercial-counsel-germany",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Staff Software Engineer, OS Integration",
-      "company": "Mozilla",
-      "location": "Germany",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163456-staff-software-engineer-os-integration",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "iOS Developer",
-      "company": "BJAK",
-      "location": "Germany",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163455-ios-developer",
-      "date": "2026-11-20"
-    },
-    {
-      "title": "Data Scientist - Product Analytics",
-      "company": "Elevenlabs",
-      "location": "Bulgaria,  France,  Germany,  Hungary,  Italy,  Poland,  Spain,  UK",
-      "category": "Data Science & Analytics",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163454-data-scientist-product-analytics-2",
-      "date": "2026-11-20"
+      "url": "https://jobicy.com/jobs/163631-application-integration-developer-2",
+      "date": "2026-11-21"
     }
   ]
 }
