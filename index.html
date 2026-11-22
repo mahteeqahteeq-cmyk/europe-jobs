@@ -131,7 +131,7 @@ var sc=document.getElementById('savedCount'); if(sc) sc.innerText=savedJobs.leng
 var el=document.getElementById('list'); if(!el) return;
 if(arr.length==0){ el.innerHTML='<div class="card" style="text-align:center"><h3>No jobs found</h3><button class="btn" onclick="clearFilters()">Clear Filters - Show All Jobs</button></div>'; return; }
 var html='';
-for(var i=0;i<arr.length;i++){ var j=arr[i]; html+='<div class="job"><span class="badge">'+j.ty+'</span> <span class="badge">'+j.sal+'</span><h3>'+j.t+'</h3><p><b>Company:</b> '+j.c+'</p><p><b>Location:</b> '+j.l+' | <b>Category:</b> '+j.cat+'</p><p><b>Start:</b> '+j.s+' | <b>Last:</b> '+j.e+'</p><p><a href="${j.u||j.url||j.link||'#'}" target="_blank" style="background:#1a73e8;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;display:inline-block;margin-top:8px;">Apply on Official Website</a> | <a href="#" onclick="saveJob('+i+');return false;">★ Save</a></p></div>'; }
+for(var i=0;i<arr.length;i++){ var j=arr[i]; html+='<div class="job"><span class="badge">'+j.ty+'</span> <span class="badge">'+j.sal+'</span><h3>'+j.t+'</h3><p><b>Company:</b> '+j.c+'</p><p><b>Location:</b> '+j.l+' | <b>Category:</b> '+j.cat+'</p><p><b>Start:</b> '+j.s+' | <b>Last:</b> '+j.e+'</p><p>'<a href="'+(j.u||j.url||j.link||'#')+'" target="_blank" style="background:#1a73e8;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;">Apply on Official Website</a>'; | <a href="#" onclick="saveJob('+i+');return false;">★ Save</a></p></div>'; }
 el.innerHTML=html;
 }
 function doFilter(){
