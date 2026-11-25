@@ -1,365 +1,365 @@
 {
-  "lastUpdated": "2026-11-24T02:01:50.536563Z",
+  "lastUpdated": "2026-11-25T02:08:50.980004Z",
   "jobs": [
     {
-      "title": "New Business Account Executive (Hebrew speaker)",
-      "company": "Twilio",
-      "location": "Ireland,  Spain,  UK",
+      "title": "Director, Sales (Nordics & Eastern Europe)",
+      "company": "Ping Identity",
+      "location": "Netherlands,  Norway",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164029-new-business-account-executive-hebrew-speaker",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164187-director-sales-nordics-eastern-europe-2",
+      "date": "2026-11-24"
     },
     {
-      "title": "New Business Account Executive (French speaker)",
-      "company": "Twilio",
-      "location": "Ireland,  Spain,  UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164027-new-business-account-executive-french-speaker",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Senior Technical Product Manager",
-      "company": "Airalo",
-      "location": "Spain",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164025-senior-technical-product-manager-3",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "MuleSoft Development Engineer",
-      "company": "Veeam Software",
-      "location": "Czechia",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164017-mulesoft-development-engineer",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Senior Technical Support Engineer, EMEA",
-      "company": "Horizon3.ai",
-      "location": "UK",
-      "category": "Technical Support",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164016-senior-technical-support-engineer-emea",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Solutions Architect, Onchain Compliance - EMEA",
-      "company": "TRM Labs",
-      "location": "EMEA",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164015-solutions-architect-onchain-compliance-emea",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Performance Marketer (Remote - Worldwide)",
-      "company": "EverAI",
-      "location": "Anywhere",
-      "category": "Marketing & Sales",
-      "type": [
-        "Contract"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163997-performance-marketer-remote-worldwide",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Manager - AI Investing",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163967-product-manager-ai-investing",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Engineer - AI Stockbroking",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163966-product-engineer-ai-stockbroking",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Manager - AI Finance",
-      "company": "BJAK",
-      "location": "Germany",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163965-product-manager-ai-finance",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Owner, Technical - AI Stockbroking",
-      "company": "BJAK",
-      "location": "Ireland",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163964-product-owner-technical-ai-stockbroking",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Owner, Technical - AI Investing",
-      "company": "BJAK",
-      "location": "Ireland",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163963-product-owner-technical-ai-investing",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Engineer - AI Neobank",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163961-product-engineer-ai-neobank",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Principal Software Engineer",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163960-principal-software-engineer-3",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Lead Software Engineer",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163959-lead-software-engineer-2",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Engineer - AI Investing",
-      "company": "BJAK",
-      "location": "Austria",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163958-product-engineer-ai-investing",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Technical Product Manager",
-      "company": "BJAK",
-      "location": "Spain",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163957-technical-product-manager-5",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Manager - AI Neobank App",
-      "company": "BJAK",
-      "location": "Netherlands",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163956-product-manager-ai-neobank-app",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Lead - AI Neobank App",
-      "company": "BJAK",
-      "location": "Germany",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163955-product-lead-ai-neobank-app",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Owner, Technical - AI Finance",
-      "company": "BJAK",
-      "location": "Spain",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163954-product-owner-technical-ai-finance",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Mobile UI Designer",
-      "company": "BJAK",
-      "location": "Ireland",
-      "category": "Web, UI & UX Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163953-mobile-ui-designer",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "NOC Incident Manager",
-      "company": "Airalo",
-      "location": "Spain",
-      "category": "DevOps & Infrastructure",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163952-noc-incident-manager",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Product Designer (UI/UX)",
-      "company": "BJAK",
-      "location": "Sweden",
-      "category": "Web, UI & UX Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163951-product-designer-ui-ux",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "NOC Engineer Level 2",
-      "company": "Airalo",
+      "title": "Senior HPC Cluster Engineer",
+      "company": "Nebius",
       "location": "Europe",
       "category": "DevOps & Infrastructure",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163950-noc-engineer-level-2",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164170-senior-hpc-cluster-engineer-2",
+      "date": "2026-11-24"
     },
     {
-      "title": "Lead Brand Designer",
-      "company": "BJAK",
-      "location": "France",
-      "category": "Creative & Design",
+      "title": "Senior Data Engineer",
+      "company": "Nebius",
+      "location": "Europe,  Israel",
+      "category": "Data Science & Analytics",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163948-lead-brand-designer-2",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164169-senior-data-engineer-10",
+      "date": "2026-11-24"
     },
     {
-      "title": "Mobile Engineer - AI Finance Agent",
-      "company": "BJAK",
-      "location": "Poland",
+      "title": "Security Solutions Engineer",
+      "company": "Nebius",
+      "location": "Europe",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164168-security-solutions-engineer-2",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Regulatory Manager / Senior Regulatory Manager",
+      "company": "Precision Medicine Group",
+      "location": "UK",
+      "category": "Legal & Compliance",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164165-regulatory-manager-senior-regulatory-manager-2",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Regulatory and Start Up Specialist",
+      "company": "Precision Medicine Group",
+      "location": "UK",
+      "category": "Healthcare & Medical",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164164-regulatory-and-start-up-specialist-3",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Sales Development Representative (SDR)",
+      "company": "saas.group",
+      "location": "EMEA",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164161-sales-development-representative-sdr-3",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Paid Media Specialist",
+      "company": "Kinsta",
+      "location": "UK",
+      "category": "Marketing & Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164160-paid-media-specialist",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Strategic Account Executive",
+      "company": "Twilio",
+      "location": "Ireland,  Spain,  UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164143-strategic-account-executive-19",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Software Engineer (L2) Supernetwork",
+      "company": "Twilio",
+      "location": "Ireland",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163946-mobile-engineer-ai-finance-agent",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164140-software-engineer-l2-supernetwork",
+      "date": "2026-11-24"
     },
     {
-      "title": "Actuary, UK",
-      "company": "Lemonade",
+      "title": "Strategic Account Manager - UK",
+      "company": "SeatGeek",
       "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164139-strategic-account-manager-uk",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Manager, Training and Enablement",
+      "company": "Cloudbeds",
+      "location": "LATAM,  Canada,  Europe,  USA",
+      "category": "Education & E-learning",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164138-manager-training-and-enablement-2",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Senior Sales Development Representative - 4 Day Week + Remote",
+      "company": "Laminar Projects",
+      "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164137-senior-sales-development-representative-4-day-week-remote",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "company": "Enode",
+      "location": "Europe",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164135-forward-deployed-engineer-15",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Account Manager - UK",
+      "company": "SeatGeek",
+      "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164134-account-manager-uk",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Sales Development Representative (Graduate/Junior) - 4 Day Week + Remote",
+      "company": "Laminar Projects",
+      "location": "UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164090-sales-development-representative-graduate-junior-4-day-week-remote",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Technical Onboarding Specialist (Night Shift)",
+      "company": "Nextiva",
+      "location": "Ukraine",
+      "category": "Technical Support",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164089-technical-onboarding-specialist-night-shift-2",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Staff Security Engineer",
+      "company": "OpenSea",
+      "location": "Europe,  USA",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164087-staff-security-engineer-2",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Senior Product Manager, AI Products & Agentic Hospitality (f/m/d)",
+      "company": "Apaleo",
+      "location": "Germany",
+      "category": "Product & Operations",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164062-senior-product-manager-ai-products-agentic-hospitality-f-m-d",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Onboarding Manager, DACH (f/m/d)",
+      "company": "Apaleo",
+      "location": "Germany",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164057-onboarding-manager-dach-f-m-d",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Business Development Representative \u2013 DACH (f/m/d)",
+      "company": "Apaleo",
+      "location": "Germany",
+      "category": "Business Development",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164053-business-development-representative-dach-f-m-d-4",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Enterprise Account Executive - DACH",
+      "company": "Qualtrics",
+      "location": "Germany",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164051-enterprise-account-executive-dach-8",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Product Readiness Manager (Remote eligible in Bulgaria)",
+      "company": "Smartsheet",
+      "location": "Bulgaria",
+      "category": "Project & Program Management",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164050-product-readiness-manager-remote-eligible-in-bulgaria",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Sales Account Executive, Public Sector",
+      "company": "Zscaler",
+      "location": "Europe",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164048-sales-account-executive-public-sector",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Generative Motion Artist",
+      "company": "Moon Active",
+      "location": "Spain",
+      "category": "Creative & Design",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164045-generative-motion-artist",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Sales Development - UK/I",
+      "company": "Elevenlabs",
+      "location": "Ireland,  UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164044-sales-development-uk-i",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Accounting Assistant",
+      "company": "Fandom",
+      "location": "Poland",
       "category": "Finance & Accounting",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163945-actuary-uk-2",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164041-accounting-assistant",
+      "date": "2026-11-24"
     },
     {
-      "title": "Strategic Account Executive, France",
-      "company": "GitLab",
+      "title": "Customer Success Manager",
+      "company": "Skillsoft",
+      "location": "France",
+      "category": "Customer Support & Success",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164040-customer-success-manager-66",
+      "date": "2026-11-24"
+    },
+    {
+      "title": "Large Enterprise Sales Director, France",
+      "company": "Semperis",
       "location": "France",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163944-strategic-account-executive-france-2",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164039-large-enterprise-sales-director-france",
+      "date": "2026-11-24"
     },
     {
-      "title": "Senior Platform Engineer, Core Platform Team (100% Remote within Poland)",
-      "company": "Docplanner",
-      "location": "Poland",
-      "category": "DevOps & Infrastructure",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/163943-senior-platform-engineer-core-platform-team-100-remote-within-poland",
-      "date": "2026-11-23"
-    },
-    {
-      "title": "Staff Software Engineer",
-      "company": "BJAK",
-      "location": "Austria",
+      "title": "Senior Software Engineer",
+      "company": "Veriff",
+      "location": "Spain",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/163941-staff-software-engineer-17",
-      "date": "2026-11-23"
+      "url": "https://jobicy.com/jobs/164038-senior-software-engineer-30",
+      "date": "2026-11-24"
     }
   ]
 }
