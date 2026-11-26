@@ -1,365 +1,365 @@
 {
-  "lastUpdated": "2026-11-25T02:08:50.980004Z",
+  "lastUpdated": "2026-11-26T02:07:28.582410Z",
   "jobs": [
     {
-      "title": "Director, Sales (Nordics & Eastern Europe)",
-      "company": "Ping Identity",
-      "location": "Netherlands,  Norway",
+      "title": "Contract Senior Software Engineer, Firefox",
+      "company": "Mozilla",
+      "location": "France",
+      "category": "Software Engineering",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164305-contract-senior-software-engineer-firefox",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Senior Sales Engineer, Enterprise",
+      "company": "Fivetran",
+      "location": "Germany",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164187-director-sales-nordics-eastern-europe-2",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164303-senior-sales-engineer-enterprise-3",
+      "date": "2026-11-25"
     },
     {
-      "title": "Senior HPC Cluster Engineer",
-      "company": "Nebius",
-      "location": "Europe",
-      "category": "DevOps & Infrastructure",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164170-senior-hpc-cluster-engineer-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Senior Data Engineer",
-      "company": "Nebius",
-      "location": "Europe,  Israel",
+      "title": "Sr Data Platform Engineer",
+      "company": "Dataiku",
+      "location": "France,  Spain,  UK",
       "category": "Data Science & Analytics",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164169-senior-data-engineer-10",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164302-sr-data-platform-engineer",
+      "date": "2026-11-25"
     },
     {
-      "title": "Security Solutions Engineer",
-      "company": "Nebius",
-      "location": "Europe",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164168-security-solutions-engineer-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Regulatory Manager / Senior Regulatory Manager",
-      "company": "Precision Medicine Group",
+      "title": "Distributor Channel Manager",
+      "company": "Huntress",
       "location": "UK",
-      "category": "Legal & Compliance",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164165-regulatory-manager-senior-regulatory-manager-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Regulatory and Start Up Specialist",
-      "company": "Precision Medicine Group",
-      "location": "UK",
-      "category": "Healthcare & Medical",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164164-regulatory-and-start-up-specialist-3",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Sales Development Representative (SDR)",
-      "company": "saas.group",
-      "location": "EMEA",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164161-sales-development-representative-sdr-3",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164299-distributor-channel-manager",
+      "date": "2026-11-25"
     },
     {
-      "title": "Paid Media Specialist",
-      "company": "Kinsta",
+      "title": "Certificate Authority Program Steward",
+      "company": "Mozilla",
+      "location": "Germany",
+      "category": "Cybersecurity",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164298-certificate-authority-program-steward",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Talent Consultant - Zartis",
+      "company": "Zartis",
+      "location": "Ireland",
+      "category": "HR & Recruiting",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164297-talent-consultant-zartis",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Outreach Marketing Specialist (Maternity Leave Cover)",
+      "company": "BOLD",
+      "location": "Poland",
+      "category": "SEO",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164296-outreach-marketing-specialist-maternity-leave-cover",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Customer Marketing Manager, EMEA",
+      "company": "Horizon3.ai",
+      "location": "France,  Netherlands,  UK",
+      "category": "Marketing & Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164295-customer-marketing-manager-emea",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Marketing Acquisition Manager",
+      "company": "Welo Global",
       "location": "UK",
       "category": "Marketing & Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164160-paid-media-specialist",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164282-marketing-acquisition-manager",
+      "date": "2026-11-25"
     },
     {
-      "title": "Strategic Account Executive",
-      "company": "Twilio",
-      "location": "Ireland,  Spain,  UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164143-strategic-account-executive-19",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Software Engineer (L2) Supernetwork",
-      "company": "Twilio",
-      "location": "Ireland",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164140-software-engineer-l2-supernetwork",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Strategic Account Manager - UK",
-      "company": "SeatGeek",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164139-strategic-account-manager-uk",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Manager, Training and Enablement",
-      "company": "Cloudbeds",
-      "location": "LATAM,  Canada,  Europe,  USA",
-      "category": "Education & E-learning",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164138-manager-training-and-enablement-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Senior Sales Development Representative - 4 Day Week + Remote",
-      "company": "Laminar Projects",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164137-senior-sales-development-representative-4-day-week-remote",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Forward Deployed Engineer",
-      "company": "Enode",
-      "location": "Europe",
-      "category": "Software Engineering",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164135-forward-deployed-engineer-15",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Account Manager - UK",
-      "company": "SeatGeek",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164134-account-manager-uk",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Sales Development Representative (Graduate/Junior) - 4 Day Week + Remote",
-      "company": "Laminar Projects",
-      "location": "UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164090-sales-development-representative-graduate-junior-4-day-week-remote",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Technical Onboarding Specialist (Night Shift)",
-      "company": "Nextiva",
-      "location": "Ukraine",
-      "category": "Technical Support",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164089-technical-onboarding-specialist-night-shift-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Staff Security Engineer",
-      "company": "OpenSea",
-      "location": "Europe,  USA",
-      "category": "Cybersecurity",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164087-staff-security-engineer-2",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Senior Product Manager, AI Products & Agentic Hospitality (f/m/d)",
-      "company": "Apaleo",
-      "location": "Germany",
-      "category": "Product & Operations",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164062-senior-product-manager-ai-products-agentic-hospitality-f-m-d",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Onboarding Manager, DACH (f/m/d)",
-      "company": "Apaleo",
-      "location": "Germany",
-      "category": "Customer Support & Success",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164057-onboarding-manager-dach-f-m-d",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Business Development Representative \u2013 DACH (f/m/d)",
-      "company": "Apaleo",
-      "location": "Germany",
-      "category": "Business Development",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164053-business-development-representative-dach-f-m-d-4",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Enterprise Account Executive - DACH",
-      "company": "Qualtrics",
-      "location": "Germany",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164051-enterprise-account-executive-dach-8",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Product Readiness Manager (Remote eligible in Bulgaria)",
-      "company": "Smartsheet",
-      "location": "Bulgaria",
+      "title": "Localization Production Coordinator",
+      "company": "Welo Global",
+      "location": "Greece,  Romania",
       "category": "Project & Program Management",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164050-product-readiness-manager-remote-eligible-in-bulgaria",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164280-localization-production-coordinator",
+      "date": "2026-11-25"
     },
     {
-      "title": "Sales Account Executive, Public Sector",
-      "company": "Zscaler",
+      "title": "Crux - Video and Audio Raters - German (Germany)",
+      "company": "Welo Global",
+      "location": "Germany",
+      "category": "Data Science & Analytics",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164279-crux-video-and-audio-raters-german-germany",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Crux - Video and Audio Raters - French (France)",
+      "company": "Welo Global",
+      "location": "France",
+      "category": "QA & Testing",
+      "type": [
+        "Contract"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164278-crux-video-and-audio-raters-french-france",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Staff QE, Mobile",
+      "company": "AlphaSense",
+      "location": "UK",
+      "category": "QA & Testing",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164277-staff-qe-mobile",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Community Lead & Talent Acquisition Advisor - DACH",
+      "company": "Ashby",
       "location": "Europe",
+      "category": "Business Development",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164244-community-lead-talent-acquisition-advisor-dach",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Business Development Representative I (m/f/d)",
+      "company": "Wellhub",
+      "location": "Germany",
+      "category": "Business Development",
+      "type": [
+        "Part-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164243-business-development-representative-i-m-f-d",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "(Senior) Java Test Automation Engineer (m/f/d)",
+      "company": "ecosio",
+      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
+      "category": "QA & Testing",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164241-senior-java-test-automation-engineer-m-f-d",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Community Lead & Talent Acquisition Advisor - EMEA",
+      "company": "Ashby",
+      "location": "UK",
+      "category": "HR & Recruiting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/164239-community-lead-talent-acquisition-advisor-emea",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Core Account Executive - DACH",
+      "company": "Samsara",
+      "location": "Germany",
       "category": "Sales",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164048-sales-account-executive-public-sector",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164238-core-account-executive-dach",
+      "date": "2026-11-25"
     },
     {
-      "title": "Generative Motion Artist",
-      "company": "Moon Active",
-      "location": "Spain",
-      "category": "Creative & Design",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164045-generative-motion-artist",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Sales Development - UK/I",
-      "company": "Elevenlabs",
-      "location": "Ireland,  UK",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164044-sales-development-uk-i",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Accounting Assistant",
-      "company": "Fandom",
-      "location": "Poland",
-      "category": "Finance & Accounting",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164041-accounting-assistant",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Customer Success Manager",
-      "company": "Skillsoft",
-      "location": "France",
-      "category": "Customer Support & Success",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164040-customer-success-manager-66",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Large Enterprise Sales Director, France",
-      "company": "Semperis",
-      "location": "France",
-      "category": "Sales",
-      "type": [
-        "Full-Time"
-      ],
-      "salary": "",
-      "url": "https://jobicy.com/jobs/164039-large-enterprise-sales-director-france",
-      "date": "2026-11-24"
-    },
-    {
-      "title": "Senior Software Engineer",
-      "company": "Veriff",
-      "location": "Spain",
+      "title": "Full Stack Developer - Java & React (f/m/d)",
+      "company": "ecosio",
+      "location": "Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK",
       "category": "Software Engineering",
       "type": [
         "Full-Time"
       ],
       "salary": "",
-      "url": "https://jobicy.com/jobs/164038-senior-software-engineer-30",
-      "date": "2026-11-24"
+      "url": "https://jobicy.com/jobs/164237-full-stack-developer-java-react-f-m-d-3",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Linux Software Engineer - Ubuntu for Next-Gen Silicon (multiple roles and seniority levels)",
+      "company": "Canonical",
+      "location": "Anywhere",
+      "category": "Software Engineering",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156997-linux-software-engineer-ubuntu-for-next-gen-silicon-multiple-roles-and-seniority-levels",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Senior Product Manager, User Acquisition",
+      "company": "RevenueCat",
+      "location": "APAC,  EMEA,  LATAM,  Canada,  USA",
+      "category": "Product & Operations",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156992-senior-product-manager-user-acquisition",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "People Operations Partner",
+      "company": "Playson",
+      "location": "Europe",
+      "category": "HR & Recruiting",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/157031-people-operations-partner",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Strategic Account Executive (Netherlands)",
+      "company": "Ping Identity",
+      "location": "Netherlands",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156988-strategic-account-executive-netherlands",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Strategic Account Executive (Middle East)",
+      "company": "Ping Identity",
+      "location": "France,  UK",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156987-strategic-account-executive-middle-east",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Strategic Account Executive (Belgium)",
+      "company": "Ping Identity",
+      "location": "Belgium",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156985-strategic-account-executive-belgium",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Senior Site Reliability Engineer",
+      "company": "Ping Identity",
+      "location": "Italy",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156984-senior-site-reliability-engineer-6",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Senior Field Marketing Manager",
+      "company": "Ping Identity",
+      "location": "UK",
+      "category": "Marketing & Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156983-senior-field-marketing-manager-2",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Sales Specialist (Italy)",
+      "company": "Ping Identity",
+      "location": "Italy",
+      "category": "Sales",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156982-sales-specialist-italy",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Dental Field Trainer - Birmingham",
+      "company": "Dandy",
+      "location": "UK",
+      "category": "Education & E-learning",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156970-dental-field-trainer-birmingham",
+      "date": "2026-11-25"
+    },
+    {
+      "title": "Platform Engineer - Compute Capacity",
+      "company": "Supabase",
+      "location": "Anywhere",
+      "category": "DevOps & Infrastructure",
+      "type": [
+        "Full-Time"
+      ],
+      "salary": "",
+      "url": "https://jobicy.com/jobs/156946-platform-engineer-compute-capacity",
+      "date": "2026-11-25"
     }
   ]
 }
